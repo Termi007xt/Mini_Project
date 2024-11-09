@@ -20,7 +20,7 @@ a {
 /* body tag style */
 body {
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
   font-family: poppins;
 }
 
@@ -31,26 +31,324 @@ body {
 }
 
 /* Navigation Header properties*/
+/* Ensure full-width nav bar */
 .navigation-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 35px;
-  max-width: 1070px;
+  padding: 20px 0;
   width: 100%;
-  margin: auto;
-  /*margin-left: 90px;*/
 }
 
+/* Logo aligns to the left */
+.logo-img {
+  margin-left: 200px;
+  padding-left: 50px; /* Adjust if needed */
+}
+
+.logo-img {
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* Increase the scale to 1.1 (10% larger) */
+}
+
+/* Center the header items */
 .header-items {
   display: flex;
-  align-items: center;
+  gap: 70px; /* Adjust space between menu items as needed */
+  margin: 0 auto;
+  margin-left: 70px;
 }
 .header-items li a {
+  position: relative; /* Necessary for positioning the underline */
   padding: 3px 10px;
-  margin: 0px 15px;
   color: #3b3b3b;
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: all ease 0.3s;
+}
+
+/* Underline effect */
+.header-items li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #39ff14; /* Fixed missing semicolon */
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* Position the underline below the text */
+  transition: width 0.3s ease; /* Adjust the speed here if needed */
+}
+
+.header-items li a:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+/* Style for header icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adjust spacing between icons */
+  margin-right: 160px;
+}
+
+.header-icons a {
+  color: #3b3b3b; /* Icon color */
+  font-size: 23px; /* Icon size */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.header-icons a:hover {
+  color: #39ff14; /* Change color on hover to green */
+}
+
+/* Cate */
+#category,
+#popular-product,
+#popular-bundle-pack,
+#partner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 50px auto;
+  align-items: center;
+}
+.category-heading,
+.product-heading,
+.partner-heading {
+  display: flex;
+  justify-content: center;
+}
+.category-heading h2,
+.product-heading h3,
+.partner-heading h3 {
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #202020;
+  letter-spacing: 0.5px;
+}
+.category-heading span,
+.product-heading span {
+  color: #a7a7a7;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  gap: 85px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+.fa-search {
+  cursor: pointer;
+}
+.category-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  min-height: 130px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+.category-box img {
+  height: 60px;
+  width: 80px;
+  object-fit: contain;
+  object-position: center;
+  transition: all ease 0.1s;
+}
+.category-box span {
+  color: #393939;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+.category-box:hover img {
+  transform: scale(1.1);
+  transition: all ease 0.1s;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  display: inline-block;
+
+  max-width: 60%; /* Make the image scale to the container's width */
+  height: auto; /* Keep the aspect ratio intact */
+}
+
+/*popular products ka css*/
+
+.productsnumber {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto; /* This will center the container horizontally */
+}
+
+.product-card {
+  width: 30%; /* Each product will take 30% of the container width */
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-details p:last-child {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .product-card {
+    width: 48%; /* 2 products per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 product per row */
+  }
+}
+.nametag078 {
+  margin-left: 40px; /* Adds 20px of space outside the element, shifting it right */
+}
+
+/*-------------------Contact-----------------*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns content at the top */
+}
+
+/* Contact Left Section */
+.contact-left {
+  flex-basis: 35%;
+  padding-right: 20px; /* Adds space between left and right sections */
+}
+
+/* Contact Right Section */
+.contact-right {
+  flex-basis: 60%;
+  text-align: right; /* Aligns form to the right */
+}
+
+.contact-left p {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #39ff14;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #39ff14;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #39ff14;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns form elements to the right */
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%; /* Keeps input fields full-width */
+  border: 0;
+  outline: none;
+  background: #fff;
+  padding: 15px;
+  margin: 20px -102px 20px;
+  color: #000; /* Changed text color for readability */
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  margin-right: 855px;
+  padding: 14px 60px;
+  font-size: 20px;
+  margin-top: -80px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  background: #fff;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+nav .fa-solid {
+  display: none;
 }
