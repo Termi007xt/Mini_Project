@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* global variables */
+:root{
+  --green: green;
+  --black: black;
+  --light-color: #666;
+  --box-shadow: 0 0.1rem 1rem rgba(0,0,0.1);
+  --border: 2rem solid rgba(0,0,0.1);
+  --outline: 0.1rem solid rgba(0,0,0.1);
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+}
+
+/* anchor tag style */
+a {
+  text-decoration: none;
+}
+
+/* body tag style */
+body {
+  margin: 0px;
+  padding: 5px;
+  font-family: poppins;
+  background: #eee;
+}
+
+/* when text is selected */
+::selection {
+  color: #ffffff;
+  background-color: #40aa54;
+}
+
+/* Navigation Header properties*/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  /*max-width: 1070px;*/
+  /*margin: auto;*/
+  /*padding: 35px;*/
+  /*margin-left: 90px;*/
+}
+
+
+/* logo properties */
+.header .logo{
+  height: 90px;
+  width: 159px;
+}
+
+.header .navbar a{
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover{
+  color: var(--green);
+}
+
+.header .icons div{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header .icons div:hover{
+  background: var(--green);
+  color: white;
+}
+
+#menu-btn {
+  display:none;
+}

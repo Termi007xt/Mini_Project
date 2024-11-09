@@ -7,45 +7,48 @@
 
     <title>Smart Groceries</title>
 
-    <!--==Stylesheet====-->
-    <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <!--==Stylesheet/link to css file ====-->
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
 
     <!--==Fav-icon======-->
     <link rel="shortcut icon" href="" />
+
+    <!--==code for font awesome cdn====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
   </head>
 
   <!-- Visible portion of website-->
   <body>
     <!--==Navigation Header===-->
-    <nav class="navigation-header">
-      <!--logo-------->
+    <header class="header">
 
-      <!--menu-------->
-      <ul class="header-items">
-        <li>
-          <a href="homepage.html" class="active"> Home </a>
-        </li>
+      <!--logo (leftmost)-->
+      <a href="#"> <img class="logo" src="images/logo.png"> </a>
 
-        <li>
-          <a href=""> Categories </a>
-        </li>
+      <!--menus in header-->
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#smartcart">Smart Cart</a>
+        <a href="#smartselections">Smart selections</a>
+        <a href="#orders">Track Orders</a>
+        <a href="#help">Contact Us</a>
+      </nav>
+      <!--menus in header-->
 
-        <li>
-          <a href=""> Smart Cart </a>
-        </li>
+      <!--icons in header-->
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+      </div>
+      <!--icons in header-->
 
-        <li>
-          <a href=""> Smart selections </a>
-        </li>
+    </header>
+    <!--==Navigation Header===-->
 
-        <li>
-          <a href=""> Track orders </a>
-        </li>
-
-        <li>
-          <a href=""> Customer care </a>
-        </li>
-      </ul>
-    </nav>
+  <script src="js/script.js"></script>
   </body>
 </html>
