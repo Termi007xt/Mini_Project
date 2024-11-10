@@ -385,16 +385,16 @@ section {
 form input,
 form textarea {
   width: 100%;
-  border: black;
+  border: 2px solid black;
   outline: black;
   background: #fffddd;
   padding: 10px;
-  margin: 10px 0;
+  margin: 0px 0;
   color: black;
   font-size: 20px;
   border-radius: 2px;
-  margin-top: 60px;
-  margin-bottom: -50px;
+  margin-top: 55px;
+  margin-bottom: -40px;
 }
 
 form .btn2 {
