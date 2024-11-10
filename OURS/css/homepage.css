@@ -10,6 +10,7 @@
   --outline: 0.1rem solid rgba(0,0,0.1);
 }
 
+
 /* universal selection (for common properties) */
 * {
   font-family: "Poppins", sans-serif;
@@ -199,7 +200,8 @@ section{
 }
 .category-heading span,
 .product-heading span{
-    color: #a7a7a7;
+    font-size: 15px;
+    color: #252222;
     font-weight: 400;
     letter-spacing: 1px;
 }
