@@ -74,6 +74,11 @@ body {
 .header .logo {
   height: 90px;
   width: 159px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.header .logo:hover {
+  transform: scale(1.03); /* Adjust the scale factor as desired */
 }
 
 .header .navbar a {
@@ -424,9 +429,33 @@ form .btn2 {
   padding: 25px;
   background: #fffddd;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: -20px;
 }
 
 nav .fa-solid {
   display: none;
+}
+
+/* About Us Section */
+#about-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#about-us .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#about-us .sub-title {
+  font-size: 40px;
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
