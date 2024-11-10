@@ -111,6 +111,7 @@ body {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
+  padding: 0;
   border-radius: 0.5rem;
   background: #eee;
   color: var(--black);
@@ -181,13 +182,13 @@ section {
   position: relative;
 }
 .content h1 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   line-height: 50px;
   color: #202020;
 }
 .content p {
   color: #4eb060;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-top: 4px;
   text-transform: none;
 }
