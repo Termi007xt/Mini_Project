@@ -23,94 +23,13 @@
   transition: all 0.2s linear;
 }
 
-/* Navigation Header properties*/
-.header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2px 67.438px;
-  background: #fff;
-  box-shadow: var(--box-shadow);
-  width: 100%;
-  height: 85px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  /*max-width: 1070px;*/
-  /*margin: auto;*/
-  /*padding: 35px;*/
-  /*margin-left: 90px;*/
-}
-
-/* logo properties */
-.header .logo {
-  height: 90px;
-  width: 159px;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
-}
-
-.header .logo:hover {
-  transform: scale(1.03); /* Adjust the scale factor as desired */
-}
-
-.header .navbar a {
-  position: relative;
-  font-size: 18px;
-  margin: 0 20px;
-  color: var(--black);
-}
-
-.header .navbar a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: var(--green);
-  position: absolute;
-  left: 0;
-  bottom: -4px; /* Position the underline below the text */
-  transition: width 0.3s ease; /* Adjust the speed here if needed */
-}
-
-.header .navbar a:hover::after {
-  width: 100%;
-}
-
-.header .navbar a:hover {
-  color: var(--green);
-}
-
-.header .icons div {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  border-radius: 0.5rem;
-  background: #eee;
-  color: var(--black);
-  font-size: 2rem;
-  margin-right: 0.3rem;
-  text-align: center;
-  cursor: pointer;
-}
-
-.header .icons div:hover {
-  background: var(--green);
-  color: white;
-}
-
-#menu-btn {
-  display: none;
-}
-
 /* banner section */
 section {
   padding-top: 100px;
   padding: 10px 9%;
 }
 
-.banner {
+.banner-fruits {
   max-width: 1250px;
   width: 95%;
   height: 500px;
@@ -121,7 +40,67 @@ section {
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url();
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-daily {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-rice {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-meats {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
   background-repeat: no-repeat;
   background-size: 1252px;
   background-position: center;
