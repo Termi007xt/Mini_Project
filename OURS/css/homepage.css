@@ -198,6 +198,17 @@ section {
   max-width: 1000px;
   margin: 50px auto;
 }
+
+.category-heading span {
+  margin-top: 18px;
+  color: #000; /* Initial color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.category-heading span:hover {
+  color: var(--green);
+}
 .category-heading,
 .product-heading {
   display: flex;
@@ -223,6 +234,7 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  gap: 10px;
 }
 .fa-search {
   cursor: pointer;
