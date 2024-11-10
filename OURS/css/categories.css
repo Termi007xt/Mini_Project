@@ -60,7 +60,7 @@ section {
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url(../images/.png);
+  background-image: url(../images/home-banner.png);
   background-repeat: no-repeat;
   background-size: 1252px;
   background-position: center;
@@ -80,7 +80,7 @@ section {
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url(../images/fruits-and-vegetables.png);
+  background-image: url(../images/home-banner.png);
   background-repeat: no-repeat;
   background-size: 1252px;
   background-position: center;
@@ -90,6 +90,86 @@ section {
 }
 
 .banner-meats {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-spices {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-bf {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-snacks {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-health {
   max-width: 1250px;
   width: 95%;
   height: 500px;
