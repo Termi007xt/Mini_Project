@@ -197,6 +197,64 @@ section {
   color: var(--green);
 }
 
+/* discount banner */
+.discount-banner {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/discount-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sale-heading {
+  position: absolute;
+  bottom: 10px; /* Adjust to move vertically */
+  right: 460px; /* Adjust to move horizontally */
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 2rem;
+  /*text-align: center;*/
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 100%;
+  text-align: center;
+  color: white; /* Set all text in countdown to white */
+  position: absolute;
+  bottom: 20px; /* Adjust to move vertically */
+  right: 20px; /* Adjust to move horizontally */
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+.countdown-el span {
+  font-size: 1.3rem;
+}
+
+
 /* categories */
 #category {
   display: flex;

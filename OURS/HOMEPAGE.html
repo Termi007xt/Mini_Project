@@ -13,8 +13,11 @@
     <!-- FONT_AWESOME ICONS-->
     <script
       src="https://kit.fontawesome.com/f3b87cd4bd.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+
+    <!--JS file link for functionality-->
+    <script src="js/script.js"></script>
 
     <!--==Fav-icon======-->
     <link rel="shortcut icon" href="" />
@@ -24,6 +27,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
   </head>
 
   <!-- Visible portion of website-->
@@ -130,13 +134,34 @@
     </section>
     <!--category-end----------------------------------->
 
-    <script src="js/script.js"></script>
   </body>
 </html>
 
 <!-- DISCOUNT BANNER -->
-<section class="banner" id="home">
-    <!--<a href="#" class="btn">Explore features</a>-->
+<section class="discount-banner" id="home">
+  <h2 class = 'sale-heading'>
+
+    Sale ends in
+
+  </h2>
+
+  <div class="countdown-container">
+      <div class="countdown-el days-c">
+          <p class="big-text" id="days">0</p>
+          <span>Days</span>
+      </div>
+      <div class="countdown-el hours-c">
+          <p class="big-text" id="hours">0</p>
+          <span>Hours</span>
+      </div>
+      <div class="countdown-el mins-c">
+          <p class="big-text" id="mins">0</p>
+          <span>Min</span>
+      </div>
+      <div class="countdown-el seconds-c">
+          <p class="big-text" id="seconds">0</p>
+          <span>Seconds</span>
+      </div>
   </div>
 </section>
 
