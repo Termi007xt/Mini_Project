@@ -221,8 +221,8 @@ section {
 
 .sale-heading {
   position: absolute;
-  bottom: 10px; /* Adjust to move vertically */
-  right: 460px; /* Adjust to move horizontally */
+  bottom: 10px;
+  right: 495px; 
   color: white;
   font-weight: bold;
   font-size: 4rem;
