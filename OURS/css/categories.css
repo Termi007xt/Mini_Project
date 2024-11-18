@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* global variables */
+:root {
+  --green: #7ed957;
+  --black: black;
+  --light-color: #666;
+  --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.164);
+  --border: 2rem solid rgba(0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0.1);
+}
+
+/* universal selection (for common properties) */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+/* banner section */
+section {
+  padding-top: 100px;
+  padding: 10px 9%;
+}
+
+.banner-fruits {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fruits-and-vegetables.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-daily {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/daily-essentials.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-rice {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/rice-&-flour.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-meats {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/meats-&-fish.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-spices {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/spices-dry-fruits.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-bf {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/breakfast.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-snacks {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/snacks.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-health {
+  max-width: 1250px;
+  width: 95%;
+  height: 500px;
+  border-width: 5px;
+  border-radius: 30px;
+  background-color: #ecf7ee;
+  margin: 10px auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/health.png);
+  background-repeat: no-repeat;
+  background-size: 1252px;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 80px;
+  margin-left: 12px;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 4rem;
+  line-height: 50px;
+  color: #202020;
+}
+.content p {
+  color: #4eb060;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.content h1 span {
+  color: var(--green);
+}
+
+.content-top-left {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: -350px;
+  margin-left: 12px;
+  position: absolute;
+}
+
+.content-top-left h1 {
+  font-size: 4rem;
+  line-height: 50px;
+  color: #202020;
+}
+.content-top-left p {
+  color: #4eb060;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.content-top-left h1 span {
+  color: var(--green);
+}
+
+.content-mid {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: -50px;
+  margin-left: 12px;
+  position: absolute;
+}
+
+.content-mid h1 {
+  font-size: 4rem;
+  line-height: 40px;
+  color: #202020;
+}
+.content-mid p {
+  color: #4eb060;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.content-mid h1 span {
+  color: var(--green);
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: -90px;
+  margin-left: 1000px;
+  position: absolute;
+}
+
+.content-right h1 {
+  font-size: 4rem;
+  line-height: 40px;
+  color: #202020;
+}
+.content-right p {
+  color: #4eb060;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.content-right h1 span {
+  color: var(--green);
+}

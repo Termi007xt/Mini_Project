@@ -1,0 +1,91 @@
+/* General Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffddd;
+}
+
+/* Container Styling */
+.profile-container {
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  position: relative;
+  width: 100%;
+  text-align: left; /* Aligns the entire group to the left */
+}
+
+/* Label Styling */
+label {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6e6e6e;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: left; /* Align labels to the left */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-bottom: 2px solid #40aa54;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button Styling */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5ed374;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #35a04b;
+}
