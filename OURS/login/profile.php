@@ -1,3 +1,4 @@
+<?php include("logincon.php"); ?> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +30,7 @@
         <div class="form-group">
           <label for="gender">Gender</label>
           <select id="gender" name="gender" required>
-            <option value="" disabled selected>Select your gender</option>
+            <option value="Not selected" disabled selected>Select your gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="Insane">Mentally-Disabled</option>
@@ -44,8 +45,43 @@
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="zip" required />
         </div>
-        <button type="submit" class="btn">Update</button>
+        <div class="btn">
+        <input type="submit"  value="Register" class="btn" name="Update">
       </form>
     </div>
   </body>
 </html>
+
+<?php
+  if($_POST['Update'])
+  {
+    $first_name=$_POST['name'];
+    $phone_num=$_POST['phone'];
+    $email=$_POST['email'];
+    $dob=$_POST['dob'];
+    $gender=$_POST['gender'];
+    $add=$_POST['address'];
+    $zip=$_POST['zip'];
+
+    $query="INSERT INTO FORM VALUES(
+      '$first_name',
+      '$phone_num',
+      '$email',
+      '$dob',
+      '$gender',
+      '$add',
+      '$zip'
+    )";
+    
+    $data=mysqli_query($conn,$query);
+    
+    if($data)
+    {
+      echo "Data Inserted";
+    }
+    else{
+      echo "Insert failed";
+    }
+
+  }
+?>
