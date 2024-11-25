@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Selections</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff; /* Light blue background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Container Styling */
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      /* Form Styling */
+      .form {
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input:focus {
+        border-color: #40aa54;
+        outline: none;
+        box-shadow: 0 0 5px rgba(64, 170, 84, 0.5);
+      }
+
+      /* Button Styling */
+      .btn {
+        background-color: #40aa54;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #35a04b;
+      }
+
+      /* Result Styling */
+      .result {
+        margin-top: 20px;
+        text-align: left;
+        display: none; /* Initially hidden */
+      }
+
+      .result h2 {
+        color: #333;
+      }
+
+      .result p,
+      .result ul {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .result ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Smart Selections</h1>
+      <form id="bmiForm" class="form">
+        <div class="form-group">
+          <label for="weight">Weight (in kg):</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Enter your weight"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="height">Height (in cm):</label>
+          <input
+            type="number"
+            id="height"
+            placeholder="Enter your height"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="exercise">Duration of Exercise (in minutes):</label>
+          <input
+            type="number"
+            id="exercise"
+            placeholder="Enter minutes of exercise"
+            required
+          />
+        </div>
+        <button type="button" class="btn" onclick="calculateBMI()">
+          Submit
+        </button>
+      </form>
+      <div id="result" class="result">
+        <h2>Your BMI and Health Status:</h2>
+        <p id="bmiOutput"></p>
+        <p id="status"></p>
+        <h2>Recommended Groceries:</h2>
+        <ul id="groceryList"></ul>
+      </div>
+    </div>
+
+    <script>
+      function calculateBMI() {
+        // Get user inputs
+        const weight = parseFloat(document.getElementById("weight").value);
+        const height =
+          parseFloat(document.getElementById("height").value) / 100; // Convert cm to meters
+        const exercise = parseInt(document.getElementById("exercise").value);
+
+        // Check if inputs are valid
+        if (
+          isNaN(weight) ||
+          isNaN(height) ||
+          isNaN(exercise) ||
+          weight <= 0 ||
+          height <= 0 ||
+          exercise < 0
+        ) {
+          alert("Please enter valid inputs!");
+          return;
+        }
+
+        // Calculate BMI
+        const bmi = (weight / (height * height)).toFixed(2);
+
+        // Determine health status
+        let status = "";
+        let groceries = [];
+
+        if (bmi < 18.5) {
+          status = "You are underweight.";
+          groceries = [
+            "Whole milk",
+            "Cheese",
+            "Nuts",
+            "Avocados",
+            "Protein shakes",
+          ];
+        } else if (bmi >= 18.5 && bmi <= 25) {
+          status = "You are healthy.";
+          groceries = [
+            "Fresh fruits",
+            "Vegetables",
+            "Lean meats",
+            "Whole grains",
+          ];
+        } else if (bmi > 25 && bmi <= 30) {
+          status = "You are overweight.";
+          groceries = [
+            "Low-fat yogurt",
+            "Leafy greens",
+            "Fish",
+            "Quinoa",
+            "Chia seeds",
+          ];
+        } else {
+          status = "You are obese.";
+          groceries = ["Green tea", "Oats", "Legumes", "Salmon", "Broccoli"];
+        }
+
+        // Update the results in the HTML
+        document.getElementById("result").style.display = "block";
+        document.getElementById(
+          "bmiOutput"
+        ).textContent = `Your BMI is: ${bmi}`;
+        document.getElementById("status").textContent = status;
+
+        // Display recommended groceries
+        const groceryList = document.getElementById("groceryList");
+        groceryList.innerHTML = "";
+        groceries.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          groceryList.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>
