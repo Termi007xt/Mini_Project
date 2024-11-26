@@ -144,7 +144,7 @@ else
     <script>
       // Function to navigate back to the profile page for editing -->
     function goBack() { -->
-        window.location.href = "../OURS/HOMEPAGE.html"; 
+        window.location.href = "#"
     } 
      </script>
   </body>
