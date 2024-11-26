@@ -46,7 +46,9 @@
           <input type="text" id="zip" name="zip" required />
         </div>
         <div class="btn">
-        <input type="submit"  value="Register" class="btn" name="Update">
+        <input type="submit"  value="Register" class="btn" onclick="goback()", name="Update">
+        <!-- <a href="../login/fetch_login.php"> -->
+        </div>
       </form>
     </div>
   </body>
@@ -77,7 +79,8 @@
     
     if($data)
     {
-      echo "Data Inserted";
+      header("Location:fetch_login.php");
+      exit();
     }
     else{
       echo "Insert failed";
