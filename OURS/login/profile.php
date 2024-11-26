@@ -10,7 +10,7 @@
   <body>
     <div class="profile-container">
       <h1>🛒 Personal Information</h1>
-      <form action="#" method="POST" class="profile-form">
+      <form action="fetch_login.php" method="POST" class="profile-form">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />

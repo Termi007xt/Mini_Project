@@ -89,8 +89,8 @@ else
 
       /* Button Styling */
       .btn {
-        margin-top: 20px;
-        padding: 10px 20px;
+        margin-top: 0px;
+        /*padding: 10px 20px;*/
         font-size: 16px;
         font-weight: bold;
         color: #fff;
@@ -104,6 +104,11 @@ else
       .btn:hover {
         background-color: #35a04b;
       }
+
+      .btn:active {
+        
+      }
+
     </style>
   </head>
   <body>
@@ -143,9 +148,9 @@ else
     </div>
     <script>
       // Function to navigate back to the profile page for editing -->
-    function goBack() { -->
-        window.location.href = "#"
-    } 
+    /*function goBack() { -->
+     // window.location.href = "./HOMEPAGE.html"
+    } */
      </script>
   </body>
 </html>
