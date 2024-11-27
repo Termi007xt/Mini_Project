@@ -50,5 +50,23 @@ body{
   padding-bottom: 0px;
   font-weight: 500;
   margin-top: 20px;
+<<<<<<< HEAD
   
 }
+=======
+}
+
+.form-address{
+  background-color: rgb(255, 255, 255);
+  margin:0 auto;
+  border:1px solid #ccc;
+  border-radius: 15px;
+  padding-bottom: 65px;
+  padding-top:0px;
+  height:100px;
+  width: 100%;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+>>>>>>> 75a06cd7466555b1098b91ceb5004122d0e83782
