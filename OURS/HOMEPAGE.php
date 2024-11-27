@@ -62,7 +62,7 @@ if (!isset($_SESSION["user"])) {
       <!--icons in header-->
       <div class="icons">
         <div class="fa fa-bars" id="menu-btn"></div>
-        <a href="features\search.html"><div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
         <a href="features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
         <a href="login-&-register\login.php"><div class="fa fa-user" id="login-btn"></div>
       </div>
