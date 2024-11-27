@@ -528,3 +528,15 @@ nav .fa-solid {
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+/* search bar css */
+.header .search-form
+{
+   border: 1px solid;
+   position: absolute;
+   top:110%;
+   rem: 2rem;
+   max-width: 50rem;
+   height: 4rem;
+   background: white;
+}

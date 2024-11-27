@@ -66,6 +66,12 @@ if (!isset($_SESSION["user"])) {
         <a href="features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
         <a href="login-&-register\login.php"><div class="fa fa-user" id="login-btn"></div>
       </div>
+      <!--search bar-->
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here...">
+        <label for="search-box" class="fa fa-search"></label>
+        
+      </form>
       <!--icons in header-->
     </header>
     <!--==Navigation Header end===-->
