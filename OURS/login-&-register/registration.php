@@ -24,10 +24,11 @@ if (isset($_SESSION["user"])) {
            $passwordRepeat = $_POST["repeat_password"];
            
            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+           $address=$_POST["address"];
 
            $errors = array();
            
-           if (empty($fullName) OR empty($email) OR empty($password) OR empty($passwordRepeat)) {
+           if (empty($fullName) OR empty($email) OR empty($password) OR empty($passwordRepeat) OR empty($address)) {
             array_push($errors,"All fields are required");
            }
            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -52,11 +53,11 @@ if (isset($_SESSION["user"])) {
             }
            }else{
             
-            $sql = "INSERT INTO users (full_name, email, password) VALUES ( ?, ?, ? )";
+            $sql = "INSERT INTO users (full_name, email, password, address) VALUES ( ?, ?, ?, ? )";
             $stmt = mysqli_stmt_init($conn);
             $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
             if ($prepareStmt) {
-                mysqli_stmt_bind_param($stmt,"sss",$fullName, $email, $passwordHash);
+                mysqli_stmt_bind_param($stmt,"ssss",$fullName, $email, $passwordHash, $address);
                 mysqli_stmt_execute($stmt);
                 echo "<div class='alert alert-success'>You are registered successfully.</div>";
             }else{
@@ -79,6 +80,9 @@ if (isset($_SESSION["user"])) {
             </div>
             <div class="form-group">
                 <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
+            </div>
+            <div class="form-group">
+                <input type="address" class="form-address" name="address" placeholder="Address:">
             </div>
             <div class="form-btn">
                 <input type="submit" class="btn btn-primary" value="Register" name="submit">
