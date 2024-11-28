@@ -56,6 +56,7 @@ if (!isset($_SESSION["user"])) {
         <a href="features\orders.html">Orders</a>
         <a href="#contact">Contact Us</a>
         <a href="#about-us">About Us</a>
+        <a href="login-&-register\logout.php" class="btn-warning">Logout</a>
       </nav>
       <!--menus in header-->
 
@@ -63,8 +64,13 @@ if (!isset($_SESSION["user"])) {
       <div class="icons">
         <div class="fa fa-bars" id="menu-btn"></div>
         <div class="fa fa-search" id="search-btn"></div>
-        <a href="features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
-        <a href="login-&-register\login.php"><div class="fa fa-user" id="login-btn"></div>
+        <a href="features\cart.html">
+          <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        </a>
+        <a href="login-&-register\login.php">
+          <div class="fa fa-user" id="login-btn"></div>
+        </a>
+
       </div>
       <!-- search bar -->
       <form class="search-form">  
@@ -273,7 +279,7 @@ if (!isset($_SESSION["user"])) {
         <div class="contact-left">
           <h1 class="sub-title">Contact Us</h1>
           <p>
-            <i class="fa-regular fa-paper-plane"></i>management@smartgroceries.dev
+            <i class="fa-regular fa-envelope"></i>Smart_groceries@gmail.com
           </p>
           <p><i class="fa-solid fa-phone"></i>080-99816548</p>
           <div class="social-icons">
@@ -323,4 +329,3 @@ if (!isset($_SESSION["user"])) {
     <p>©️ Smart Groceries</p>
   </div>
 </div>
-<a href="login-&-register\logout.php" class="btn btn-warning">Logout</a>

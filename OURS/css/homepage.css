@@ -468,28 +468,57 @@ section {
   width: 100%;
 }
 
-/* form input,
-form textarea {
+.contact-right form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border: 2px solid black;
-  outline: black;
+  padding: 20px;
   background: #fffddd;
-  padding: 10px;
-  margin: 0px 0;
-  color: black;
-  font-size: 20px;
-  border-radius: 2px;
-  margin-top: 55px;
-  margin-bottom: -40px;
+  border-radius: 10px;
 }
 
-form .btn2 {
-  padding: 14px 60px;
-  font-size: 20px;
-  margin-top: -20px;
-  margin-bottom: 40px;
+.contact-right form input,
+.contact-right form textarea {
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px; /* Add spacing between fields */
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+}
+
+.contact-right form input::placeholder,
+.contact-right form textarea::placeholder {
+  color: #999; /* Light gray placeholder text */
+}
+
+.contact-right form textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Set a fixed height */
+}
+
+.contact-right form .btn2 {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--green);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
   cursor: pointer;
-} */
+  transition: all 0.3s ease;
+}
+
+.contact-right form .btn2:hover {
+  background: #5bbd3b; /* Darker green on hover */
+}
+
 
 .copyright {
   width: 100%;
