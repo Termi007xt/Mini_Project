@@ -56,7 +56,6 @@ if (!isset($_SESSION["user"])) {
         <a href="features\orders.html">Orders</a>
         <a href="#contact">Contact Us</a>
         <a href="#about-us">About Us</a>
-        <a href="login-&-register\logout.php" class="btn btn-warning">Logout</a>
       </nav>
       <!--menus in header-->
 
@@ -68,10 +67,9 @@ if (!isset($_SESSION["user"])) {
         <a href="login-&-register\login.php"><div class="fa fa-user" id="login-btn"></div>
       </div>
       <!-- search bar -->
-      <form class="search-form">
-          <i class="fa fa-search icon-right"></i> 
-          <!-- Search icon -->
-          <input type="text" placeholder="Search..." id="search-input">
+      <form class="search-form">  
+          <input type="search" id="search-box" placeholder="Search here..">
+          <label for="search-box" class="fa fa-search"></label>
       </form>
 
       <!--icons in header-->
@@ -334,3 +332,4 @@ if (!isset($_SESSION["user"])) {
     <p>Copyright ©️ Smart</p>
   </div>
 </div>
+<a href="login-&-register\logout.php" class="btn btn-warning">Logout</a>
