@@ -532,7 +532,18 @@ nav .fa-solid {
 /* search bar css */
 .header .search-form
 {
-  
+  border: 0px solid;
+  position: absolute;
+  top:110%;
+  right: 20rem;
+  width: 400px;
+  height: 4.5rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 5px var(--green);
 }
 /* border: 0px solid;
    position: absolute;
