@@ -404,106 +404,7 @@ section {
 }
 
 /*-------------------Contact-----------------*/
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.contact-left {
-  margin-left: 180px;
-  flex-basis: 35%;
-  padding-right: 20px; /* Optional: Add padding for spacing */
-}
-
-.contact-right {
-  flex-basis: 60%;
-  padding-left: 20px;
-  margin-right: 50px; /* Optional: Add padding for spacing */
-}
-
-.contact-left h1 {
-  font-size: 40px;
-}
-
-.contact-left p {
-  margin-top: 30px;
-  font-size: 20px;
-}
-
-.contact-left p i {
-  margin-top: 10px;
-  color: var(--green);
-  margin-right: 15px;
-  font-size: 30px;
-}
-
-.social-icons {
-  margin-top: 30px;
-}
-
-.social-icons a {
-  margin-top: 30px;
-  text-decoration: none;
-  font-size: 35px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-
-.social-icons a:hover {
-  color: var(--green);
-  transform: translateY(-5px);
-}
-
-.btn.btn2 {
-  margin-top: 50px;
-  display: inline-block;
-  padding: 10px 50px;
-  background: var(--green);
-}
-
-.contact-right form {
-  width: 100%;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  border: 2px solid black;
-  outline: black;
-  background: #fffddd;
-  padding: 10px;
-  margin: 0px 0;
-  color: black;
-  font-size: 20px;
-  border-radius: 2px;
-  margin-top: 55px;
-  margin-bottom: -40px;
-}
-
-form .btn2 {
-  padding: 14px 60px;
-  font-size: 20px;
-  margin-top: -20px;
-  margin-bottom: 40px;
-  cursor: pointer;
-}
-
-.copyright {
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
-  padding: 25px;
-  background: #fffddd;
-  font-weight: 500;
-  margin-top: -20px;
-}
-
-nav .fa-solid {
-  display: none;
-}
+/*  */
 
 /* About Us Section */
 #about-us {
@@ -537,7 +438,7 @@ nav .fa-solid {
   top: 110%; 
   right: 10%; 
   width: 50rem;
-  height: 3.8rem;
+  height: 4rem;
   background: #fff;
   border-radius: 5px;
   overflow: hidden;
@@ -567,13 +468,16 @@ nav .fa-solid {
   width: 100%;
 }
 
-.header .search-form input {
+.header .search-form input
+{
   height: 100%;
   width: 100%;
   background: none;
   font-size: 1.6rem;
   color: var(--black);
   padding: 0 1.5rem;
+  border: none;
+  outline: none;
 }
 
 .header .search-form label {
