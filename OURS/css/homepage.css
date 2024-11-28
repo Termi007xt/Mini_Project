@@ -57,7 +57,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.2rem 5%;
+  /* padding: 0.2rem 5%; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background: #fff;
   box-shadow: var(--box-shadow);
   width: 100%;
@@ -464,7 +468,7 @@ section {
   width: 100%;
 }
 
-form input,
+/* form input,
 form textarea {
   width: 100%;
   border: 2px solid black;
@@ -485,7 +489,7 @@ form .btn2 {
   margin-top: -20px;
   margin-bottom: 40px;
   cursor: pointer;
-}
+} */
 
 .copyright {
   width: 100%;
@@ -526,13 +530,44 @@ nav .fa-solid {
 }
 
 /* search bar */
-
 .header .search-form {
-  /* position: absolute;  */
-  transform: translateY(-50%);
+  position: absolute;
   top: 110%;
-  right: 2rem;
+  right: -110%;
   width: 50rem;
-  height: 4rem;
+  height: 4.5rem;
   background: #fff;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+  right: 4rem;
+  transition: 0.4s linear;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+
+.header .search-form label {
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+
+}
+
+.header .search-form label:hover {
+  color: var(--green);
 }

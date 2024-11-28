@@ -56,7 +56,6 @@ if (!isset($_SESSION["user"])) {
         <a href="features\orders.html">Orders</a>
         <a href="#contact">Contact Us</a>
         <a href="#about-us">About Us</a>
-        <a href="login-&-register\logout.php" class="btn btn-warning">Logout</a>
       </nav>
       <!--menus in header-->
 
@@ -324,3 +323,4 @@ if (!isset($_SESSION["user"])) {
     <p>©️ Smart Groceries</p>
   </div>
 </div>
+<a href="login-&-register\logout.php" class="btn btn-warning">Logout</a>
