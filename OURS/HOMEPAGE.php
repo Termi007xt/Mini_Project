@@ -24,6 +24,7 @@ if (!isset($_SESSION["user"])) {
 
     <!--JS file link for functionality-->
     <script src="js/script.js"></script>
+    <script src="js/search.js"defer></script>
 
     <!--==fav-icon======-->
     <link rel="icon" href="images/fav-icon.png" type="image/png">
@@ -66,12 +67,13 @@ if (!isset($_SESSION["user"])) {
         <a href="features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
         <a href="login-&-register\login.php"><div class="fa fa-user" id="login-btn"></div>
       </div>
-      <!--search bar-->
+      <!-- search bar -->
       <form class="search-form">
-        <input type="search" id="search-box" placeholder="Search Here...">
-        <label for="search-box" class="fa fa-search"></label>
-        
+          <i class="fa fa-search icon-right"></i> 
+          <!-- Search icon -->
+          <input type="text" placeholder="Search..." id="search-input">
       </form>
+
       <!--icons in header-->
     </header>
     <!--==Navigation Header end===-->
