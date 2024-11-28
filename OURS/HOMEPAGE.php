@@ -273,9 +273,9 @@ if (!isset($_SESSION["user"])) {
         <div class="contact-left">
           <h1 class="sub-title">Contact Us</h1>
           <p>
-            <i class="fa-regular fa-paper-plane"></i>Smart_groceries@gmail.com
+            <i class="fa-regular fa-paper-plane"></i>management@smartgroceries.dev
           </p>
-          <p><i class="fa-solid fa-phone"></i>9999999999</p>
+          <p><i class="fa-solid fa-phone"></i>080-99816548</p>
           <div class="social-icons">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               ><i class="fa-brands fa-linkedin"></i
@@ -317,18 +317,9 @@ if (!isset($_SESSION["user"])) {
         mimic a system which makes grocery shopping easy, personalized, and
         enjoyable for everyone.
       </p>
-      <p>
-        Please note that this project is designed for academic purposes only and
-        does not represent a real-world grocery store or a fully functional
-        website. The purpose of this project is to demonstrate the skills and
-        knowledge of the students and how we can apply them.<br> <br />To be
-        submitted as group mini project by : <br />Maulik Sharma - 1MV22CS095, <br>  Kshtiz
-        Mowar - 1MV22CS078,<br /> Kheder Mohammed - 1MV22CS074,<br> Kishan Kumar Mishra - 1MV22CS076.
-      </p>
     </div>
   </div>
-
   <div class="copyright">
-    <p>Copyright ©️ Smart</p>
+    <p>©️ Smart Groceries</p>
   </div>
 </div>

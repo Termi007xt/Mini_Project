@@ -19,7 +19,7 @@
   scroll-behavior: smooth;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   transition: all 0.2s linear;
 }
 
@@ -428,7 +428,7 @@ section {
 
 .contact-left p {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .contact-left p i {
@@ -493,12 +493,12 @@ form .btn2 {
 
 .copyright {
   width: 100%;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   padding: 25px;
   background: #fffddd;
   font-weight: 500;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 nav .fa-solid {
@@ -523,10 +523,10 @@ nav .fa-solid {
 }
 
 #about-us p {
-  font-size: 20px;
+  font-size: 15px;
   color: #555;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 /* search bar css */
