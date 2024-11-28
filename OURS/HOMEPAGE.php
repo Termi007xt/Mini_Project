@@ -24,7 +24,7 @@ if (!isset($_SESSION["user"])) {
 
     <!--JS file link for functionality-->
     <script src="js/script.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/search.js"defer></script>
 
     <!--==fav-icon======-->
     <link rel="icon" href="images/fav-icon.png" type="image/png">
@@ -69,9 +69,10 @@ if (!isset($_SESSION["user"])) {
       </div>
       <!-- search bar -->
       <form class="search-form">
-            <i class="fa fa-search icon-right"></i> <!-- Search icon -->
-            <input type="text" placeholder="Search..." id="search-input">
-        <form/>
+          <i class="fa fa-search icon-right"></i> 
+          <!-- Search icon -->
+          <input type="text" placeholder="Search..." id="search-input">
+      </form>
 
       <!--icons in header-->
     </header>

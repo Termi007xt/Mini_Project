@@ -1,6 +1,12 @@
-let searchForm = document.querySelector('.search-form');
+document.addEventListener('DOMContentLoaded', () => {
+    let searchForm = document.querySelector('.search-form');
+    let searchBtn = document.querySelector('#search-btn');
 
-document.querySelector('#search-btn').onclick = () =>
-{
-    searchForm.classList.toggle('active');
-}
+    if (searchForm && searchBtn) {
+        searchBtn.onclick = () => {
+            searchForm.classList.toggle('active');
+        };
+    } else {
+        console.error('Search form or button not found!');
+    }
+});
