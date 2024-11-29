@@ -19,7 +19,7 @@
   scroll-behavior: smooth;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   transition: all 0.2s linear;
 }
 
@@ -57,17 +57,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.2rem 5%;
+  /* padding: 0.2rem 5%; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background: #fff;
   box-shadow: var(--box-shadow);
   width: 100%;
   height: 85px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  /*max-width: 1070px;*/
-  /*margin: auto;*/
-  /*padding: 35px;*/
-  /*margin-left: 90px;*/
 }
 
 /* logo properties */
@@ -428,7 +428,7 @@ section {
 
 .contact-left p {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .contact-left p i {
@@ -468,37 +468,66 @@ section {
   width: 100%;
 }
 
-form input,
-form textarea {
+.contact-right form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border: 2px solid black;
-  outline: black;
+  padding: 20px;
   background: #fffddd;
-  padding: 10px;
-  margin: 0px 0;
-  color: black;
-  font-size: 20px;
-  border-radius: 2px;
-  margin-top: 55px;
-  margin-bottom: -40px;
+  border-radius: 10px;
 }
 
-form .btn2 {
-  padding: 14px 60px;
-  font-size: 20px;
-  margin-top: -20px;
-  margin-bottom: 40px;
-  cursor: pointer;
+.contact-right form input,
+.contact-right form textarea {
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px; /* Add spacing between fields */
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
 }
+
+.contact-right form input::placeholder,
+.contact-right form textarea::placeholder {
+  color: #999; /* Light gray placeholder text */
+}
+
+.contact-right form textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Set a fixed height */
+}
+
+.contact-right form .btn2 {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--green);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-right form .btn2:hover {
+  background: #5bbd3b; /* Darker green on hover */
+}
+
 
 .copyright {
   width: 100%;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   padding: 25px;
   background: #fffddd;
   font-weight: 500;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 nav .fa-solid {
@@ -523,8 +552,51 @@ nav .fa-solid {
 }
 
 #about-us p {
-  font-size: 20px;
+  font-size: 15px;
   color: #555;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+}
+
+/* search bar */
+.header .search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 50rem;
+  height: 4.5rem;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+  right: 4rem;
+  transition: 0.4s linear;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+
+.header .search-form label {
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+
+}
+
+.header .search-form label:hover {
+  color: var(--green);
 }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+      }
+
+      /* Container Styling */
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Orders Section */
+      .orders-section {
+        margin-bottom: 30px;
+      }
+
+      .orders-section h2 {
+        color: #40aa54;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #40aa54;
+        padding-bottom: 5px;
+      }
+
+      /* Individual Orders */
+      .order {
+        background-color: #f0f8ff;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-left: 5px solid #40aa54;
+      }
+
+      .order p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .order strong {
+        color: #333;
+        font-size: 16px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+        }
+
+        .order p {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Orders</h1>
+
+      <!-- Current Orders Section -->
+      <div class="orders-section">
+        <h2>Current Orders</h2>
+        <div class="order">
+          <p><strong>Order #12345</strong></p>
+          <p>Items: Apples, Bananas, Milk</p>
+          <p>Expected Delivery: 25th November 2024, 10:00 AM</p>
+        </div>
+        <div class="order">
+          <p><strong>Order #12346</strong></p>
+          <p>Items: Bread, Eggs, Butter</p>
+          <p>Expected Delivery: 26th November 2024, 4:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Previous Orders Section -->
+      <div class="orders-section">
+        <h2>Previous Orders</h2>
+        <div class="order">
+          <p><strong>Order #12344</strong></p>
+          <p>Items: Rice, Chicken, Broccoli</p>
+          <p>Delivered: 24th November 2024, 3:00 PM</p>
+        </div>
+        <div class="order">
+          <p><strong>Order #12343</strong></p>
+          <p>Items: Coffee, Sugar, Cream</p>
+          <p>Delivered: 23rd November 2024, 11:00 AM</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Sample Data
+      const currentOrders = [
+        {
+          id: "12345",
+          items: "Apples, Bananas, Milk",
+          delivery: "25th November 2024, 10:00 AM",
+        },
+        {
+          id: "12346",
+          items: "Bread, Eggs, Butter",
+          delivery: "26th November 2024, 4:00 PM",
+        },
+      ];
+
+      const previousOrders = [
+        {
+          id: "12344",
+          items: "Rice, Chicken, Broccoli",
+          delivery: "24th November 2024, 3:00 PM",
+        },
+        {
+          id: "12343",
+          items: "Coffee, Sugar, Cream",
+          delivery: "23rd November 2024, 11:00 AM",
+        },
+      ];
+
+      // Function to Render Orders
+      function renderOrders() {
+        const currentOrdersContainer = document.querySelector(
+          ".orders-section:nth-of-type(1)"
+        );
+        const previousOrdersContainer = document.querySelector(
+          ".orders-section:nth-of-type(2)"
+        );
+
+        // Render Current Orders
+        currentOrders.forEach((order) => {
+          const orderDiv = document.createElement("div");
+          orderDiv.classList.add("order");
+          orderDiv.innerHTML = `
+            <p><strong>Order #${order.id}</strong></p>
+            <p>Items: ${order.items}</p>
+            <p>Expected Delivery: ${order.delivery}</p>
+        `;
+          currentOrdersContainer.appendChild(orderDiv);
+        });
+
+        // Render Previous Orders
+        previousOrders.forEach((order) => {
+          const orderDiv = document.createElement("div");
+          orderDiv.classList.add("order");
+          orderDiv.innerHTML = `
+            <p><strong>Order #${order.id}</strong></p>
+            <p>Items: ${order.items}</p>
+            <p>Delivered: ${order.delivery}</p>
+        `;
+          previousOrdersContainer.appendChild(orderDiv);
+        });
+      }
+
+      // Call the Function
+      document.addEventListener("DOMContentLoaded", renderOrders);
+    </script>
+  </body>
+</html>

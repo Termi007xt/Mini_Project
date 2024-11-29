@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Cart</title>
+
+    <!--==fav-icon======-->
+    <link rel="icon" href="../images/fav-icon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+      }
+
+      /* Container */
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Subscription List Styling */
+      .subscription-list {
+        margin-bottom: 30px;
+      }
+
+      .subscription-list h2 {
+        color: #40aa54;
+        margin-bottom: 10px;
+      }
+
+      .add-btn {
+        background-color: #40aa54;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .add-btn:hover {
+        background-color: #35a04b;
+      }
+
+      /* List Items */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      ul li {
+        background-color: #f0f8ff;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+      }
+
+      ul li i {
+        color: #ff4d4d;
+        cursor: pointer;
+      }
+
+      /* Input Fields */
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .delivery-time,
+      .delivery-day,
+      .delivery-date {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Smart Cart Subscriptions</h1>
+      <!-- Daily List -->
+      <div class="subscription-list">
+        <h2>Daily Subscription</h2>
+        <button class="add-btn" onclick="addItem('daily')">
+          <i class="fas fa-plus-circle"></i> Add Item
+        </button>
+        <ul id="daily-list">
+          <!-- Dynamically populated -->
+        </ul>
+        <label for="daily-time">Select Delivery Time:</label>
+        <input type="time" id="daily-time" class="delivery-time" />
+      </div>
+
+      <!-- Weekly List -->
+      <div class="subscription-list">
+        <h2>Weekly Subscription</h2>
+        <button class="add-btn" onclick="addItem('weekly')">
+          <i class="fas fa-plus-circle"></i> Add Item
+        </button>
+        <ul id="weekly-list">
+          <!-- Dynamically populated -->
+        </ul>
+        <label for="weekly-day">Select Delivery Day:</label>
+        <select id="weekly-day" class="delivery-day">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+        <label for="weekly-time">Select Delivery Time:</label>
+        <input type="time" id="weekly-time" class="delivery-time" />
+      </div>
+
+      <!-- Monthly List -->
+      <div class="subscription-list">
+        <h2>Monthly Subscription</h2>
+        <button class="add-btn" onclick="addItem('monthly')">
+          <i class="fas fa-plus-circle"></i> Add Item
+        </button>
+        <ul id="monthly-list">
+          <!-- Dynamically populated -->
+        </ul>
+        <label for="monthly-date">Select Delivery Date:</label>
+        <input type="date" id="monthly-date" class="delivery-date" />
+        <label for="monthly-time">Select Delivery Time:</label>
+        <input type="time" id="monthly-time" class="delivery-time" />
+      </div>
+    </div>
+
+    <script>
+      function addItem(listType) {
+        const item = prompt("Enter the item you want to add:");
+
+        if (item) {
+          const list = document.getElementById(`${listType}-list`);
+          const li = document.createElement("li");
+
+          li.textContent = item;
+
+          // Add a delete icon
+          const deleteIcon = document.createElement("i");
+          deleteIcon.classList.add("fas", "fa-trash-alt");
+          deleteIcon.addEventListener("click", () => {
+            list.removeChild(li);
+          });
+
+          li.appendChild(deleteIcon);
+          list.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>
