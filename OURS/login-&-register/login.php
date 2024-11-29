@@ -1,21 +1,22 @@
 <?php
 session_start();
 
+// error_reporting(0);
 // If the user is already logged in, redirect to the homepage
 if (isset($_SESSION["user"])) {
     header("Location: ../HOMEPAGE.php");
-    die();
+    
 }
 
 // Handle the login process only if $_SESSION["user"] is not set
-if ($user) {
-    $_SESSION["user"] = "yes";
-    $_SESSION["user_id"] = $user["id"]; // Ensure 'id' is the unique identifier in your database
-    header("Location: ../HOMEPAGE.php");
-    die();
-} else {
-    echo "<div class='alert alert-danger'>Invalid Email, Please register!</div>";
-}
+// if ($user) {
+//     $_SESSION["user"] = "yes";
+//     $_SESSION["user_id"] = $user["id"]; // Ensure 'id' is the unique identifier in your database
+//     header("Location: ../HOMEPAGE.php");
+//     die();
+// } else {
+//     echo "<div class='alert alert-danger'>Invalid Email, Please register!</div>";
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,20 +69,3 @@ if ($user) {
     </div>
 </body>
 </html>
-
-<!-- 
-require_once "database.php";
-
-$email = $_SESSION["user_email"];
-$sql = "SELECT * FROM users WHERE email = ?";
-$stmt = mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt, "s", $email);
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-if (!$user) {
-    echo "User not found.";
-    exit();
-}
-?>
