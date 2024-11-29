@@ -22,29 +22,25 @@ if (isset($_SESSION["user"])) {
             $email = $_POST["email"];
             $password = $_POST["password"];
 
-            // Include the database connection
+            // callin the db
             require_once "database.php";
 
-            // Query to fetch the user by email
             $sql = "SELECT * FROM users WHERE email = ?";
             $stmt = mysqli_prepare($conn, $sql);
 
             if ($stmt) {
-                // Bind email parameter
+                // Binin the email
                 mysqli_stmt_bind_param($stmt, "s", $email);
                 mysqli_stmt_execute($stmt);
 
-                // Get the result and fetch user details
                 $result = mysqli_stmt_get_result($stmt);
                 $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
                 if ($user) {
-                    // Verify the password
                     if (password_verify($password, $user["password"])) {
-                        // Start session and store user info
                         session_start();
                         $_SESSION["user"] = "yes";
-                        $_SESSION["user_email"] = $email; // Store user email in session
+                        $_SESSION["user_email"] = $email; 
                         header("Location: ../HOMEPAGE.php");
                         die();
                     } else {
