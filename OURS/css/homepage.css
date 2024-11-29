@@ -534,6 +534,12 @@ nav .fa-solid {
   display: none;
 }
 
+#msg {
+  color: var(--green);
+  margin-top: -40px;
+  display: block;
+}
+
 /* About Us Section */
 #about-us {
   padding: 50px 20px;

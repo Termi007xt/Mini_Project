@@ -279,7 +279,7 @@ if (!isset($_SESSION["user"])) {
         <div class="contact-left">
           <h1 class="sub-title">Contact Us</h1>
           <p>
-            <i class="fa-regular fa-envelope"></i>Smart_groceries@gmail.com
+            <i class="fa-regular fa-envelope"></i>help@smartgroceries.dev
           </p>
           <p><i class="fa-solid fa-phone"></i>080-99816548</p>
           <div class="social-icons">
@@ -329,3 +329,22 @@ if (!isset($_SESSION["user"])) {
     <p>©️ Smart Groceries</p>
   </div>
 </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxemBWtQzTek37AMtQhQI-qJ60Mp9_HdQ2kMNzIu1fvnnnYwRxCPw638_Ty2jYXKEXr3A/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => 
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset()
+      )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
