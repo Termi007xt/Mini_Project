@@ -1,29 +1,23 @@
 <?php
 session_start();
 if (!isset($_SESSION["user_email"])) {
-    // Redirect to login if not authenticated
     header("Location: login.php");
     exit();
 }
 
-// Include database connection
 require_once "database.php";
 
-// Get the logged-in user's email from the session
 $email = $_SESSION["user_email"];
 
-// Query to fetch user data
 $sql = "SELECT * FROM users WHERE email = ?";
 $stmt = mysqli_prepare($conn, $sql);
 
 if ($stmt) {
-    // Bind the email parameter and execute
     mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-    // Check if user data is found
     if (!$user) {
         echo "Error: User not found.";
         exit();
