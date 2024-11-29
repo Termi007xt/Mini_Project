@@ -42,9 +42,9 @@ if ($stmt) {
         <h1 class="mb-4">User Profile</h1>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Name: <?php echo htmlspecialchars($user["full_name"]); ?></h5>
-                <p class="card-text">Email: <?php echo htmlspecialchars($user["email"]); ?></p>
-                <p class="card-text">Address: <?php echo htmlspecialchars($user["address"]); ?></p>
+                <h5 class="card-title"><b>Name: <?php echo htmlspecialchars($user["full_name"]); ?></b></h5>
+                <h5 class="card-text"><b>Email: <?php echo htmlspecialchars($user["email"]); ?></b></p>
+                <h5 class="card-text"><b>Address: <?php echo htmlspecialchars($user["address"]); ?></b></p>
                 <!-- Add other user fields as needed -->
             </div>
         </div>
