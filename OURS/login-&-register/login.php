@@ -18,8 +18,9 @@ if (isset($_SESSION["user"])) {
     <link rel="stylesheet" href="../css/login.css">
 
 </head>
-    <body>
-        <div class="card">
+<body>
+    <div class="logo"><img src="../images/logo.png"></div>
+    <div class="card">
             <div class="bg">
                 <form action="login.php" method="post" class="form">
                     <?php
