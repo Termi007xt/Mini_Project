@@ -15,8 +15,31 @@ if (isset($_SESSION["user"])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/profile.css"> 
     <link rel="stylesheet" href="../css/login.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
     <body>
+
+        <canvas id="gradientCanvas"></canvas>
+        <script src="../js/login.js"></script>
+        
         <div class="card">
             <div class="bg">
                 <form action="login.php" method="post" class="form">
