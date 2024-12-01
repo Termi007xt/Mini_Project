@@ -331,28 +331,20 @@ if (!isset($_SESSION["user"])) {
 </div>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxemBWtQzTek37AMtQhQI-qJ60Mp9_HdQ2kMNzIu1fvnnnYwRxCPw638_Ty2jYXKEXr3A/exec';
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-  e.preventDefault(); // Prevent page refresh
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => {
-      // Success feedback
-      msg.innerHTML = "Message sent successfully";
-      setTimeout(() => {
-        msg.innerHTML = ""; // Clear the message after 3 seconds
-      }, 3000);
-      form.reset(); // Clear the form
-    })
-    .catch(error => {
-      // Error feedback
-      console.error('Error!', error.message);
-      msg.innerHTML = "Failed to send the message. Please try again.";
-      setTimeout(() => {
-        msg.innerHTML = ""; // Clear the error message
-      }, 3000);
-    });
-});
-</script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUs3_VJlRWedKHqDkeidvOgxJ91bnH-D3wkDk-WaPMVrfSqjW30zcn7ExLZpEbeBBr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>

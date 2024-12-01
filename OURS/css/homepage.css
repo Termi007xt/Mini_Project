@@ -535,6 +535,7 @@ nav .fa-solid {
 }
 
 #msg {
+  font-size: 20px;
   color: var(--green);
   margin-top: -40px;
   display: block;
