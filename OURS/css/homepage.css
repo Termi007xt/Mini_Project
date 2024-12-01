@@ -120,6 +120,29 @@ body {
   text-align: center;
   cursor: pointer;
 }
+.icons{
+  position: relative;
+}
+.fa-shopping-cart{
+  position: relative;
+}
+
+.icons .cart-count {
+  position: absolute;
+  right: 40px;
+  background-color: red;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: start;
+  margin-bottom: px;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  top: 50%;
+  right: -20px;
+}
 
 .header .icons div:hover {
   background: var(--green);
