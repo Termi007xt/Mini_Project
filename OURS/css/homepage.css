@@ -222,7 +222,7 @@ section {
 .sale-heading {
   position: absolute;
   bottom: 10px;
-  right: 495px; 
+  right: 495px;
   color: white;
   font-weight: bold;
   font-size: 4rem;
@@ -253,7 +253,6 @@ section {
 .countdown-el span {
   font-size: 1.3rem;
 }
-
 
 /* categories */
 #category {
@@ -519,6 +518,11 @@ section {
   background: #5bbd3b; /* Darker green on hover */
 }
 
+#msg {
+  color: var(--green);
+  margin-top: -40px;
+  display: block;
+}
 
 .copyright {
   width: 100%;
@@ -580,8 +584,7 @@ nav .fa-solid {
   box-shadow: var(--box-shadow);
 }
 
-.header .search-form.active
-{
+.header .search-form.active {
   right: 4rem;
   transition: 0.4s linear;
 }
@@ -601,7 +604,6 @@ nav .fa-solid {
   padding-right: 1.5rem;
   color: var(--black);
   cursor: pointer;
-
 }
 
 .header .search-form label:hover {
