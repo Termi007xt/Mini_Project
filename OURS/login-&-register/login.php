@@ -58,7 +58,7 @@ if (isset($_SESSION["user"])) {
                     }
                     ?>
                 
-                    <h6>Welcome to Smart Groceries!</h6>
+                    <h2>Welcome!</h2>
                     <div class="form-group">
                         <input type="email" placeholder="Enter Email:" name="email" class="form-control" required>
                     </div>

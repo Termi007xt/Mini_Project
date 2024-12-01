@@ -18,7 +18,7 @@ body {
   background: none; /* No background to keep the blur effect visible */
 }
 
-.form h3  {
+.form h2  {
   padding-top: 2px;
   padding-bottom: 15px;
 }
@@ -29,7 +29,10 @@ body {
 
 .form-control {
   width: 250px; /* Adjust width to fit within the card */
-  padding: 8px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* padding-bottom: 15px; */
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
@@ -37,9 +40,21 @@ body {
 }
 
 .form-btn {
+  padding-top: 8px;
   text-align: center;
 }
 
+.alert {
+  position: absolute; /* Position the alert at the top */
+  top: 10px; /* Add a small gap from the top of the card */
+  left: 50%; /* Center the alert horizontally */
+  transform: translateX(-50%); /* Adjust to center it perfectly */
+  z-index: 10; /* Ensure it appears above all elements in the card */
+  width: 90%; /* Make it fit within the card */
+  text-align: center; /* Center the alert text */
+  font-size: 14px; /* Optional: Adjust the font size for better visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
 
 
 .btn-primary {
