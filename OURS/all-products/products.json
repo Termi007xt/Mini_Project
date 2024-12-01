@@ -1,0 +1,63 @@
+[
+    // Breakfast and Cereal
+    {
+        "id": 1,
+        "name":"Kwality Choco Flakes - Made With Whole Wheat Zero% Maida",
+        "price": 200,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":"Tata Soulfull Millet Granola - Honey, Fruits, Nuts & Seeds",
+        "price": 250,
+        "image": "image/2.png"
+    },
+    {
+        "id": 3,
+        "name":"",
+        "price": 290,
+        "image": "image/3.png"
+    },
+    {
+        "id": 4,
+        "name":"",
+        "price": 200,
+        "image": "image/4.png"
+    },
+    {
+        "id": 5,
+        "name":"",
+        "price": 300,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":"",
+        "price": 200,
+        "image": "image/6.png"
+    },
+    {
+        "id": 7,
+        "name":"",
+        "price": 200,
+        "image": "image/7.png"
+    },
+    {
+        "id": 8,
+        "name":"",
+        "price": 200,
+        "image": "image/8.png"
+    },
+    {
+        "id": 9,
+        "name":"",
+        "price": 200,
+        "image": "image/8.png"
+    },
+    {
+        "id": 10,
+        "name":"",
+        "price": 200,
+        "image": "image/8.png"
+    }
+]
