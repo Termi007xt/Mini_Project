@@ -97,6 +97,172 @@
         "price": 444,
         "packsize":"500g",
         "image": "image/8.png"
-    }
-    // -----------------------------------------------//
+    },
+    //daily essentials//
+
+    {
+        "id": 15,
+        "name":"Nandini Samrudhi Milk Pink",
+        "price": 27,
+        "packsize":"500g",
+        "image": "https://kmf-public.s3.ap-south-1.amazonaws.com/Samrudhi_500_ml_BIMUL_2_product_image_eebc55a74d.jpg"
+    },
+    {
+        "id": 16,
+        "name":"iD Curd Cup",
+        "price":80,
+        "packsize":"400g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 17,
+        "name":"Amul Butter",
+        "price": 295,
+        "packsize":"400g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 18,
+        "name":"Colgate MaxFresh Toothpaste",
+        "price": 132,
+        "packsize":"150g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 19,
+        "name":"Surf Excel Easy Wash",
+        "price": 152,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    {
+        "id": 20,
+        "name":"Eggoz Farm Fresh Eggs",
+        "price": 121,
+        "packsize":"10 pieces",
+        "image": "image/8.png"
+    },
+    {
+        "id": 21,
+        "name":"Madhur Sugar",
+        "price": 56,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    {
+        "id": 22,
+        "name":"Tata Salt",
+        "price": 28,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    {
+        "id": 23,
+        "name":"Britannia Pav",
+        "price": 25,
+        "packsize":"250g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 24,
+        "name":"Aashirvaad Atta",
+        "price": 1250,
+        "packsize":"5kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
+    },
+    // Fruits and veg
+    {
+        "id": 25,
+        "name":"Okra",
+        "price": 26,
+        "packsize":"250g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 26,
+        "name":"Cauliflower",
+        "price": 41,
+        "packsize":"250g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 27,
+        "name":"Onion",
+        "price": 89,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    {
+        "id": 28,
+        "name":"Potato",
+        "price": 61,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    {
+        "id": 29,
+        "name":"cabbage",
+        "price": 38,
+        "packsize":"1 pc",
+        "image": "image/8.png"
+    },
+    {
+        "id": 30,
+        "name":"Green Grapes",
+        "price": 124,
+        "packsize":"500g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 31,
+        "name":"Banana",
+        "price": 71,
+        "packsize":"500g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 32,
+        "name":"Pomegranate",
+        "price": 95,
+        "packsize":"400g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 33,
+        "name":"Kiwi",
+        "price": 144,
+        "packsize":"3 pc",
+        "image": "image/8.png"
+    },
+    {
+        "id": 34,
+        "name":"Mosambi",
+        "price": 89,
+        "packsize":"1kg",
+        "image": "image/8.png"
+    },
+    // Health and Hygiene
+    
+    {
+        "id": 35,
+        "name":"Dettol Antiseptic Liquid",
+        "price": 308,
+        "packsize":"1L",
+        "image": "image/8.png"
+    },
+    {
+        "id": 36,
+        "name":"Dove Cream Beauty Bar",
+        "price": 418,
+        "packsize":"",
+        "image": "image/8.png"
+    },
+    {
+        "id": 25,
+        "name":"Okra",
+        "price": 26,
+        "packsize":"250g",
+        "image": "image/8.png"
+    },
+
 ]
