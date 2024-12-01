@@ -1,13 +1,26 @@
-/* Form container inside the card */
+body {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Set the height to fill the viewport */
+  margin: 0; /* Remove default body margins */
+  background-color: #f5f5f5; /* Optional: Add a background color */
+}
+
 .form {
   position: relative;
   z-index: 3; /* Ensure it's above the blob and inside the bg */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  /* gap: 15px; */
   padding: 20px;
   background: none; /* No background to keep the blur effect visible */
+}
+
+.form h3  {
+  padding-top: 2px;
+  padding-bottom: 15px;
 }
 
 .form-group {
@@ -15,7 +28,7 @@
 }
 
 .form-control {
-  width: 220px; /* Adjust width to fit within the card */
+  width: 250px; /* Adjust width to fit within the card */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -27,9 +40,11 @@
   text-align: center;
 }
 
+
+
 .btn-primary {
   width: 100px;
-  padding: 8px;
+  /* padding: 8px; */
   background-color: #ff0000;
   color: white;
   border: none;
@@ -60,7 +75,7 @@
 }
 
 .copyright {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 12px;
   text-align: center;
   color: #aaa;

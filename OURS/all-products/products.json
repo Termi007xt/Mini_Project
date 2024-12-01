@@ -1,113 +1,102 @@
 [
-    //Breakfast and Cereal
     {
         "id": 1,
         "name":"Kwality Choco Flakes - Made With Whole Wheat Zero% Maida",
         "price": 403,
         "packsize":"1kg",
-        "image": "image/1.png"
+        "image": "/product_images/Screenshot 2024-12-01 154113.png"
     },
     {
         "id": 2,
         "name":"Tata Soulfull Millet Granola - Honey, Fruits, Nuts & Seeds",
         "price": 275,
         "packsize":"400g",
-        "image": "image/2.png"
+        "image": "/product_images/Screenshot 2024-12-01 154128.png"
     },
     {
         "id": 3,
         "name":"Saffola Massala Oats",
         "price": 194,
         "packsize":"400g",
-        "image": "image/3.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154151.png"
     },
     {
         "id": 4,
         "name":"Kelloggs's Muesli Fruit Nut & Seeds",
         "price": 390,
         "packsize":"175g",
-        "image": "image/4.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154213.png"
     },
     {
         "id": 5,
         "name":"Nutella Hazelnut",
         "price": 364,
         "packsize":"350g",
-        "image": "image/5.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154248.png"
     },
     {
         "id": 6,
         "name":"MyFitness Peanut Butter Cripsy",
         "price": 200,
         "packsize":"510g",
-        "image": "image/6.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154331.png"
     },
     {
         "id": 7,
         "name":"Dabur Honey",
         "price": 197,
         "packsize":"450g",
-        "image": "image/7.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154419.png"
     },
     {
         "id": 8,
         "name":"Yoga Bar Muesli",
         "price": 262,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 154850.png"
     },
     {
         "id": 9,
         "name":"Quaker Oats",
         "price": 182,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 155041.png"
     },
     {
         "id": 10,
         "name":"English Oven Milk Bread",
         "price": 45,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 155150.png"
     },
     {
         "id": 11,
         "name":"NESCAFE Coffee Powder",
         "price": 200,
         "packsize":"45g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 12,
         "name":"Lipton Green Tea",
         "price": 149,
         "packsize":"1pack(25 tea bags)",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 155445.png"
     },
     {
         "id": 13,
         "name":"Modern Multigrain Bread",
         "price": 60,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 155604.png"
     },
     {
         "id": 14,
         "name":"Taj Mahal Tea",
         "price": 444,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 155806.png"
     },
-
-
-
-
-    
-
-
-
-
-    //daily essentials//
 
     {
         "id": 15,
@@ -121,56 +110,56 @@
         "name":"iD Curd Cup",
         "price":80,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 160843.png"
     },
     {
         "id": 17,
         "name":"Amul Butter",
         "price": 295,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 160928.png"
     },
     {
         "id": 18,
         "name":"Colgate MaxFresh Toothpaste",
         "price": 132,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 161518.png"
     },
     {
         "id": 19,
         "name":"Surf Excel Easy Wash",
         "price": 152,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 161713.png"
     },
     {
         "id": 20,
         "name":"Eggoz Farm Fresh Eggs",
         "price": 121,
         "packsize":"10 pieces",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 161902.png"
     },
     {
         "id": 21,
         "name":"Madhur Sugar",
         "price": 56,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 161942.png"
     },
     {
         "id": 22,
         "name":"Tata Salt",
         "price": 28,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162035.png"
     },
     {
         "id": 23,
         "name":"Britannia Pav",
         "price": 25,
         "packsize":"250g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162128.png"
     },
     {
         "id": 24,
@@ -180,221 +169,183 @@
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
     },
 
-
-
-
-
-
-
-
-
-
-
-    // Fruits and veg
     {
         "id": 25,
         "name":"Okra",
         "price": 26,
         "packsize":"250g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162413.png"
     },
     {
         "id": 26,
         "name":"Cauliflower",
         "price": 41,
         "packsize":"250g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162436.png"
     },
     {
         "id": 27,
         "name":"Onion",
         "price": 89,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162502.png"
     },
     {
         "id": 28,
         "name":"Potato",
         "price": 61,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162612.png"
     },
     {
         "id": 29,
         "name":"cabbage",
         "price": 38,
         "packsize":"1 pc",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162638.png"
     },
     {
         "id": 30,
         "name":"Green Grapes",
         "price": 124,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162717.png"
     },
     {
         "id": 31,
         "name":"Banana",
         "price": 71,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162752.png"
     },
     {
         "id": 32,
         "name":"Pomegranate",
         "price": 95,
         "packsize":"400g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162823.png"
     },
     {
         "id": 33,
         "name":"Kiwi",
         "price": 144,
         "packsize":"3 pc",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 162911.png"
     },
     {
         "id": 34,
         "name":"Mosambi",
         "price": 89,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 163016.png"
     },
 
-
-
-
-
-
-
-
-
-
-
-    // Health and Hygiene
     
     {
         "id": 35,
         "name":"Dettol Antiseptic Liquid",
         "price": 308,
         "packsize":"1L",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 163530.png"
     },
     {
         "id": 36,
         "name":"Dove Cream Beauty Bar",
         "price": 418,
         "packsize":"125g",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 163652.png"
     },
     {
         "id": 37,
         "name":"Dettol Skincare Liquid Handwash Refill",
         "price": 166,
         "packsize":"110L",
-        "image": "image/8.png"
+        "image": "OURS/all-products/product_images/Screenshot 2024-12-01 163847.png"
     },
     {
         "id": 38,
         "name":"Dove Gentle Exfoliating Beads Body Wash",
         "price": 425,
         "packsize":"800mL",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 39,
         "name":"NIVEA Pearl & Beauty Women Deodorant Roll-On",
         "price": 249,
         "packsize":"200mL",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 40,
         "name":"Oral-B Toothbrushes",
         "price": 165,
         "packsize":"pack of 4", 
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 41,
         "name":"Johnson's Baby Shampoo",
         "price": 480,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 42,
         "name":"Kloy Ramie Scrubbing Bath Glove",
         "price": 179,
         "packsize":"1 pc",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 43,
         "name":"Nycil Talcum Powder",
         "price": 141,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 44,
         "name":"Colgate MaxFresh Toothpaste",
         "price": 132,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": ""
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //meats and fish
     {
         "id": 45,
         "name":"Relish Goat Curry Cut",
         "price": 359,
         "packsize":"1 Pack(approx.350g-370g)",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 46,
         "name":"Relish chicken Drumstick",
         "price": 189,
         "packsize":"4 pcs",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 47,
         "name":"Relish Tilapia whole and Cleaned",
         "price": 129,
         "packsize":"2 pcs",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 49,
         "name":"Relish Chicken Smoked Franks",
         "price": 139,
         "packsize":"pack of 4",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 50,
         "name":"Tasty Nibbles Sardine",
         "price": 115,
         "packsize":"185g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 51,
@@ -408,263 +359,235 @@
         "name":"Relish Chicken Breast",
         "price": 259,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 53,
         "name":"Suguna Delfrez white Eggs",
         "price": 77,
         "packsize":"6 pcs",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 54,
         "name":"Eggspro Brown Eggs",
         "price": 80,
         "packsize":"6 pcs",
-        "image": "image/8.png"
+        "image": ""
     },
 
-
-
-
-
-
-
-
-
-
-    // Rice and Flour
     {
         "id": 55,
         "name":"India Gate Basmati Rice",
         "price": 149,
         "packsize":"1kg",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 56,
         "name":"Sattu Atta",
         "price": 146,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 57,
         "name":"Colgate MaxFresh Toothpaste",
         "price": 132,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 58,
         "name":"Rajdhani Besan",
         "price": 66,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 59,
         "name":"Fortune Thick Poha",
         "price": 48,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 60,
         "name":"Dhara Groundnut Oil",
         "price": 221,
         "packsize":"1l",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 61,
         "name":"Saffola Gold Oil",
         "price": 175,
         "packsize":"1l",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 62,
         "name":"Gowardhan Pure Ghee",
         "price": 728,
         "packsize":"1l",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 63,
         "name":"Fortune Chakki Freah Atta",
         "price": 446,
         "packsize":"10kg",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 64,
         "name":"Daily Good Maida",
         "price": 37,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // Snacks and Drinks
     {
         "id": 65,
         "name":"Oreo",
         "price": 140,
         "packsize":"123.5g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 66,
         "name":"Hide & Seek",
         "price": 26,
         "packsize":"100g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 67,
         "name":"Lotte Choco Pie",
         "price": 142,
         "packsize":"336g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 68,
         "name":"Parle-G",
         "price": 100,
         "packsize":"800g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 69,
         "name":"Lay's Chips",
         "price": 45,
         "packsize":"52g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 70,
         "name":"Haldiram's Bhujia",
         "price": 155,
         "packsize":"600g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 71,
         "name":"Pepsi Soft Drink",
         "price": 100,
         "packsize":"2.25l",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 72,
         "name":"Sprite",
         "price": 111,
         "packsize":"300ml x3",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 73,
         "name":"Frooti",
         "price": 68,
         "packsize":"1.2l",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 74,
         "name":"Coca-Cola",
         "price": 45,
         "packsize":"750ml",
-        "image": "image/8.png"
+        "image": ""
     },
     
-    
-    
-    
-    
-    
-    
-    
-    //Spices and Dry fruits
     {
         "id": 75,
         "name":"Suhana Paneer Butter Spice",
         "price": 35,
         "packsize":"50g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 76,
         "name":"Daily Good cinnamon",
         "price": 127,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 77,
         "name":"Catch jeera whole",
         "price": 126,
         "packsize":"150g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 78,
         "name":"Nutraj Cashew",
         "price": 612,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 79,
         "name":"Farmley Prasadam Makhana",
         "price": 414,
         "packsize":"200g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 80,
         "name":"Daily Good Walnut",
         "price": 295,
         "packsize":"250g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 81,
         "name":"Nutraj Black Raisin",
         "price": 177,
         "packsize":"250g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 82,
         "name":"Farmley Snack Mix Dry Fruits",
         "price": 293,
         "packsize":"350g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 83,
         "name":"Daily Good Almond",
         "price": 399,
         "packsize":"500g",
-        "image": "image/8.png"
+        "image": ""
     },
     {
         "id": 84,
         "name":"Daily Good Pistachios",
         "price": 233,
         "packsize":"100g",
-        "image": "image/8.png"
-    },
+        "image": ""
+    }
 
 ]
+

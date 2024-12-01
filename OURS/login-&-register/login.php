@@ -20,7 +20,6 @@ if (isset($_SESSION["user"])) {
         <div class="card">
             <div class="bg">
                 <form action="login.php" method="post" class="form">
-
                     <?php
                     if (isset($_POST["login"])) {
                         $email = $_POST["email"];
@@ -59,6 +58,7 @@ if (isset($_SESSION["user"])) {
                     }
                     ?>
                 
+                    <h6>Welcome to Smart Groceries!</h6>
                     <div class="form-group">
                         <input type="email" placeholder="Enter Email:" name="email" class="form-control" required>
                     </div>
