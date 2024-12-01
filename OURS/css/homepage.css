@@ -537,7 +537,7 @@ nav .fa-solid {
 #msg {
   font-size: 20px;
   color: var(--green);
-  margin-top: -40px;
+  margin-bottom: -20px;
   display: block;
 }
 
@@ -606,4 +606,22 @@ nav .fa-solid {
 
 .header .search-form label:hover {
   color: var(--green);
+}
+
+/* show all button css*/
+
+.show-all-button {
+    display: inline-block;
+    margin-left: 1250px;
+    padding: 10px 20px;
+    background-color: #7ed957;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.show-all-button:hover {
+    background-color: #006d2ecc;
 }

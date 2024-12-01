@@ -66,10 +66,11 @@
   color: #aaa;
 }
 
+/* Updated dimensions of the card */
 .card {
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 300px; /* Adjusted width for form */
+  height: 400px; /* Adjusted height for form */
   border-radius: 14px;
   z-index: 1111;
   overflow: hidden;
@@ -78,30 +79,31 @@
   align-items: center;
   justify-content: center;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  ;
 }
 
+/* Adjust the background to match the card's new size */
 .bg {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 4px;
-  width: 190px;
-  height: 240px;
+  width: 290px; /* 10px smaller than card width */
+  height: 390px; /* 10px smaller than card height */
   z-index: 2;
-  background: rgba(255, 255, 255, .95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(24px);
   border-radius: 10px;
   overflow: hidden;
   outline: 2px solid white;
 }
 
+/* Blob remains proportional to the new card size */
 .blob {
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 220px; /* Slightly smaller than new card width */
+  height: 220px; /* Keep it proportional */
   border-radius: 50%;
   background-color: #ff0000;
   opacity: 1;
@@ -109,25 +111,21 @@
   animation: blob-bounce 5s infinite ease;
 }
 
+/* No changes to the animation */
 @keyframes blob-bounce {
   0% {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
-
   25% {
     transform: translate(-100%, -100%) translate3d(100%, 0, 0);
   }
-
   50% {
     transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
   }
-
   75% {
     transform: translate(-100%, -100%) translate3d(0, 100%, 0);
   }
-
   100% {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
 }
-

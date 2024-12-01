@@ -101,12 +101,11 @@ if (!isset($_SESSION["user"])) {
 
     <!--==category=========================================-->
     <!--heading---------------->
-    <div class="category-heading">
+    <div class="category-heading ">
       <h2>Categories</h2>
-      <div>
-        
-      </div>  
-    </div>
+        </div> 
+          <a href="categories/all.html" class="show-all-button">Show All</a>
+        </div>
     <section id="category">
       <!--box-container---------->
       <div class="category-container">
