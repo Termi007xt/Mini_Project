@@ -126,15 +126,6 @@
             required
           />
         </div>
-        <div class="form-group">
-          <label for="exercise">Duration of Exercise (in minutes):</label>
-          <input
-            type="number"
-            id="exercise"
-            placeholder="Enter minutes of exercise"
-            required
-          />
-        </div>
         <button type="button" class="btn" onclick="calculateBMI()">
           Submit
         </button>
@@ -150,79 +141,70 @@
 
     <script>
       function calculateBMI() {
-        // Get user inputs
-        const weight = parseFloat(document.getElementById("weight").value);
-        const height =
-          parseFloat(document.getElementById("height").value) / 100; // Convert cm to meters
-        const exercise = parseInt(document.getElementById("exercise").value);
+  // Get user inputs
+  const weight = parseFloat(document.getElementById("weight").value);
+  const height =
+    parseFloat(document.getElementById("height").value) / 100; // Convert cm to meters
 
-        // Check if inputs are valid
-        if (
-          isNaN(weight) ||
-          isNaN(height) ||
-          isNaN(exercise) ||
-          weight <= 0 ||
-          height <= 0 ||
-          exercise < 0
-        ) {
-          alert("Please enter valid inputs!");
-          return;
-        }
+  // Check if inputs are valid
+  if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+    alert("Please enter valid inputs!");
+    return;
+  }
 
-        // Calculate BMI
-        const bmi = (weight / (height * height)).toFixed(2);
+  // Calculate BMI
+  const bmi = (weight / (height * height)).toFixed(2);
 
-        // Determine health status
-        let status = "";
-        let groceries = [];
+  // Determine health status
+  let status = "";
+  let groceries = [];
 
-        if (bmi < 18.5) {
-          status = "You are underweight.";
-          groceries = [
-            "Whole milk",
-            "Cheese",
-            "Nuts",
-            "Avocados",
-            "Protein shakes",
-          ];
-        } else if (bmi >= 18.5 && bmi <= 25) {
-          status = "You are healthy.";
-          groceries = [
-            "Fresh fruits",
-            "Vegetables",
-            "Lean meats",
-            "Whole grains",
-          ];
-        } else if (bmi > 25 && bmi <= 30) {
-          status = "You are overweight.";
-          groceries = [
-            "Low-fat yogurt",
-            "Leafy greens",
-            "Fish",
-            "Quinoa",
-            "Chia seeds",
-          ];
-        } else {
-          status = "You are obese.";
-          groceries = ["Green tea", "Oats", "Legumes", "Salmon", "Broccoli"];
-        }
+  if (bmi < 18.5) {
+    status = "You are underweight.";
+    groceries = [
+      "Whole milk",
+      "Cheese",
+      "Nuts",
+      "Avocados",
+      "Protein shakes",
+    ];
+  } else if (bmi >= 18.5 && bmi <= 25) {
+    status = "You are healthy.";
+    groceries = [
+      "Fresh fruits",
+      "Vegetables",
+      "Lean meats",
+      "Whole grains",
+    ];
+  } else if (bmi > 25 && bmi <= 30) {
+    status = "You are overweight.";
+    groceries = [
+      "Low-fat yogurt",
+      "Leafy greens",
+      "Fish",
+      "Quinoa",
+      "Chia seeds",
+    ];
+  } else {
+    status = "You are obese.";
+    groceries = ["Green tea", "Oats", "Legumes", "Salmon", "Broccoli"];
+  }
 
-        // Update the results in the HTML
-        document.getElementById("result").style.display = "block";
-        document.getElementById(
-          "bmiOutput"
-        ).textContent = `Your BMI is: ${bmi}`;
-        document.getElementById("status").textContent = status;
+  // Update the results in the HTML
+  document.getElementById("result").style.display = "block";
+  document.getElementById("bmiOutput").textContent = `Your BMI is: ${bmi}`;
+  document.getElementById("status").textContent = status;
 
-        // Display recommended groceries
-        const groceryList = document.getElementById("groceryList");
-        groceryList.innerHTML = "";
-        groceries.forEach((item) => {
-          const li = document.createElement("li");
-          li.textContent = item;
-          groceryList.appendChild(li);
-        });
-      }
+  // Display recommended groceries
+  const groceryList = document.getElementById("groceryList");
+  groceryList.innerHTML = "";
+  groceries.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    groceryList.appendChild(li);
+  });
+}
+
     </script>
   </body>
 </html>
