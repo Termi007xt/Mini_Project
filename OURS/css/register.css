@@ -10,6 +10,60 @@ body {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
+.form-group{
+  margin-bottom:30px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5ed374;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #35a04b;
+}
+
+.optext {
+  font-size: 12px;
+}
+
+.copyright {
+  width: 100%;
+  opacity: 100%;
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-weight: 500;
+  margin-top: 20px;
+  
+}
+.form-address{
+  background-color: rgb(255, 255, 255);
+  margin:0 auto;
+  border:1px solid #ccc;
+  border-radius: 6px;
+  padding-bottom: 65px;
+  padding-top:0px;
+  padding-left: 16px;
+  height:100px;
+  width: 100%;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
 img {
   position: absolute;
   top: 1px;
@@ -18,9 +72,10 @@ img {
 }
 
 div .container {
-    padding-top: 20px;
+    padding-top: 15px;
     /* padding-left: 30px; */
     align-items: center;
+    height: inherit;
 }
 
 .form {
@@ -48,7 +103,8 @@ div .container {
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  /* padding-bottom: 15px; */
+  padding-bottom: 6px;
+  margin-bottom: -10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
@@ -56,7 +112,7 @@ div .container {
 }
 
 .form-btn {
-  padding-top: 8px;
+  padding-top: 2px;
   text-align: center;
 }
 
@@ -75,6 +131,8 @@ div .container {
 
 .btn-primary {
   width: 100px;
+  margin-bottom: 8px;
+  margin-top: -10px;
   /* padding: 8px; */
   background-color: #7ed957;
   color: white;
@@ -91,7 +149,7 @@ div .container {
 
 .optext {
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 0px;
   text-align: center;
   color: #555;
 }
