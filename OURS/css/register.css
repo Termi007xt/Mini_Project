@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Set the height to fill the viewport */
+  margin: 0; /* Remove default body margins */
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+img {
+  position: absolute;
+  top: 1px;
+  height: 80px;
+  width: auto;
+}
+
+div .container {
+    padding-top: 20px;
+    /* padding-left: 30px; */
+    align-items: center;
+}
+
+.form {
+    position: relative;
+    z-index: 3; /* Ensure it's above the blob and inside the bg */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: none;
+    margin-top: 10px; /* Optional: Add slight spacing from the top */
+  }
+
+.form h2  {
+  padding-top: 2px;
+  padding-bottom: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-control {
+  width: 285px; /* Adjust width to fit within the card */
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* padding-bottom: 15px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-btn {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.alert {
+  position: absolute; /* Position the alert at the top */
+  top: 10px; /* Add a small gap from the top of the card */
+  left: 50%; /* Center the alert horizontally */
+  transform: translateX(-50%); /* Adjust to center it perfectly */
+  z-index: 10; /* Ensure it appears above all elements in the card */
+  width: 90%; /* Make it fit within the card */
+  text-align: center; /* Center the alert text */
+  font-size: 14px; /* Optional: Adjust the font size for better visibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+
+.btn-primary {
+  width: 100px;
+  /* padding: 8px; */
+  background-color: #7ed957;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #40aa54;
+}
+
+.optext {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: #555;
+}
+
+.optext a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.optext a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  /* margin-top: 10px; */
+  font-size: 12px;
+  text-align: center;
+  color: #aaa;
+}
+
+.card {
+    position: relative;
+    top: 28px;
+    width: 400px; /* Slightly wider for the form */
+    height: 520px; /* Increased height for registration fields */
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.164);
+  }  
+
+  .bg {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 390px; /* 10px smaller than card width */
+    height: 510px; /* 10px smaller than card height */
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%; 
+    left: 50%;
+    width: 300px; /* Slightly smaller than new card width */
+    height: 320px; /* Keep it proportional */
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }  
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-120%, -120%) translate3d(150%, 0, 0); /* Adjust horizontal translation */
+  }
+  50% {
+    transform: translate(-120%, -120%) translate3d(150%, 150%, 0); /* Adjust bottom-right */
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}

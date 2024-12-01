@@ -64,7 +64,7 @@ if (!isset($_SESSION["user"])) {
       <div class="icons">
         <div class="fa fa-bars" id="menu-btn"></div>
         <div class="fa fa-search" id="search-btn"></div>
-        <a href="features\cart.html">
+        <!-- <a href="features\cart.html"> -->
           <div class="fa fa-shopping-cart" id="cart-btn"></div>
         </a>
         <a href="login-&-register/profile.php">
