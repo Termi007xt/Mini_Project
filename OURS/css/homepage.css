@@ -521,7 +521,7 @@ section {
 
 #msg {
   font-size: 20px;
-  color: var(--green);
+  color: var(--black);
   margin-bottom: -20px;
   display: block;
 }
