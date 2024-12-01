@@ -17,7 +17,6 @@ img {
   width: auto;
 }
 
-
 .form {
   position: relative;
   z-index: 3; /* Ensure it's above the blob and inside the bg */
