@@ -519,6 +519,12 @@ section {
   background: #5bbd3b; /* Darker green on hover */
 }
 
+#msg {
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: -20px;
+  display: block;
+}
 
 .copyright {
   width: 100%;
@@ -532,13 +538,6 @@ section {
 
 nav .fa-solid {
   display: none;
-}
-
-#msg {
-  font-size: 20px;
-  color: var(--green);
-  margin-bottom: -20px;
-  display: block;
 }
 
 /* About Us Section */

@@ -104,7 +104,7 @@ if (!isset($_SESSION["user"])) {
     <div class="category-heading ">
       <h2>Categories</h2>
         </div> 
-          <a href="categories/all.html" class="show-all-button">Show All</a>
+          <a href="all-products/all-items.html" class="show-all-button">Show All</a>
         </div>
     <section id="category">
       <!--box-container---------->
