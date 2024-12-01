@@ -3,61 +3,100 @@
     {
         "id": 1,
         "name":"Kwality Choco Flakes - Made With Whole Wheat Zero% Maida",
-        "price": 200,
+        "price": 403,
+        "packsize":"1kg",
         "image": "image/1.png"
     },
     {
         "id": 2,
         "name":"Tata Soulfull Millet Granola - Honey, Fruits, Nuts & Seeds",
-        "price": 250,
+        "price": 275,
+        "packsize":"400g",
         "image": "image/2.png"
     },
     {
         "id": 3,
-        "name":"",
-        "price": 290,
+        "name":"Saffola Massala Oats",
+        "price": 194,
+        "packsize":"400g",
         "image": "image/3.png"
     },
     {
         "id": 4,
-        "name":"",
-        "price": 200,
+        "name":"Kelloggs's Muesli Fruit Nut & Seeds",
+        "price": 390,
+        "packsize":"175g",
         "image": "image/4.png"
     },
     {
         "id": 5,
-        "name":"",
-        "price": 300,
+        "name":"Nutella Hazelnut",
+        "price": 364,
+        "packsize":"350g",
         "image": "image/5.png"
     },
     {
         "id": 6,
-        "name":"",
+        "name":"MyFitness Peanut Butter Cripsy",
         "price": 200,
+        "packsize":"510g",
         "image": "image/6.png"
     },
     {
         "id": 7,
-        "name":"",
-        "price": 200,
+        "name":"Dabur Honey",
+        "price": 197,
+        "packsize":"450g",
         "image": "image/7.png"
     },
     {
         "id": 8,
-        "name":"",
-        "price": 200,
+        "name":"Yoga Bar Muesli",
+        "price": 262,
+        "packsize":"400g",
         "image": "image/8.png"
     },
     {
         "id": 9,
-        "name":"",
-        "price": 200,
+        "name":"Quaker Oats",
+        "price": 182,
+        "packsize":"1kg",
         "image": "image/8.png"
     },
     {
         "id": 10,
-        "name":"",
+        "name":"English Oven Milk Bread",
+        "price": 45,
+        "packsize":"400g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 11,
+        "name":"NESCAFE Coffee Powder",
         "price": 200,
+        "packsize":"45g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 12,
+        "name":"Lipton Green Tea",
+        "price": 149,
+        "packsize":"1pack(25 tea bags)",
+        "image": "image/8.png"
+    },
+    {
+        "id": 13,
+        "name":"Modern Multigrain Bread",
+        "price": 60,
+        "packsize":"400g",
+        "image": "image/8.png"
+    },
+    {
+        "id": 14,
+        "name":"Taj Mahal Tea",
+        "price": 444,
+        "packsize":"500g",
         "image": "image/8.png"
     }
+    // -----------------------------------------------//
 ]
