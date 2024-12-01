@@ -103,7 +103,9 @@ if (!isset($_SESSION["user"])) {
     <!--heading---------------->
     <div class="category-heading">
       <h2>Categories</h2>
-      <!-- <span> Show all </span> -->
+      <div>
+        
+      </div>  
     </div>
     <section id="category">
       <!--box-container---------->
