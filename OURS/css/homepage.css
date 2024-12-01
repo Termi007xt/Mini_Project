@@ -136,11 +136,11 @@ body {
   display: flex;
   align-items: start;
   margin-bottom: px;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   border-radius: 50%;
   color: #fff;
-  top: 50%;
+  top: 15%;
   right: -20px;
 }
 

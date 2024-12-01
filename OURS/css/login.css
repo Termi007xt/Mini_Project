@@ -10,11 +10,10 @@ body {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
-.logo {
-  /* position: relative;
-  top: -200px;   
-  left: 200px; */
-  height: 87px;
+img {
+  position: absolute;
+  top: 60px;
+  height: 80px;
   width: auto;
 }
 

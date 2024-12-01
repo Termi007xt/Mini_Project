@@ -19,8 +19,8 @@ if (isset($_SESSION["user"])) {
 
 </head>
 <body>
-    <div class="logo"><img src="../images/logo.png"></div>
-    <div class="card">
+        <img src="../images/logo.png">
+        <div class="card">
             <div class="bg">
                 <form action="login.php" method="post" class="form">
                     <?php
