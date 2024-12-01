@@ -7,61 +7,10 @@ body {
   height: 100vh; /* Set the height to fill the viewport */
   margin: 0; /* Remove default body margins */
   background-color: #85FFBD;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
-.form-group{
-  margin-bottom:30px;
-  position: relative;
-  width: 100%;
-  text-align: left;
-}
-
-.btn {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #5ed374;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #35a04b;
-}
-
-.optext {
-  font-size: 12px;
-}
-
-.copyright {
-  width: 100%;
-  opacity: 100%;
-  font-size: 10px;
-  text-align: center;
-  padding-bottom: 0px;
-  font-weight: 500;
-  margin-top: 20px;
-  
-}
-.form-address{
-  background-color: rgb(255, 255, 255);
-  margin:0 auto;
-  border:1px solid #ccc;
-  border-radius: 6px;
-  padding-bottom: 65px;
-  padding-top:0px;
-  padding-left: 16px;
-  height:100px;
-  width: 100%;
-  outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
 
 
 img {
@@ -71,11 +20,17 @@ img {
   width: auto;
 }
 
-div .container {
-    padding-top: 15px;
-    /* padding-left: 30px; */
-    align-items: center;
-    height: inherit;
+.container{
+  background-color: rgb(255, 255, 255);
+  max-width: 600px;
+  margin:0 auto;
+  padding-bottom: 0px;
+  padding-top:18px;
+  padding-left:50px;
+  padding-right:50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: inherit;
 }
 
 .form {
@@ -84,9 +39,9 @@ div .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2px;
     padding: 20px;
     background: none;
-    margin-top: 10px; /* Optional: Add slight spacing from the top */
   }
 
 .form h2  {
@@ -96,19 +51,36 @@ div .container {
 
 .form-group {
   width: 100%;
+  margin-bottom:30px;
+  position: relative;
+  width: 100%;
+  text-align: left;
 }
 
 .form-control {
   width: 285px; /* Adjust width to fit within the card */
-  padding-top: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 6px;
+  padding: 8px;
   margin-bottom: -10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
   outline: none;
+}
+
+.form-address{
+  background-color: rgb(255, 255, 255);
+  margin:0 auto;
+  font-size: 14px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-bottom: 65px;
+  padding-top:0px;
+  height:100px;
+  width: 285px;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .form-btn {

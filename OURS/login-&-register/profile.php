@@ -38,17 +38,55 @@ if ($stmt) {
     <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4">User Profile</h1>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title"><b>Name: <?php echo htmlspecialchars($user["full_name"]); ?></b></h5>
-                <h5 class="card-text"><b>Email: <?php echo htmlspecialchars($user["email"]); ?></b></p>
-                <h5 class="card-text"><b>Address: <?php echo htmlspecialchars($user["address"]); ?></b></p>
-                <!-- Add other user fields as needed -->
+<section class="vh-100" style="background-color: #f4f5f7;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center text-white"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+              <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"
+                alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+              <h5><b><?php echo htmlspecialchars($user["full_name"]); ?></b></h5>
+              <p>Customer</p>
+              <i class="far fa-edit mb-5"></i>
             </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>Contact Information</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Email</h6>
+                    <p class="text-muted"><?php echo htmlspecialchars($user["email"]); ?></p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Phone</h6>
+                    <p class="text-muted">123 456 789</p>
+                  </div>
+                </div>
+                <h6>Personal Information</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Address</h6>
+                    <p class="text-muted"><?php echo htmlspecialchars($user["address"]); ?> </p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>blah blah</h6>
+                    <p class="text-muted">yap yap yap..</p>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-danger mt-3">Update</a>
+                <a href="logout.php" class="btn btn-danger mt-3">Logout</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="logout.php" class="btn btn-danger mt-3">Logout</a>
+      </div>
     </div>
+  </div>
+</section>
 </body>
 </html>

@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 body{
   padding:50px;
   font-family: "Poppins", sans-serif;
   background-color: #fffddd;
 }
-
+/* .container{
+  background-color: rgb(255, 255, 255);
+  max-width: 600px;
+  margin:0 auto;
+  padding-bottom: 0px;
+  padding-top:50px;
+  padding-left:50px;
+  padding-right:50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} */
 .form-group{
   margin-bottom:30px;
   position: relative;
@@ -46,7 +58,7 @@ body{
   background-color: rgb(255, 255, 255);
   margin:0 auto;
   border:1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 15px;
   padding-bottom: 65px;
   padding-top:0px;
   height:100px;
@@ -55,3 +67,14 @@ body{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+  }
