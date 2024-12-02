@@ -126,9 +126,9 @@ body.showCart .cartTab {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.cartTab .close{
-    border-radius: 5%;
-    background-color: #eee;
+.btn .close{
+    /* border-radius: 5%; */
+    background-color: rgba(255, 0, 0, 0.418);
 }
 .cartTab .checkOut{
     border-radius: 10%;

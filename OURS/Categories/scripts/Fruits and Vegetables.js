@@ -21,12 +21,11 @@ closeCart.addEventListener('click', () => {
 
 // Load products and initialize app
 const initApp = () => {
-    // Fetch products from products.json
-    fetch('products.json')
+    // Fetch products from "fruits and vegetable.json"
+    fetch('fruits and vegetable.json')
         .then(response => response.json())
         .then(data => {
-            // Filter products by category
-            products = data.filter(product => product.category === 'Fruits and Vegetables');
+            products = data; // Store products in the global array
             addDataToHTML();
 
             // Load cart from local storage
