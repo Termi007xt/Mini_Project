@@ -127,7 +127,7 @@ body {
   position: relative;
 }
 
- .header .icons .cart-count {
+ /* .header .icons .cart-count {
   position: absolute;
   right: 40px;
   background-color: red;
@@ -135,13 +135,13 @@ body {
   height: 18px;
   display: flex;
   align-items: start;
-  /* margin-bottom: px; */
+  margin-bottom: px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   color: #fff;
   top: 25%;
-}
+} */
 
 .header .icons div:hover {
   background: var(--green);

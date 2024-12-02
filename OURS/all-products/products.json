@@ -84,7 +84,7 @@
         "name":"NESCAFE Coffee Powder",
         "price": 200,
         "packsize":"45g",
-        "image": "product_images/file.png",
+        "image": "https://m.media-amazon.com/images/I/71z9qM84SKL.jpg",
         "category":"Breakfast and cereal"
     },
     {
@@ -97,18 +97,18 @@
     },
     {
         "id": 13,
-        "name":"Modern Multigrain Bread",
-        "price": 60,
-        "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 155604.png",
-        "category":"Breakfast and cereal"
-    },
-    {
-        "id": 14,
         "name":"Taj Mahal Tea",
         "price": 444,
         "packsize":"500g",
         "image": "product_images/Screenshot 2024-12-01 155806.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 14,
+        "name":"Modern Multigrain Bread",
+        "price": 60,
+        "packsize":"400g",
+        "image": "https://www.jiomart.com/images/product/original/490017700/modern-multigrain-superseed-bread-400-g-product-images-o490017700-p490017700-0-202203151702.jpg?im=Resize=(1000,1000)",
         "category":"Breakfast and cereal"
     },
 
@@ -344,7 +344,7 @@
         "name":"Nycil Talcum Powder",
         "price": 141,
         "packsize":"150g",
-        "image": "product_images/Screenshot 2024-12-01 164858.png",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFC-U7oCtrfKdBxgxXIZHqV2nGBKU0fO38A&s",
         "category":"Health and Hygiene"
     },
     {

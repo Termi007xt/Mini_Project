@@ -1,0 +1,83 @@
+[
+    {
+        "id": 15,
+        "name":"Nandini Samrudhi Milk Pink",
+        "price": 27,
+        "packsize":"500g",
+        "image": "https://kmf-public.s3.ap-south-1.amazonaws.com/Samrudhi_500_ml_BIMUL_2_product_image_eebc55a74d.jpg",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 16,
+        "name":"iD Curd Cup",
+        "price":80,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 160843.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 17,
+        "name":"Amul Butter",
+        "price": 295,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 160928.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 18,
+        "name":"Colgate MaxFresh Toothpaste",
+        "price": 132,
+        "packsize":"150g",
+        "image": "product_images/Screenshot 2024-12-01 161518.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 19,
+        "name":"Surf Excel Easy Wash",
+        "price": 152,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 161713.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 20,
+        "name":"Eggoz Farm Fresh Eggs",
+        "price": 121,
+        "packsize":"10 pieces",
+        "image": "product_images/Screenshot 2024-12-01 161902.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 21,
+        "name":"Madhur Sugar",
+        "price": 56,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 161942.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 22,
+        "name":"Tata Salt",
+        "price": 28,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 162035.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 23,
+        "name":"Britannia Pav",
+        "price": 25,
+        "packsize":"250g",
+        "image": "product_images/Screenshot 2024-12-01 162128.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 24,
+        "name":"Aashirvaad Atta",
+        "price": 1250,
+        "packsize":"5kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s",
+        "category":"Daily Essentials"
+    }
+
+]

@@ -14,6 +14,24 @@ body {
     background-color: var(--light-color);
 }
 
+.header .icons {
+    position: relative;
+}
+
+.header .icons span {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    right: -5px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -44,10 +62,6 @@ body {
     /* filter: drop-shadow(0 50px 20px #0009); */
 }
 
-.listProduct:hover{
-    transform: translateY(-10px);
-}
-
 .listProduct{
     padding-top: 100px;
     display: grid;
@@ -70,8 +84,10 @@ body {
     font-size: large;
 }
 .listProduct .item .price{
-    letter-spacing: 7px;
+    /* letter-spacing: 2px; */
+    padding-top: 5px;
     font-size: small;
+    font-weight: bold;
 }
 .listProduct .item button{
     background-color: #353432;
@@ -96,13 +112,14 @@ body {
 /* Cart */
 .cartTab {
     width: 400px;
-    background-color: rgb(221, 226, 166);
-    color: var(--text-color);
+    background-color: #353432;
+    color: #fff;
     position: fixed;
-    top: 0;
+    /* top: 0;
     right: -400px;
     padding-top: 15px;
-    bottom: 0;
+    bottom: 0; */
+    inset: 0 -400px 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: 0.5s;
@@ -111,12 +128,17 @@ body {
     border-radius:5px ;
 }
 
+.cartTab h1 {
+    padding: 20px;
+    padding-left: 150px;
+}
+
 body.showCart .cartTab {
     right: 0;
 }
 
 .cartTab button {
-    background-color: var(--secondary-color);
+    background-color: #fff;
     border: none;
     font-family: var(--font-family);
     font-weight: 500;
@@ -128,14 +150,15 @@ body.showCart .cartTab {
 }
 .btn .close{
     /* border-radius: 5%; */
-    background-color: rgba(255, 0, 0, 0.418);
+    background-color: lightcoral;
 }
 .cartTab .checkOut{
-    border-radius: 10%;
-    background-color: #eee;
+    /* border-radius: 10%; */
+    background-color: lightgreen;
 }
 .cartTab .listCart .item img{
     width: 100%;
+    border-radius: 16px;
 }
 .cartTab .listCart .item{
     display: grid;
@@ -145,6 +168,12 @@ body.showCart .cartTab {
     text-align: center;
     align-items: center;
 }
+
+.cartTab .listCart .item .totalPrice {
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .listCart .quantity span{
     display: inline-block;
     width: 20px;

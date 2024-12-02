@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name":"Kwality Choco Flakes - Made With Whole Wheat Zero% Maida",
+        "price": 403,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 154113.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 2,
+        "name":"Tata Soulfull Millet Granola - Honey, Fruits, Nuts & Seeds",
+        "price": 275,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 154128.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 3,
+        "name":"Saffola Massala Oats",
+        "price": 194,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 154151.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 4,
+        "name":"Kelloggs's Muesli Fruit Nut & Seeds",
+        "price": 390,
+        "packsize":"175g",
+        "image": "product_images/Screenshot 2024-12-01 154213.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 5,
+        "name":"Nutella Hazelnut",
+        "price": 364,
+        "packsize":"350g",
+        "image": "product_images/Screenshot 2024-12-01 154248.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 6,
+        "name":"MyFitness Peanut Butter Cripsy",
+        "price": 200,
+        "packsize":"510g",
+        "image": "product_images/Screenshot 2024-12-01 154331.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 7,
+        "name":"Dabur Honey",
+        "price": 197,
+        "packsize":"450g",
+        "image": "product_images/Screenshot 2024-12-01 154419.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 8,
+        "name":"Yoga Bar Muesli",
+        "price": 262,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 154850.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 9,
+        "name":"Quaker Oats",
+        "price": 182,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 155041.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 10,
+        "name":"English Oven Milk Bread",
+        "price": 45,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 155150.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 11,
+        "name":"NESCAFE Coffee Powder",
+        "price": 200,
+        "packsize":"45g",
+        "image": "https://m.media-amazon.com/images/I/71z9qM84SKL.jpg",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 12,
+        "name":"Lipton Green Tea",
+        "price": 149,
+        "packsize":"1pack(25 tea bags)",
+        "image": "product_images/Screenshot 2024-12-01 155445.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 13,
+        "name":"Taj Mahal Tea",
+        "price": 444,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 155806.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 14,
+        "name":"Modern Multigrain Bread",
+        "price": 60,
+        "packsize":"400g",
+        "image": "https://www.jiomart.com/images/product/original/490017700/modern-multigrain-superseed-bread-400-g-product-images-o490017700-p490017700-0-202203151702.jpg?im=Resize=(1000,1000)",
+        "category":"Breakfast and cereal"
+    }
+]

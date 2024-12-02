@@ -4,7 +4,7 @@
         "name":"Okra",
         "price": 26,
         "packsize":"250g",
-        "image": "product_images/Screenshot 2024-12-01 162413.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162413.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -12,7 +12,7 @@
         "name":"Cauliflower",
         "price": 41,
         "packsize":"250g",
-        "image": "product_images/Screenshot 2024-12-01 162436.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162436.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -20,7 +20,7 @@
         "name":"Onion",
         "price": 89,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 162502.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162502.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -28,7 +28,7 @@
         "name":"Potato",
         "price": 61,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 162612.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162612.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -36,7 +36,7 @@
         "name":"cabbage",
         "price": 38,
         "packsize":"1 pc",
-        "image": "product_images/Screenshot 2024-12-01 162638.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162638.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -44,7 +44,7 @@
         "name":"Green Grapes",
         "price": 124,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 162717.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162717.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -52,7 +52,7 @@
         "name":"Banana",
         "price": 71,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 162752.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162752.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -60,7 +60,7 @@
         "name":"Pomegranate",
         "price": 95,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 162823.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162823.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -68,7 +68,7 @@
         "name":"Kiwi",
         "price": 144,
         "packsize":"3 pc",
-        "image": "product_images/Screenshot 2024-12-01 162911.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162911.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -76,7 +76,7 @@
         "name":"Mosambi",
         "price": 89,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 163016.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 163016.png",
         "category":"Fruits and Vegetables"
     }
 
