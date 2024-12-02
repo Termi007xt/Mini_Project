@@ -66,7 +66,7 @@ if (isset($_SESSION["user"])) {
                             mysqli_stmt_execute($stmt);
                             echo "<div class='alert alert-success'>You are registered successfully, Redirecting...</div>";
                             // sleep(3000);
-                            header('Refresh:3 ; URL=login.php');
+                            header('Refresh:1 ; URL=login.php');
                         }else{
                             die("Something went wrong");
                         }
