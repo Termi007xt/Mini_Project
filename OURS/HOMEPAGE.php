@@ -51,7 +51,7 @@ if (!isset($_SESSION["user"])) {
       <!--menus in header-->
       <nav class="navbar">
         <a href="#category">Categories</a>
-        <a href="features\smart_cart.html">Smart Cart</a>
+        <a href="features\smartcart.php">Smart Cart</a>
         <a href="features\recommendations.html">Smart selections</a>
         <a href="features\orders.html">Orders</a>
         <a href="#contact">Contact Us</a>
