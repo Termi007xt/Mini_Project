@@ -13,6 +13,7 @@
     <!--==Stylesheet/link to css file ====-->
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
     <link rel="stylesheet" type="text/css" href="../css/categories.css" />
+    <link rel="stylesheet" href="../css/items-&-cart.css"> 
   </head>
   <body>
     <!--==Navigation Header===-->
@@ -32,11 +33,11 @@
       <!--menus in header-->
 
       <!--icons in header-->
+    
       <div class="icons">
-        <div class="fa fa-bars" id="menu-btn"></div>
-        <a href="../features\search.html"><div class="fa fa-search" id="search-btn"></div>
-        <a href="../features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
-        <a href="../features\profile.html"><div class="fa fa-user" id="login-btn"></div>
+          <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-shopping-cart" id="icon-cart"></div>
+            <span class="cart-count">0</span>
       </div>
       <!--icons in header-->
     </header>
@@ -55,5 +56,37 @@
       </div>
     </section>
     <!--==banner-end--------------->
+    <div class="listProduct">
+      <div class="item">
+        <img src="../all-products/product_images/Screenshot 2024-12-01 154113.png" alt="">
+        <h2>Product Name</h2>
+        <div class="price">₹200</div>
+        <button class="addcart">Add To cart</button>
+      </div>
+    </div>
+    
+<div class="cartTab">
+    <h1><center>Shopping Cart</h1></center>
+    <div class="listCart">
+      <div class="item">
+        <img src="../all-products/product_images/Screenshot 2024-12-01 154113.png", alt="Product">
+        <div class="name">NAME</div>
+        <div class="totalPrice">₹200</div>
+        <div class="quantity">
+          <span class="minus"><</span>
+          <span>1</span>
+          <span class="plus">></span>
+        </div>       
+      </div>
+    </div>
+      <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">Check Out</button>
+    </div>
+</div>
+
+<script src="scripts/Fruits and Vegetables.js"></script>
+    <!-- PASTE PRODUCTS HERE @1mv22cs078 KSHITIZ ANNA-->
+
   </body>
 </html>

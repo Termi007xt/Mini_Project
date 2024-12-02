@@ -15,6 +15,7 @@ if (!isset($_SESSION["user"])) {
 
     <!--==Stylesheet/link to css file ====-->
     <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/items-&-cart.css">
 
     <!-- FONT_AWESOME ICONS-->
     <script
@@ -65,7 +66,8 @@ if (!isset($_SESSION["user"])) {
         <div class="fa fa-bars" id="menu-btn"></div>
         <div class="fa fa-search" id="search-btn"></div>
         <div class="fa fa-shopping-cart" id="cart-btn">
-          <span class="cart-count">0</span>
+        <a href="#">  
+        <span class="cart-count">0</span>
         </div>        
         <a href="login-&-register/profile.php">
           <div class="fa fa-user" id="login-btn"></div>
@@ -330,6 +332,27 @@ if (!isset($_SESSION["user"])) {
     <p>©️ Smart Groceries</p>
   </div>
 </div>
+
+<!-- cart functionality -->
+<div class="cartTab">
+        <h1><center>Shopping Cart</h1></center>
+        <div class="listCart">
+          <div class="item">
+            <img src="product_images/Screenshot 2024-12-01 154113.png", alt="Product">
+            <div class="name">NAME</div>
+            <div class="totalPrice">₹200</div>
+            <div class="quantity">
+              <span class="minus"><</span>
+              <span>1</span>
+              <span class="plus">></span>
+            </div>       
+          </div>
+        </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
 
 <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxUs3_VJlRWedKHqDkeidvOgxJ91bnH-D3wkDk-WaPMVrfSqjW30zcn7ExLZpEbeBBr/exec'
