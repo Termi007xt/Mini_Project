@@ -3,24 +3,8 @@
 body{
   padding:50px;
   font-family: "Poppins", sans-serif;
-  background-color: #fffddd;
-}
-/* .container{
-  background-color: rgb(255, 255, 255);
-  max-width: 600px;
-  margin:0 auto;
-  padding-bottom: 0px;
-  padding-top:50px;
-  padding-left:50px;
-  padding-right:50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-} */
-.form-group{
-  margin-bottom:30px;
-  position: relative;
-  width: 100%;
-  text-align: left;
+  /* background-color: #fffddd; */
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .btn {
@@ -36,36 +20,22 @@ body{
   transition: background-color 0.3s;
 }
 
-.btn:hover {
-  background-color: #35a04b;
+.btn1 {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5ed374;
+  background-color: #fff;
+  border: 1px solid #5ed374;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.optext {
-  font-size: 12px;
-}
-
-.copyright {
-  width: 100%;
-  opacity: 100%;
-  font-size: 10px;
-  text-align: center;
-  padding-bottom: 0px;
-  font-weight: 500;
-  margin-top: 20px;
-  
-}
-.form-address{
-  background-color: rgb(255, 255, 255);
-  margin:0 auto;
-  border:1px solid #ccc;
-  border-radius: 15px;
-  padding-bottom: 65px;
-  padding-top:0px;
-  height:100px;
-  width: 100%;
-  outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+.btn1:hover {
+  background-color: #5ed374;
+  color: #fff;
 }
 
 .gradient-custom {

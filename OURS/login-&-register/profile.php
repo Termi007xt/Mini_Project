@@ -38,10 +38,11 @@ if ($stmt) {
     <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
-<section class="vh-100" style="background-color: #f4f5f7;">
+<section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-lg-6 mb-4 mb-lg-0">
+        <h2>User Profile</h2>
         <div class="card mb-3" style="border-radius: .5rem;">
           <div class="row g-0">
             <div class="col-md-4 gradient-custom text-center text-white"
@@ -78,7 +79,7 @@ if ($stmt) {
                     <p class="text-muted">yap yap yap..</p>
                   </div>
                 </div>
-                <a href="#" class="btn btn-danger mt-3">Update</a>
+                <button href="#" class="btn1">Update</button>
                 <a href="logout.php" class="btn btn-danger mt-3">Logout</a>
               </div>
             </div>
