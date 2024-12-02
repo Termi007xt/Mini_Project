@@ -62,9 +62,11 @@ if (isset($_SESSION["user"])) {
                         $stmt = mysqli_stmt_init($conn);
                         $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
                         if ($prepareStmt) {
-                            mysqli_stmt_bind_param($stmt,"ssss",$fullName, $email, $passwordHash, $address);
+                            mysqli_stmt_bind_param($stmt,"sssss",$fullName, $email, $phno, $passwordHash, $address);
                             mysqli_stmt_execute($stmt);
-                            echo "<div class='alert alert-success'>You are registered successfully.</div>";
+                            echo "<div class='alert alert-success'>You are registered successfully, Redirecting...</div>";
+                            // sleep(3000);
+                            header('Refresh:3 ; URL=login.php');
                         }else{
                             die("Something went wrong");
                         }
@@ -79,6 +81,9 @@ if (isset($_SESSION["user"])) {
                     </div>
                     <div class="form-group">
                         <input type="emamil" class="form-control" name="email" placeholder="Email:">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="phno" placeholder="Ph. Number:">
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control" name="password" placeholder="Password:">
