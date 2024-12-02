@@ -25,6 +25,7 @@ if (isset($_SESSION["user"])) {
                     if (isset($_POST["submit"])) {
                        $fullName = $_POST["fullname"];
                        $email = $_POST["email"];
+                       $phno= $_POST["phno"];
                        $password = $_POST["password"];
                        $passwordRepeat = $_POST["repeat_password"];
                     
@@ -57,7 +58,7 @@ if (isset($_SESSION["user"])) {
                             echo "<div class='alert alert-danger'>$error</div>";
                         }
                        }else{
-                        $sql = "INSERT INTO users (full_name, email, password, address) VALUES ( ?, ?, ?, ? )";
+                        $sql = "INSERT INTO users (full_name, email, phno, password, address) VALUES ( ?, ?, ?, ?, ? )";
                         $stmt = mysqli_stmt_init($conn);
                         $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
                         if ($prepareStmt) {

@@ -63,9 +63,7 @@ if (!isset($_SESSION["user"])) {
       <div class="icons">
         <div class="fa fa-bars" id="menu-btn"></div>
         <div class="fa fa-search" id="search-btn"></div>
-        <a href="/all-products/all-items.html"> 
-          <div class="fa fa-shopping-cart" id="cart-btn"></div>
-        </a>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>        
         <a href="login-&-register/profile.php">
           <div class="fa fa-user" id="login-btn"></div>
         </a>
@@ -347,4 +345,16 @@ if (!isset($_SESSION["user"])) {
             })
             .catch(error => console.error('Error!', error.message))
         })
+
+        
+    // Select the button using its ID
+    const cartButton = document.getElementById('cart-btn');
+
+    // Add a click event listener to the button
+    cartButton.addEventListener('click', () => {
+        // Redirect to the desired HTML file
+        window.location.href = 'OURS/all-products/all-items.html'; // Replace 'cart.html' with your file path
+    });
+
+
     </script>

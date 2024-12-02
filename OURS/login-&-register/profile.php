@@ -64,7 +64,7 @@ if ($stmt) {
                   </div>
                   <div class="col-6 mb-3">
                     <h6>Phone</h6>
-                    <p class="text-muted">123 456 789</p>
+                    <p class="text-muted"><?php echo htmlspecialchars($user["phno"]); ?></p>
                   </div>
                 </div>
                 <h6>Personal Information</h6>
