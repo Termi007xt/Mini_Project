@@ -75,11 +75,11 @@ if ($stmt) {
                     <p class="text-muted"><?php echo htmlspecialchars($user["address"]); ?> </p>
                   </div>
                   <div class="col-6 mb-3">
-                    <h6>blah blah</h6>
-                    <p class="text-muted">yap yap yap..</p>
+                    <h6>Delivery Instructions:</h6>
+                    <p class="text-muted">Leave the package at the front door.</p>
                   </div>
                 </div>
-                <button href="#" class="btn1">Update</button>
+                <a href="update.php" class="btn btn-success mt-3">Update</a>
                 <a href="logout.php" class="btn btn-danger mt-3">Logout</a>
               </div>
             </div>
