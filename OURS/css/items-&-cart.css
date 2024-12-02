@@ -102,17 +102,17 @@ body.showCart .container{
 .cartTab .close{
     background-color: #eee;
 }
-.listCart .item img{
+.cartTab .listCart .item img{
     width: 100%;
 }
-.listCart .item{
+.cartTab .listCart .item{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
     gap: 10px;
     text-align: center;
     align-items: center;
 }
-.listCart .quantity span{
+.cartTab .listCart .quantity span{
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -121,15 +121,15 @@ body.showCart .container{
     color: #555;
     cursor: pointer;
 }
-.listCart .quantity span:nth-child(2){
+.cartTab .listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: #eee;
     cursor: auto;
 }
-.listCart .item:nth-child(even){
+.cartTab .listCart .item:nth-child(even){
     background-color: #eee1;
 }
-.listCart{
+.cartTab .listCart{
     overflow: auto;
 }
 .listCart::-webkit-scrollbar{
