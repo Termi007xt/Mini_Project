@@ -127,21 +127,20 @@ body {
   position: relative;
 }
 
-.icons .cart-count {
+ .header .icons .cart-count {
   position: absolute;
   right: 40px;
   background-color: red;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: start;
-  margin-bottom: px;
+  /* margin-bottom: px; */
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   color: #fff;
-  top: 15%;
-  right: -20px;
+  top: 25%;
 }
 
 .header .icons div:hover {

@@ -46,7 +46,6 @@ body {
 
 .listProduct:hover{
     transform: translateY(-10px);
-    cursor: pointer;
 }
 
 .listProduct{
@@ -81,10 +80,12 @@ body {
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 .listProduct .item button {
     font-size: 14px;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 .listProduct .item h2 {

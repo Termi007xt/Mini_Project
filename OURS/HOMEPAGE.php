@@ -25,6 +25,7 @@ if (!isset($_SESSION["user"])) {
     <!--JS file link for functionality-->
     <script src="js/script.js"></script>
     <script src="js/search.js"defer></script>
+    <script> src="all-products/app.js"</script>
 
     <!--==fav-icon======-->
     <link rel="icon" href="images/fav-icon.png" type="image/png">
@@ -63,7 +64,9 @@ if (!isset($_SESSION["user"])) {
       <div class="icons">
         <div class="fa fa-bars" id="menu-btn"></div>
         <div class="fa fa-search" id="search-btn"></div>
-        <div class="fa fa-shopping-cart" id="cart-btn"></div>        
+        <div class="fa fa-shopping-cart" id="cart-btn">
+          <span class="cart-count">0</span>
+        </div>        
         <a href="login-&-register/profile.php">
           <div class="fa fa-user" id="login-btn"></div>
         </a>
