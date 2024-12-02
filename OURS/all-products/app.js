@@ -1,103 +1,107 @@
-// Selecting DOM elements
-const listProductHTML = document.querySelector('.listProduct');
-const listCartHTML = document.querySelector('.listCart');
-const iconCart = document.querySelector('.icons');
-const iconCartSpan = document.querySelector('.cart-count');
-const body = document.querySelector('body');
-const closeCart = document.querySelector('.close');
+// Selecting elements
+let listProductHTML = document.querySelector('.listProduct');
+let listCartHTML = document.querySelector('.listCart');
+let iconCart = document.querySelector('#icon-cart'); // Cart icon
+let iconCartSpan = document.querySelector('.cart-count'); // Cart count
+let body = document.querySelector('body');
+let closeCart = document.querySelector('.close'); // Close button in the cart
 
-// Product and cart arrays
+// Product and cart data
 let products = [];
 let cart = [];
 
-// Toggle cart visibility
+// Event listener to toggle cart visibility
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
+
 closeCart.addEventListener('click', () => {
-    body.classList.toggle('showCart');
+    body.classList.remove('showCart');
 });
 
-// Add products to the product list in the HTML
+// Load products and initialize app
+const initApp = () => {
+    // Fetch products from products.json
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data; // Store products in the global array
+            addDataToHTML();
+
+            // Load cart from local storage
+            if (localStorage.getItem('cart')) {
+                cart = JSON.parse(localStorage.getItem('cart'));
+                addCartToHTML();
+            }
+        })
+        .catch(error => console.error('Error fetching products:', error));
+};
+
+// Display products in the DOM
 const addDataToHTML = () => {
-    listProductHTML.innerHTML = ''; // Clear existing products
+    listProductHTML.innerHTML = ''; // Clear existing product data
 
     if (products.length > 0) {
         products.forEach(product => {
-            const newProduct = document.createElement('div');
+            let newProduct = document.createElement('div');
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">₹${product.price}</div>
-                <button class="addCart">Add To Cart</button>
-            `;
+                <button class="addCart">Add To Cart</button>`;
             listProductHTML.appendChild(newProduct);
         });
-    } else {
-        console.warn("No products available to display.");
     }
 };
 
-// Add product to the cart
-listProductHTML.addEventListener('click', (event) => {
-    const clickedElement = event.target;
-    if (clickedElement.classList.contains('addCart')) {
-        const productId = clickedElement.parentElement.dataset.id;
-        addToCart(productId);
-    }
-});
-
-// Add product to the cart array
+// Add product to cart
 const addToCart = (productId) => {
-    const productIndexInCart = cart.findIndex(item => item.product_id === productId);
+    let positionInCart = cart.findIndex(item => item.product_id == productId);
 
-    if (productIndexInCart >= 0) {
-        cart[productIndexInCart].quantity += 1;
+    if (positionInCart < 0) {
+        cart.push({ product_id: productId, quantity: 1 });
     } else {
-        cart.push({
-            product_id: productId,
-            quantity: 1
-        });
+        cart[positionInCart].quantity += 1;
     }
 
-    updateCartUI();
+    addCartToHTML();
     saveCartToLocalStorage();
 };
 
-// Update cart UI
-const updateCartUI = () => {
-    listCartHTML.innerHTML = '';
+// Update cart in the DOM
+const addCartToHTML = () => {
+    listCartHTML.innerHTML = ''; // Clear existing cart items
     let totalQuantity = 0;
 
     if (cart.length > 0) {
-        cart.forEach(item => {
-            const product = products.find(product => product.id === item.product_id);
-            if (!product) return;
+        cart.forEach(cartItem => {
+            totalQuantity += cartItem.quantity;
 
-            totalQuantity += item.quantity;
+            let product = products.find(p => p.id == cartItem.product_id);
+            if (product) {
+                let newItem = document.createElement('div');
+                newItem.classList.add('item');
+                newItem.dataset.id = cartItem.product_id;
 
-            const cartItem = document.createElement('div');
-            cartItem.classList.add('item');
-            cartItem.dataset.id = item.product_id;
-            cartItem.innerHTML = `
-                <div class="image">
-                    <img src="${product.image}" alt="${product.name}">
-                </div>
-                <div class="name">${product.name}</div>
-                <div class="totalPrice">₹${product.price * item.quantity}</div>
-                <div class="quantity">
-                    <span class="minus">&lt;</span>
-                    <span>${item.quantity}</span>
-                    <span class="plus">&gt;</span>
-                </div>
-            `;
-            listCartHTML.appendChild(cartItem);
+                newItem.innerHTML = `
+                    <div class="image">
+                        <img src="${product.image}" alt="${product.name}">
+                    </div>
+                    <div class="name">${product.name}</div>
+                    <div class="totalPrice">₹${product.price * cartItem.quantity}</div>
+                    <div class="quantity">
+                        <span class="minus">-</span>
+                        <span>${cartItem.quantity}</span>
+                        <span class="plus">+</span>
+                    </div>`;
+                listCartHTML.appendChild(newItem);
+            }
         });
     }
 
-    iconCartSpan.textContent = totalQuantity;
+    iconCartSpan.textContent = totalQuantity; // Update cart count
 };
 
 // Save cart to local storage
@@ -105,62 +109,47 @@ const saveCartToLocalStorage = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 };
 
-// Load cart from local storage
-const loadCartFromLocalStorage = () => {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-        cart = JSON.parse(savedCart);
-    }
-};
-
-// Change cart quantity
-listCartHTML.addEventListener('click', (event) => {
-    const clickedElement = event.target;
-    if (clickedElement.classList.contains('minus') || clickedElement.classList.contains('plus')) {
-        const productId = clickedElement.parentElement.parentElement.dataset.id;
-        const type = clickedElement.classList.contains('plus') ? 'plus' : 'minus';
-        updateCartQuantity(productId, type);
+// Handle add-to-cart button clicks
+listProductHTML.addEventListener('click', (event) => {
+    if (event.target.classList.contains('addCart')) {
+        let productId = event.target.parentElement.dataset.id;
+        addToCart(productId);
     }
 });
 
-// Update cart quantity
-const updateCartQuantity = (productId, type) => {
-    const productIndexInCart = cart.findIndex(item => item.product_id === productId);
+// Handle cart item quantity changes
+listCartHTML.addEventListener('click', (event) => {
+    let clickedElement = event.target;
+    if (clickedElement.classList.contains('minus') || clickedElement.classList.contains('plus')) {
+        let productId = clickedElement.parentElement.parentElement.dataset.id;
 
-    if (productIndexInCart >= 0) {
-        if (type === 'plus') {
-            cart[productIndexInCart].quantity += 1;
+        if (clickedElement.classList.contains('minus')) {
+            changeCartQuantity(productId, 'minus');
         } else {
-            const newQuantity = cart[productIndexInCart].quantity - 1;
-            if (newQuantity > 0) {
-                cart[productIndexInCart].quantity = newQuantity;
-            } else {
-                cart.splice(productIndexInCart, 1);
+            changeCartQuantity(productId, 'plus');
+        }
+    }
+});
+
+// Change quantity of an item in the cart
+const changeCartQuantity = (productId, action) => {
+    let cartItemIndex = cart.findIndex(item => item.product_id == productId);
+
+    if (cartItemIndex >= 0) {
+        if (action === 'plus') {
+            cart[cartItemIndex].quantity += 1;
+        } else if (action === 'minus') {
+            cart[cartItemIndex].quantity -= 1;
+
+            if (cart[cartItemIndex].quantity <= 0) {
+                cart.splice(cartItemIndex, 1); // Remove item if quantity is 0
             }
         }
     }
 
-    updateCartUI();
+    addCartToHTML();
     saveCartToLocalStorage();
 };
 
 // Initialize the app
-const initApp = () => {
-    fetch('products.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch products.json');
-            }
-            return response.json();
-        })
-        .then(data => {
-            products = data;
-            addDataToHTML();
-            loadCartFromLocalStorage();
-            updateCartUI();
-        })
-        .catch(error => console.error('Error initializing app:', error));
-};
-
-// Start the app
 initApp();

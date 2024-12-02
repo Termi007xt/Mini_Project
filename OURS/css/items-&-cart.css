@@ -1,13 +1,11 @@
-/* Variables */
 :root {
-    --primary-color: #e7cfa0;
+    --primary-color: #fcfcfc;
     --secondary-color: #E8BC0E;
-    --text-color: #eee;
-    --light-color: #fff;
+    --text-color: #000000;
+    --light-color: #dae9b5;
     --font-family: 'Poppins', sans-serif;
 }
 
-/* General */
 body {
     font-family: var(--font-family);
     color: var(--text-color);
@@ -16,7 +14,6 @@ body {
     background-color: var(--light-color);
 }
 
-/* Header (Ensure alignment with your header CSS) */
 .header {
     display: flex;
     justify-content: space-between;
@@ -33,46 +30,72 @@ body {
 }
 
 .header .icons .fa {
-    color: var(--light-color);
+    color: black;
     margin: 0 5px;
     cursor: pointer;
 }
 
 /* Product List */
-.listProduct {
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    width: 100%;
+    /* filter: drop-shadow(0 50px 20px #0009); */
+}
+
+.listProduct:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.listProduct{
     padding-top: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
-.listProduct .item {
-    background-color: var(--light-color);
+.listProduct .item{
+    background-color: #fff;
     padding: 20px;
     border-radius: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .listProduct .item:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.listProduct .item button {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
     border: none;
-    padding: 8px 12px;
+    padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
 }
+.listProduct .item button {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.listProduct .item h2 {
+    font-size: medium;
+}
+
 
 /* Cart */
 .cartTab {
     width: 400px;
-    background-color: var(--primary-color);
+    background-color: rgb(221, 226, 166);
     color: var(--text-color);
     position: fixed;
     top: 0;
@@ -95,12 +118,35 @@ body.showCart .cartTab {
     font-weight: 500;
     cursor: pointer;
 }
-
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.cartTab .checkOut{
+    background-color: #eee;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    margin-left: 5px;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
 /* Responsive Adjustments */
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
+} */
+.listCart::-webkit-scrollbar{
+    width: 0;
 }
 
 @media only screen and (max-width: 768px) {
