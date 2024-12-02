@@ -1,0 +1,82 @@
+[    
+    {
+        "id": 35,
+        "name":"Dettol Antiseptic Liquid",
+        "price": 308,
+        "packsize":"1L",
+        "image": "product_images/Screenshot 2024-12-01 163530.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 36,
+        "name":"Dove Cream Beauty Bar",
+        "price": 418,
+        "packsize":"125g",
+        "image": "product_images/Screenshot 2024-12-01 163652.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 37,
+        "name":"Dettol Skincare Liquid Handwash Refill",
+        "price": 166,
+        "packsize":"110L",
+        "image": "product_images/Screenshot 2024-12-01 163847.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 38,
+        "name":"Dove Gentle Exfoliating Beads Body Wash",
+        "price": 425,
+        "packsize":"800mL",
+        "image": "product_images/Screenshot 2024-12-01 164217.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 39,
+        "name":"NIVEA Pearl & Beauty Women Deodorant Roll-On",
+        "price": 249,
+        "packsize":"200mL",
+        "image": "product_images/Screenshot 2024-12-01 164309.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 40,
+        "name":"Oral-B Toothbrushes",
+        "price": 165,
+        "packsize":"pack of 4", 
+        "image": "product_images/Screenshot 2024-12-01 164427.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 41,
+        "name":"Johnson's Baby Shampoo",
+        "price": 480,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 164555.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 42,
+        "name":"Kloy Ramie Scrubbing Bath Glove",
+        "price": 179,
+        "packsize":"1 pc",
+        "image": "product_images/Screenshot 2024-12-01 164725.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 43,
+        "name":"Nycil Talcum Powder",
+        "price": 141,
+        "packsize":"150g",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFC-U7oCtrfKdBxgxXIZHqV2nGBKU0fO38A&s",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 44,
+        "name":"Colgate MaxFresh Toothpaste",
+        "price": 132,
+        "packsize":"150g",
+        "image": "product_images/Screenshot 2024-12-01 161518.png",
+        "category":"Health and Hygiene"
+    }
+]

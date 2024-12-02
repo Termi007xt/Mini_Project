@@ -4,7 +4,7 @@
         "name":"Relish Goat Curry Cut",
         "price": 359,
         "packsize":"1 Pack(approx.350g-370g)",
-        "image": "product_images/Screenshot 2024-12-01 165331.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 165331.png",
         "category":"Meats and Fish"
     },
     {
@@ -12,7 +12,7 @@
         "name":"Relish chicken Drumstick",
         "price": 189,
         "packsize":"4 pcs",
-        "image": "product_images/Screenshot 2024-12-01 165547.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 165547.png",
         "category":"Meats and Fish"
     },
     {
@@ -20,7 +20,7 @@
         "name":"Relish Tilapia whole and Cleaned",
         "price": 129,
         "packsize":"2 pcs",
-        "image": "product_images/Screenshot 2024-12-01 165707.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 165707.png",
         "category":"Meats and Fish"
     },
     {
@@ -28,7 +28,7 @@
         "name":"Relish Chicken Smoked Franks",
         "price": 139,
         "packsize":"pack of 4",
-        "image": "product_images/Screenshot 2024-12-01 165913.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 165913.png",
         "category":"Meats and Fish"
     },
     {   
@@ -36,39 +36,39 @@
         "name":"Tasty Nibbles Sardine",
         "price": 115,
         "packsize":"185g",
-        "image": "product_images/Screenshot 2024-12-01 170113.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 170113.png",
         "category":"Meats and Fish"
     },
     {
         "id": 51,
         "name":"Relish Basa Fillet",
         "price": 132,
-    "packsize":"500g",
-    "image": "product_images/ScreenShot_Relish Basa Fillet.png",
-    "category":"Meats and Fish"
+        "packsize":"500g",
+        "image": "../all-products/product_images/ScreenShot_Relish Basa Fillet.png",
+        "category":"Meats and Fish"
     },
     {
-    "id": 52,
-    "name":"Relish Chicken Breast",
-    "price": 259,
-    "packsize":"500g",
-    "image": "product_images/Screenshot 2024-12-01 170548.png",
-    "category":"Meats and Fish"
-    },
-        {
-    "id": 53,
-    "name":"Suguna Delfrez white Eggs",
-    "price": 77,
-    "packsize":"6 pcs",
-    "image": "product_images/Screenshot 2024-12-01 170715.png",
-    "category":"Meats and Fish"
+        "id": 52,
+        "name":"Relish Chicken Breast",
+        "price": 259,
+        "packsize":"500g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 170548.png",
+        "category":"Meats and Fish"
     },
     {
-    "id": 54,
-    "name":"Eggspro Brown Eggs",
-    "price": 80,
-    "packsize":"6 pcs",
-    "image": "product_images/Screenshot 2024-12-01 170834.png",
-    "category":"Meats and Fish"
+        "id": 53,
+        "name":"Suguna Delfrez white Eggs",
+        "price": 77,
+        "packsize":"6 pcs",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 170715.png",
+        "category":"Meats and Fish"
     },
+    {
+        "id": 54,
+        "name":"Eggspro Brown Eggs",
+        "price": 80,
+        "packsize":"6 pcs",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 170834.png",
+        "category":"Meats and Fish"
+    }
 ]
