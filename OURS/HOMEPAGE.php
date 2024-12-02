@@ -329,32 +329,20 @@ if (!isset($_SESSION["user"])) {
 </div>
 
 <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUs3_VJlRWedKHqDkeidvOgxJ91bnH-D3wkDk-WaPMVrfSqjW30zcn7ExLZpEbeBBr/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-    
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-
-        
-    // Select the button using its ID
-    const cartButton = document.getElementById('cart-btn');
-
-    // Add a click event listener to the button
-    cartButton.addEventListener('click', () => {
-        // Redirect to the desired HTML file
-        window.location.href = 'OURS/all-products/all-items.html'; // Replace 'cart.html' with your file path
-    });
-
-
-    </script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxUs3_VJlRWedKHqDkeidvOgxJ91bnH-D3wkDk-WaPMVrfSqjW30zcn7ExLZpEbeBBr/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+  
+      form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML = "Message Sent Successfully"
+              setTimeout(function(){
+                  msg.innerHTML = ""
+              },5000)
+              form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+  </script>
