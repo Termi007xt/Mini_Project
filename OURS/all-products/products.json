@@ -587,7 +587,7 @@
         "name":"Coca-Cola",
         "price": 45,
         "packsize":"750ml",
-        "image": "product_images/Screenshot 2024-12-01 173619.png",
+        "image": "product_images/coke.png",
         "category":"Snacks and Drinks"
     },
     
@@ -670,7 +670,46 @@
         "packsize":"100g",
         "image": "product_images/Screenshot 2024-12-01 174851.png",
         "category":"Spices and dry fruits"
+    },
+    {
+        "id": 85,
+        "name":"Kashmiri Apple",
+        "price": 1000,
+        "packsize":"1kg",
+        "image": "https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png",
+        "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 86,
+        "name":"Aashirvaad Atta",
+        "price": 1250,
+        "packsize":"5kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 87,
+        "name":"Pulses",
+        "price": 160,
+        "packsize":"2kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWb9pWnxUOt7LaxFSZH20msJLWV1yyOHCgPQ&s",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 88,
+        "name":"Maggie Classic",
+        "price": 130,
+        "packsize":"4 pack",
+        "image": "https://www.quickpantry.in/cdn/shop/products/maggi-masala-instant-noodles-pack-of-4-280-g-quick-pantry.jpg?crop=center&height=1200&v=1710538813&width=1200",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 89,
+        "name":"Thumbs up",
+        "price": 40,
+        "packsize":"750ml",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MbhhJn_nbbtUsPfcBqIMEQEuNqfHVj8iyliln4pitapGRW_Sjv--P0UmE8fkqD5q-bc&usqp=CAU",
+        "category":"Snacks and Drinks"
     }
-
 ]
 

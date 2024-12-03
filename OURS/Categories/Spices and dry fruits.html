@@ -13,47 +13,69 @@
     <!--==Stylesheet/link to css file ====-->
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
     <link rel="stylesheet" type="text/css" href="../css/categories.css" />
+    <link rel="stylesheet" href="../css/items-&-cart.css"/>
   </head>
   <body>
-    <!--==Navigation Header===-->
-    <header class="header">
-      <!--logo (leftmost)-->
-      <a href="../HOMEPAGE.php">
-        <img class="logo" src="../images/logo.png" />
-      </a>
+    <div class="container">
+      <!--==Navigation Header===-->
+      <header class="header">
+        <!--logo (leftmost)-->
+        <a href="../HOMEPAGE.php">
+          <img class="logo" src="../images/logo.png" />
+        </a>
 
-      <!--menus in header-->
-      <nav class="navbar">
-        <a href="../homepage.html#category">Categories</a>
-        <a href="../features/smart_cart.html">Smart Cart</a>
-        <a href="../features/recommendations.html">Smart selections</a>
-        <a href="../features/orders.html">Orders</a>
-      </nav>
-      <!--menus in header-->
+        <!--menus in header-->
+        <nav class="navbar">
+          <a href="../homepage.html#category">Categories</a>
+          <a href="../features/smart_cart.html">Smart Cart</a>
+          <a href="../features/recommendations.html">Smart selections</a>
+          <a href="../features/orders.html">Orders</a>
+        </nav>
+        <!--menus in header-->
 
-      <!--icons in header-->
-      <div class="icons">
-        <div class="fa fa-bars" id="menu-btn"></div>
-        <a href="../features\search.html"><div class="fa fa-search" id="search-btn"></div>
-        <a href="../features\cart.html"><div class="fa fa-shopping-cart" id="cart-btn"></div>
-        <a href="../features\profile.html"><div class="fa fa-user" id="login-btn"></div>
+        <!--icons in header-->
+        <div class="icons">
+          <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-shopping-cart" id="icon-cart"></div>
+            <span class="cart-count">0</span>
+        </div>
+        <!--icons in header-->
+      </header>
+      <!--==Navigation Header end===-->
+
+      <!--==banner------------------->
+      <section class="banner-spices" id="home">
+        <div class="content">
+          <h1>SPICES & <br> DRY FRUITS</h1>
+        
+          <p>
+            Rich Flavors, Premium Picks – Spices and Dry Fruits That Inspire!
+          </p>
+
+          <!--<a href="#" class="btn">Explore features</a>-->
+        </div>
+      </section>
+      <div class="listProduct">
+        <div class="item">
+          <img src="product_images/Screenshot 2024-12-01 154113.png" alt="">
+          <h2>Product Name</h2>
+          <div class="price">₹200</div>
+          <button class="addCart">Add To cart</button>
+        </div>
       </div>
-      <!--icons in header-->
-    </header>
-    <!--==Navigation Header end===-->
+      <div class="cartTab">
+        <h1><center>Shopping Cart</h1></center>
+        <div class="listCart">
+          
+        </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+          </div>
+        </div>
 
-    <!--==banner------------------->
-    <section class="banner-spices" id="home">
-      <div class="content">
-        <h1>SPICES & <br> DRY FRUITS</h1>
-      
-        <p>
-          Rich Flavors, Premium Picks – Spices and Dry Fruits That Inspire!
-        </p>
-
-        <!--<a href="#" class="btn">Explore features</a>-->
-      </div>
-    </section>
+    </div>
     <!--==banner-end--------------->
+    <script>src="Spicesanddryfruits.js"</script>
   </body>
 </html>

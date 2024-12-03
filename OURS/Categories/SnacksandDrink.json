@@ -1,0 +1,82 @@
+[
+    {
+        "id": 65,
+        "name":"Oreo",
+        "price": 140,
+        "packsize":"123.5g",
+        "image": "product_images/Screenshot 2024-12-01 172834.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 66,
+        "name":"Hide & Seek",
+        "price": 26,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 172918.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 67,
+        "name":"Lotte Choco Pie",
+        "price": 142,
+        "packsize":"336g",
+        "image": "product_images/Screenshot 2024-12-01 173106.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 68,
+        "name":"Parle-G",
+        "price": 100,
+        "packsize":"800g",
+        "image": "product_images/Screenshot 2024-12-01 173227.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 69,
+        "name":"Lay's Chips",
+        "price": 45,
+        "packsize":"52g",
+        "image": "product_images/Screenshot 2024-12-01 173339.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 70,
+        "name":"Haldiram's Bhujia",
+        "price": 155,
+        "packsize":"600g",
+        "image": "product_images/Screenshot 2024-12-01 173445.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 71,
+        "name":"Pepsi Soft Drink",
+        "price": 100,
+        "packsize":"2.25l",
+        "image": "product_images/Screenshot 2024-12-01 173530.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 72,
+        "name":"Sprite",
+        "price": 111,
+        "packsize":"300ml x3",
+        "image": "product_images/Screenshot 2024-12-01 173619.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 73,
+        "name":"Frooti",
+        "price": 68,
+        "packsize":"1.2l",
+        "image": "product_images/Screenshot 2024-12-01 173716.png",
+        "category":"Snacks and Drinks"
+    },
+    {
+        "id": 74,
+        "name":"Coca-Cola",
+        "price": 45,
+        "packsize":"750ml",
+        "image": "product_images/Screenshot 2024-12-01 173619.png",
+        "category":"Snacks and Drinks"
+    },
+]

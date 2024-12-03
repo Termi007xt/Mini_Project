@@ -1,0 +1,82 @@
+[
+    {
+        "id": 75,
+        "name":"Suhana Paneer Butter Spice",
+        "price": 35,
+        "packsize":"50g",
+        "image": "product_images/Screenshot 2024-12-01 173949.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 76,
+        "name":"Daily Good cinnamon",
+        "price": 127,
+        "packsize":"150g",
+        "image": "product_images/Screenshot 2024-12-01 174028.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 77,
+        "name":"Catch jeera whole",
+        "price": 126,
+        "packsize":"150g",
+        "image": "product_images/Screenshot 2024-12-01 174118.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 78,
+        "name":"Nutraj Cashew",
+        "price": 612,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 174202.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 79,
+        "name":"Farmley Prasadam Makhana",
+        "price": 414,
+        "packsize":"200g",
+        "image": "product_images/Screenshot 2024-12-01 174324.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 80,
+        "name":"Daily Good Walnut",
+        "price": 295,
+        "packsize":"250g",
+        "image": "product_images/Screenshot 2024-12-01 174423.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 81,
+        "name":"Nutraj Black Raisin",
+        "price": 177,
+        "packsize":"250g",
+        "image": "product_images/Screenshot 2024-12-01 174545.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 82,
+        "name":"Farmley Snack Mix Dry Fruits",
+        "price": 293,
+        "packsize":"350g",
+        "image": "product_images/Screenshot 2024-12-01 174701.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 83,
+        "name":"Daily Good Almond",
+        "price": 399,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 174755.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    }
+]

@@ -93,7 +93,7 @@ if (!isset($_SESSION["user"])) {
               <span class="minus"><</span>
               <span>1</span>
               <span class="plus">></span> -->
-            <!-- </div>        -->
+            <!-- </div> -->
           <!-- </div> -->
         </div>
           <div class="btn">
