@@ -78,6 +78,30 @@
         "packsize":"1kg",
         "image": "../all-products/product_images/Screenshot 2024-12-01 163016.png",
         "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 90,
+        "name":"Blueberries imported",
+        "price": 203,
+        "packsize":"200g",
+        "image": "../all-products/product_images/Screenshot 2024-12-03 211040.png",
+        "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 91,
+        "name":"Pineapple",
+        "price": 62,
+        "packsize":"900g",
+        "image": "../all-producproduct_images/Screenshot 2024-12-03 211150.png",
+        "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 85,
+        "name":"Kashmiri Apple",
+        "price": 1000,
+        "packsize":"1kg",
+        "image": "https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png",
+        "category":"Fruits and Vegetables"
     }
 
 ]

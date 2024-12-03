@@ -70,5 +70,21 @@
         "packsize":"6 pcs",
         "image": "../all-products/product_images/Screenshot 2024-12-01 170834.png",
         "category":"Meats and Fish"
+    },
+    {
+        "id": 95,
+        "name":"Tuna",
+        "price": 196,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-03 212519.png",
+        "category":"Meat and Fish"
+    },
+    {
+        "id": 96,
+        "name":"Fish oil",
+        "price": 277,
+        "packsize":"400g",
+        "image": "product_images/a_oil.png",
+        "category":"Meat and Fish"
     }
 ]

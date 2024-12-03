@@ -4,7 +4,7 @@
         "name":"Dettol Antiseptic Liquid",
         "price": 308,
         "packsize":"1L",
-        "image": "product_images/Screenshot 2024-12-01 163530.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 163530.png",
         "category":"Health and Hygiene"
     },
     {
@@ -12,7 +12,7 @@
         "name":"Dove Cream Beauty Bar",
         "price": 418,
         "packsize":"125g",
-        "image": "product_images/Screenshot 2024-12-01 163652.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 163652.png",
         "category":"Health and Hygiene"
     },
     {
@@ -20,7 +20,7 @@
         "name":"Dettol Skincare Liquid Handwash Refill",
         "price": 166,
         "packsize":"110L",
-        "image": "product_images/Screenshot 2024-12-01 163847.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 163847.png",
         "category":"Health and Hygiene"
     },
     {
@@ -28,7 +28,7 @@
         "name":"Dove Gentle Exfoliating Beads Body Wash",
         "price": 425,
         "packsize":"800mL",
-        "image": "product_images/Screenshot 2024-12-01 164217.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 164217.png",
         "category":"Health and Hygiene"
     },
     {
@@ -36,7 +36,7 @@
         "name":"NIVEA Pearl & Beauty Women Deodorant Roll-On",
         "price": 249,
         "packsize":"200mL",
-        "image": "product_images/Screenshot 2024-12-01 164309.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 164309.png",
         "category":"Health and Hygiene"
     },
     {
@@ -44,7 +44,7 @@
         "name":"Oral-B Toothbrushes",
         "price": 165,
         "packsize":"pack of 4", 
-        "image": "product_images/Screenshot 2024-12-01 164427.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 164427.png",
         "category":"Health and Hygiene"
     },
     {
@@ -52,7 +52,7 @@
         "name":"Johnson's Baby Shampoo",
         "price": 480,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 164555.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 164555.png",
         "category":"Health and Hygiene"
     },
     {
@@ -60,7 +60,7 @@
         "name":"Kloy Ramie Scrubbing Bath Glove",
         "price": 179,
         "packsize":"1 pc",
-        "image": "product_images/Screenshot 2024-12-01 164725.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 164725.png",
         "category":"Health and Hygiene"
     },
     {
@@ -76,7 +76,23 @@
         "name":"Colgate MaxFresh Toothpaste",
         "price": 132,
         "packsize":"150g",
-        "image": "product_images/Screenshot 2024-12-01 161518.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 161518.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 103,
+        "name":"Vaseline cocoa serum",
+        "price": 189,
+        "packsize":"200ml",
+        "image": "product_images/Screenshot 2024-12-03 214140.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 104,
+        "name":"Foxtale body lotion",
+        "price": 330,
+        "packsize":"200ml",
+        "image": "product_images/Screenshot 2024-12-03 214307.png",
         "category":"Health and Hygiene"
     }
 ]

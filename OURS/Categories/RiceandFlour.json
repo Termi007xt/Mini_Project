@@ -70,5 +70,29 @@
         "packsize":"500g",
         "image": "../all-products/product_images/Screenshot 2024-12-01 172722.png",
         "category":"Rice and Flour"
+    },
+    {
+        "id": 94,
+        "name":"Tata Sampann Unpolished Moong daal",
+        "price": 89,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-03 212129.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 95,
+        "name":"Fortune Suji",
+        "price": 36,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-03 214743.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 86,
+        "name":"Aashirvaad Atta",
+        "price": 1250,
+        "packsize":"5kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s",
+        "category":"Rice and Flour"
     }
 ]

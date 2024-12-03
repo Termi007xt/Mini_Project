@@ -716,7 +716,7 @@
         "name":"Blueberries imported",
         "price": 203,
         "packsize":"200g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 211040.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -724,7 +724,7 @@
         "name":"Pineapple",
         "price": 62,
         "packsize":"900g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 211150.png",
         "category":"Fruits and Vegetables"
     },
     {
@@ -732,7 +732,7 @@
         "name":"ID batter",
         "price": 83,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 211711.png",
         "category":"Daily Essentials"
     },
     {
@@ -740,7 +740,7 @@
         "name":"MTR rava idli Instant Mix",
         "price": 199,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 212255.png",
         "category":"Daily Essentials"
     },
     {
@@ -748,7 +748,7 @@
         "name":"Tata Sampann Unpolished Moong daal",
         "price": 89,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 212129.png",
         "category":"Rice and Flour"
     },
     {
@@ -756,7 +756,7 @@
         "name":"Fortune Suji",
         "price": 36,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 214743.png",
         "category":"Rice and Flour"
     },
     {
@@ -764,7 +764,7 @@
         "name":"Tuna",
         "price": 196,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 212519.png",
         "category":"Meat and Fish"
     },
     {
@@ -772,7 +772,7 @@
         "name":"Fish oil",
         "price": 277,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/a_oil.png",
         "category":"Meat and Fish"
     },
     {
@@ -780,7 +780,7 @@
         "name":"Salt",
         "price": 59,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 213055.png",
         "category":"Spices and dry fruits"
     },
     {
@@ -788,48 +788,56 @@
         "name":"Lion dates",
         "price": 74,
         "packsize":"250g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "image": "product_images/Screenshot 2024-12-03 213117.png",
         "category":"Spices and dry fruits"
     },
     {
-        "id": 84,
-        "name":"Daily Good Pistachios",
-        "price": 233,
-        "packsize":"100g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
-        "category":"Spices and dry fruits"
+        "id": 99,
+        "name":"Jam",
+        "price": 80,
+        "packsize":"200g",
+        "image": "product_images/Screenshot 2024-12-03 213549.png",
+        "category":"Breakfast and cereal"
     },
     {
-        "id": 84,
-        "name":"Daily Good Pistachios",
-        "price": 233,
-        "packsize":"100g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
-        "category":"Spices and dry fruits"
+        "id": 100,
+        "name":"Tomato Ketchup",
+        "price": 79,
+        "packsize":"900g",
+        "image": "product_images/Screenshot 2024-12-03 213608.png",
+        "category":"Breakfast and cereal"
     },
     {
-        "id": 84,
-        "name":"Daily Good Pistachios",
-        "price": 233,
-        "packsize":"100g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
-        "category":"Spices and dry fruits"
+        "id": 101,
+        "name":"Baskin robins Hazelnut Rocks ",
+        "price": 316,
+        "packsize":"800ml",
+        "image": "product_images/Screenshot 2024-12-03 213804.png",
+        "category":"Snacks and Drinks"
     },
     {
-        "id": 84,
-        "name":"Daily Good Pistachios",
-        "price": 233,
-        "packsize":"100g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
-        "category":"Spices and dry fruits"
+        "id": 102,
+        "name":"Brownie fudge tub",
+        "price": 272,
+        "packsize":"700ml",
+        "image": "product_images/Screenshot 2024-12-03 213825.png",
+        "category":"Snacks and Drinks"
     },
     {
-        "id": 84,
-        "name":"Daily Good Pistachios",
-        "price": 233,
-        "packsize":"100g",
-        "image": "product_images/Screenshot 2024-12-01 174851.png",
-        "category":"Spices and dry fruits"
+        "id": 103,
+        "name":"Vaseline cocoa serum",
+        "price": 189,
+        "packsize":"200ml",
+        "image": "product_images/Screenshot 2024-12-03 214140.png",
+        "category":"Health and Hygiene"
+    },
+    {
+        "id": 104,
+        "name":"Foxtale body lotion",
+        "price": 330,
+        "packsize":"200ml",
+        "image": "product_images/Screenshot 2024-12-03 214307.png",
+        "category":"Health and Hygiene"
     }
 ]
 

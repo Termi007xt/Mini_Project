@@ -69,14 +69,13 @@ if (!isset($_SESSION["user"])) {
         </form>
         <!-- 2 icons -->
         <div class="icons">
-          <div class="fa fa-search" id="search-btn"></div>
-          <div class="fa fa-shopping-cart" id="icon-cart">
-          <span class="cart-counter">0</span>
-          </div>        
-          <a href="login-&-register/profile.php">
-            <div class="fa fa-user" id="login-btn"></div>
-          </a>
-
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="icon-cart">
+              <span class="cart-counter">0</span>
+            </div>
+          <div class="fa fa-user" id="login-btn"></div>
+          <!-- <a href="login-&-register/profile.php">
+          </a> -->
         </div>
       </header>
       <!--==Navigation Header end===-->
@@ -85,16 +84,7 @@ if (!isset($_SESSION["user"])) {
       <div class="cartTab">
         <h1>Shopping Cart</h1>
         <div class="listCart">
-          <!-- <div class="item"> -->
-            <!-- <img src="#", alt="Product">
-            <div class="name"></div>
-            <div class="totalPrice"></div>
-            <div class="quantity">
-              <span class="minus"><</span>
-              <span>1</span>
-              <span class="plus">></span> -->
-            <!-- </div> -->
-          <!-- </div> -->
+          
         </div>
           <div class="btn">
             <button class="close">CLOSE</button>
@@ -102,7 +92,7 @@ if (!isset($_SESSION["user"])) {
         </div>
       </div>      
     </div>
-    <script src="homepage.js"></script>
+    <script src="js/homepage.js"defer></script>
 
 
     <!--==banner------------------->
@@ -353,27 +343,6 @@ if (!isset($_SESSION["user"])) {
     <p>©️ Smart Groceries</p>
   </div>
 </div>
-
-<!-- cart functionality -->
-<div class="cartTab">
-        <h1><center>Shopping Cart</h1></center>
-        <div class="listCart">
-          <div class="item">
-            <img src="product_images/Screenshot 2024-12-01 154113.png", alt="Product">
-            <div class="name">NAME</div>
-            <div class="totalPrice">₹200</div>
-            <div class="quantity">
-              <span class="minus"><</span>
-              <span>1</span>
-              <span class="plus">></span>
-            </div>       
-          </div>
-        </div>
-          <div class="btn">
-            <button class="close">CLOSE</button>
-            <button class="checkOut">Check Out</button>
-        </div>
-    </div>
 
 <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxUs3_VJlRWedKHqDkeidvOgxJ91bnH-D3wkDk-WaPMVrfSqjW30zcn7ExLZpEbeBBr/exec'

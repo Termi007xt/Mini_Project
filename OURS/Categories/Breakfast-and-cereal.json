@@ -4,7 +4,7 @@
         "name":"Kwality Choco Flakes - Made With Whole Wheat Zero% Maida",
         "price": 403,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 154113.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154113.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -12,7 +12,7 @@
         "name":"Tata Soulfull Millet Granola - Honey, Fruits, Nuts & Seeds",
         "price": 275,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 154128.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154128.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -20,7 +20,7 @@
         "name":"Saffola Massala Oats",
         "price": 194,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 154151.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154151.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -28,7 +28,7 @@
         "name":"Kelloggs's Muesli Fruit Nut & Seeds",
         "price": 390,
         "packsize":"175g",
-        "image": "product_images/Screenshot 2024-12-01 154213.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154213.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -36,7 +36,7 @@
         "name":"Nutella Hazelnut",
         "price": 364,
         "packsize":"350g",
-        "image": "product_images/Screenshot 2024-12-01 154248.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154248.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -44,7 +44,7 @@
         "name":"MyFitness Peanut Butter Cripsy",
         "price": 200,
         "packsize":"510g",
-        "image": "product_images/Screenshot 2024-12-01 154331.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154331.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -52,7 +52,7 @@
         "name":"Dabur Honey",
         "price": 197,
         "packsize":"450g",
-        "image": "product_images/Screenshot 2024-12-01 154419.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154419.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -60,7 +60,7 @@
         "name":"Yoga Bar Muesli",
         "price": 262,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 154850.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 154850.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -68,7 +68,7 @@
         "name":"Quaker Oats",
         "price": 182,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 155041.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 155041.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -76,7 +76,7 @@
         "name":"English Oven Milk Bread",
         "price": 45,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 155150.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 155150.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -92,7 +92,7 @@
         "name":"Lipton Green Tea",
         "price": 149,
         "packsize":"1pack(25 tea bags)",
-        "image": "product_images/Screenshot 2024-12-01 155445.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 155445.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -100,7 +100,7 @@
         "name":"Taj Mahal Tea",
         "price": 444,
         "packsize":"500g",
-        "image": "product_images/Screenshot 2024-12-01 155806.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 155806.png",
         "category":"Breakfast and cereal"
     },
     {
@@ -109,6 +109,22 @@
         "price": 60,
         "packsize":"400g",
         "image": "https://www.jiomart.com/images/product/original/490017700/modern-multigrain-superseed-bread-400-g-product-images-o490017700-p490017700-0-202203151702.jpg?im=Resize=(1000,1000)",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 99,
+        "name":"Jam",
+        "price": 80,
+        "packsize":"200g",
+        "image": "product_images/Screenshot 2024-12-03 213549.png",
+        "category":"Breakfast and cereal"
+    },
+    {
+        "id": 100,
+        "name":"Tomato Ketchup",
+        "price": 79,
+        "packsize":"900g",
+        "image": "product_images/Screenshot 2024-12-03 213608.png",
         "category":"Breakfast and cereal"
     }
 ]

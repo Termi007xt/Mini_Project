@@ -78,6 +78,30 @@
         "packsize":"5kg",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s",
         "category":"Daily Essentials"
+    },
+    {
+        "id": 92,
+        "name":"ID batter",
+        "price": 83,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-03 211711.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 93,
+        "name":"MTR rava idli Instant Mix",
+        "price": 199,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-03 212255.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 87,
+        "name":"Pulses",
+        "price": 160,
+        "packsize":"2kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWb9pWnxUOt7LaxFSZH20msJLWV1yyOHCgPQ&s",
+        "category":"Daily Essentials"
     }
 
 ]
