@@ -1,4 +1,4 @@
-<?php
+<center?php
 session_start();
 if (!isset($_SESSION["user"])) {
    header("Location: login-&-register/login.php");
@@ -71,12 +71,11 @@ if (!isset($_SESSION["user"])) {
         <div class="icons">
             <div class="fa fa-search" id="search-btn"></div>
             <div class="fa fa-shopping-cart" id="icon-cart">
-              <span class="cart-counter">0</span>
+              <span class="cart-counter"></span>
             </div>
-          <div class="fa fa-user" id="login-btn"></div>
-          <!-- <a href="login-&-register/profile.php">
-          </a> -->
-        </div>
+            <a href="login-&-register/profile.php">
+              <div class="fa fa-user" id="login-btn"></div>
+            </a>
       </header>
       <!--==Navigation Header end===-->
 
@@ -116,9 +115,10 @@ if (!isset($_SESSION["user"])) {
     <!--heading---------------->
     <div class="category-heading ">
       <h2>Categories</h2>
-        </div> 
-          <a href="all-products/all-items.html" class="show-all-button">Show All</a>
-        </div>
+      <span>
+        <a href="all-products/all-items.html" class="show-all-button">Show All</a>
+      </span>
+    </div>
     <section id="category">
       <!--box-container---------->
       <div class="category-container">
@@ -171,6 +171,7 @@ if (!isset($_SESSION["user"])) {
     </section>
     <!--category-end----------------------------------->
 
+
   </body>
 </html>
 
@@ -207,34 +208,39 @@ if (!isset($_SESSION["user"])) {
   <h2>Popular Products</h2>
 </div>
 <div class="productsnumber">
-  <div class="product-card">
-    <img
-      src="https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png"
-      alt="Product 1"
-      class="product-img"
-    />
-    <div class="product-details">
-      <h3>Kashmiri Apple</h3>
-      <p>1 kg</p>
-      <p>1000</p>
+  <a href="Categories/Fruits and Vegetables.html" class="product-link">
+    <div class="product-card">
+    
+      <img
+        src="https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png"
+        alt="Product 1"
+        class="product-img"
+      />
+      <div class="product-details">
+        <h3>Kashmiri Apple</h3>
+        <p>1 kg</p>
+        <p>1000</p>
+      </div>
     </div>
-  </div>
+  </a>  
 
-  <div class="product-card">
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
-      width="40px"
-      ,
-      height="40px"
-      alt="Product 2"
-      class="product-img"
-    />
-    <div class="product-details">
-      <h3>Aashirvaad Atta</h3>
-      <p>5 kg</p>
-      <p>1250</p>
+
+  <a href="Categories/Fruits and Vegetables.html" class="product-link"></a>
+    <div class="product-card">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
+        width="40px"
+        ,
+        height="40px"
+        alt="Product 2"
+        class="product-img"
+      />
+      <div class="product-details">
+        <h3>Aashirvaad Atta</h3>
+        <p>5 kg</p>
+        <p>1250</p>
+      </div>
     </div>
-  </div>
 
   <div class="product-card">
     <img
@@ -296,18 +302,19 @@ if (!isset($_SESSION["user"])) {
             <i class="fa-regular fa-envelope"></i>help@smartgroceries.dev
           </p>
           <p><i class="fa-solid fa-phone"></i>080-99816548</p>
-          <div class="social-icons">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+          <p><i class="fa-solid fa-phone"></i>Visit us here:</p>
+          <div style="width: 90%; border-radius: 15px; overflow: hidden;">
+            <iframe 
+                width="100%" 
+                height="200" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                style="border-radius: 15px;" 
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=13.149615050000001,77.60684816767413+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
           </div>
-          <a href="PICS/guide.docx" download class="btn btn2">Download Guide</a>
         </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
@@ -325,6 +332,17 @@ if (!isset($_SESSION["user"])) {
       </div>
     </div>
   </div>
+  <div class="social-icons"><center>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+    </center></div>
 
   <!-- About Us Section -->
   <div id="about-us">

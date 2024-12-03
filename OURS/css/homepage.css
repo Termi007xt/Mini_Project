@@ -70,6 +70,7 @@ body {
   border-bottom-right-radius: 12px;
 }
 
+
 /* logo properties */
 .header .logo {
   height: 90px;
@@ -120,14 +121,15 @@ body {
   text-align: center;
   cursor: pointer;
 }
+
 .icons{
   position: relative;
 }
 
 .header .icons .cart-counter {
   display: flex;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: red;
   justify-content: center;
   align-items: center;
@@ -305,15 +307,17 @@ section {
   margin-right: auto;
 }
 
-.category-heading span {
-  margin-top: 18px;
-  color: #000; /* Initial color */
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  transition: color 0.3s; /* Smooth color transition */
-}
+/* .category-heading span {
+  color: #a7a7a7;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  margin-left: 88rem;
+} */
 
 .category-heading span:hover {
   color: var(--green);
+  cursor: pointer;
 }
 .category-heading,
 .product-heading {
@@ -396,7 +400,7 @@ section {
 }
 
 .product-card {
-  width: 30%; /* Each product will take 30% of the container width */
+  width: calc(33.333% - 20px);/* Each product will take 30% of the container width */
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
@@ -441,6 +445,10 @@ section {
   margin-top: 50px;
   margin-left: 11.9rem;
 }
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*-------------------Contact-----------------*/
 .row {
@@ -466,7 +474,7 @@ section {
 }
 
 .contact-left p {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 16px;
 }
 
@@ -478,7 +486,8 @@ section {
 }
 
 .social-icons {
-  margin-top: 30px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .social-icons a {
@@ -569,8 +578,7 @@ section {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  padding: 25px;
-  background: #fffddd;
+  padding: 25px;  
   font-weight: 500;
   margin-top: -50px;
 }
@@ -650,7 +658,7 @@ nav .fa-solid {
 
 .show-all-button {
     display: inline-block;
-    margin-left: 1250px;
+    margin-left: 80rem;
     padding: 10px 20px;
     background-color: #7ed957;
     color: rgb(255, 255, 255);

@@ -1,9 +1,9 @@
 // Selecting elements
-let listProductHTML = document.querySelector('.listProduct');
-let listCartHTML = document.querySelector('.listCart');
+let listProductHTML = document.querySelector('.listProduct'); // For product listing
+let listCartHTML = document.querySelector('.listCart'); // For cart items
 let iconCart = document.querySelector('#icon-cart'); // Cart icon
 let iconCartSpan = document.querySelector('.cart-count'); // Cart count
-let body = document.querySelector('body');
+let body = document.querySelector('body'); // Body element
 let closeCart = document.querySelector('.close'); // Close button in the cart
 
 // Product and cart data
@@ -12,17 +12,17 @@ let cart = [];
 
 // Event listener to toggle cart visibility
 iconCart.addEventListener('click', () => {
-    body.classList.toggle('showCart');
+    body.classList.toggle('showCart'); // Toggles cart visibility
 });
 
 closeCart.addEventListener('click', () => {
-    body.classList.remove('showCart');
+    body.classList.remove('showCart'); // Hides cart
 });
 
 // Load products and initialize app
 const initApp = () => {
     // Fetch products from products.json
-    fetch('products.json')
+    fetch('OURS/homepage-products.json') // Replace with your JSON file path
         .then(response => response.json())
         .then(data => {
             products = data; // Store products in the global array
@@ -47,7 +47,7 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = `
-                <img src="${product.image}" alt="">
+                <img src="${product.image}" alt="${product.name}">
                 <h2>${product.name}</h2>
                 <div class="price">₹${product.price}</div>
                 <button class="addCart">Add To Cart</button>`;

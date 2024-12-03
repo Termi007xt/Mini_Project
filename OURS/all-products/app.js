@@ -1,10 +1,10 @@
 // Selecting elements
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
-let iconCart = document.querySelector('#icon-cart'); // Cart icon
-let iconCartSpan = document.querySelector('.cart-count'); // Cart count
+let iconCart = document.querySelector('#icon-cart');
+let iconCartSpan = document.querySelector('.cart-count');
 let body = document.querySelector('body');
-let closeCart = document.querySelector('.close'); // Close button in the cart
+let closeCart = document.querySelector('.close'); 
 
 // Product and cart data
 let products = [];
@@ -25,7 +25,7 @@ const initApp = () => {
     fetch('products.json')
         .then(response => response.json())
         .then(data => {
-            products = data; // Store products in the global array
+            products = data; 
             addDataToHTML();
 
             // Load cart from local storage
@@ -39,7 +39,7 @@ const initApp = () => {
 
 // Display products in the DOM
 const addDataToHTML = () => {
-    listProductHTML.innerHTML = ''; // Clear existing product data
+    listProductHTML.innerHTML = ''; 
 
     if (products.length > 0) {
         products.forEach(product => {
@@ -72,7 +72,7 @@ const addToCart = (productId) => {
 
 // Update cart in the DOM
 const addCartToHTML = () => {
-    listCartHTML.innerHTML = ''; // Clear existing cart items
+    listCartHTML.innerHTML = ''; 
     let totalQuantity = 0;
 
     if (cart.length > 0) {
@@ -101,7 +101,7 @@ const addCartToHTML = () => {
         });
     }
 
-    iconCartSpan.textContent = totalQuantity; // Update cart count
+    iconCartSpan.textContent = totalQuantity; 
 };
 
 // Save cart to local storage
@@ -142,7 +142,7 @@ const changeCartQuantity = (productId, action) => {
             cart[cartItemIndex].quantity -= 1;
 
             if (cart[cartItemIndex].quantity <= 0) {
-                cart.splice(cartItemIndex, 1); // Remove item if quantity is 0
+                cart.splice(cartItemIndex, 1);
             }
         }
     }
@@ -151,5 +151,4 @@ const changeCartQuantity = (productId, action) => {
     saveCartToLocalStorage();
 };
 
-// Initialize the app
 initApp();

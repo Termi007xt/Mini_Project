@@ -94,5 +94,13 @@
         "packsize":"5kg",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s",
         "category":"Rice and Flour"
+    },
+    {
+        "id": 87,
+        "name":"Pulses",
+        "price": 160,
+        "packsize":"2kg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWb9pWnxUOt7LaxFSZH20msJLWV1yyOHCgPQ&s",
+        "category":"Daily Essentials"
     }
 ]

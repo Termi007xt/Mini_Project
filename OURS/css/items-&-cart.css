@@ -44,12 +44,12 @@ body {
     color: var(--light-color);
     text-decoration: none;
     font-weight: 500;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 .header .icons .fa {
     color: black;
-    margin: 0 5px;
+    margin: 0 3px;
     cursor: pointer;
 }
 
@@ -185,7 +185,7 @@ body.showCart .cartTab {
 }
 .cartTab .listCart .quantity span:nth-child(2){
     background-color: transparent;
-    color: #000000;
+    color: #ffffff;
     font-size: small;
     cursor: auto;
 }

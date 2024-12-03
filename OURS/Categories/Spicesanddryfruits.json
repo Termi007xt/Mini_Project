@@ -78,5 +78,21 @@
         "packsize":"100g",
         "image": "../all-products/product_images/Screenshot 2024-12-01 174851.png",
         "category":"Spices and dry fruits"
+    },
+    {
+        "id": 97,
+        "name":"Salt",
+        "price": 59,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-03 213055.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 98,
+        "name":"Lion dates",
+        "price": 74,
+        "packsize":"250g",
+        "image": "product_images/Screenshot 2024-12-03 213117.png",
+        "category":"Spices and dry fruits"
     }
 ]
