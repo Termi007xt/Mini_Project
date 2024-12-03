@@ -85,15 +85,15 @@ if (!isset($_SESSION["user"])) {
       <div class="cartTab">
         <h1>Shopping Cart</h1>
         <div class="listCart">
-          <div class="item">
-            <img src="#", alt="Product">
+          <!-- <div class="item"> -->
+            <!-- <img src="#", alt="Product">
             <div class="name"></div>
             <div class="totalPrice"></div>
             <div class="quantity">
               <span class="minus"><</span>
               <span>1</span>
-              <span class="plus">></span>
-            </div>       
+              <span class="plus">></span> -->
+            <!-- </div>        -->
           </div>
         </div>
           <div class="btn">
