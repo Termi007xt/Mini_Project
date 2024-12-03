@@ -1,0 +1,82 @@
+[
+    {
+        "id": 55,
+        "name":"India Gate Basmati Rice",
+        "price": 149,
+        "packsize":"1kg",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 171045.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 56,
+        "name":"Sattu Atta",
+        "price": 146,
+        "packsize":"500g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 171241.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 57,
+        "name":"Filet",
+        "price": 132,
+        "packsize":"150g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 170241.png",
+        "category":"Meat and Fish"
+    },
+    {
+        "id": 58,
+        "name":"Rajdhani Besan",
+        "price": 66,
+        "packsize":"500g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 171510.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 59,
+        "name":"Fortune Thick Poha",
+        "price": 48,
+        "packsize":"500g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 171617.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 60,
+        "name":"Dhara Groundnut Oil",
+        "price": 221,
+        "packsize":"1l",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 172156.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 61,
+        "name":"Saffola Gold Oil",
+        "price": 175,
+        "packsize":"1l",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 172339.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 62,
+        "name":"Gowardhan Pure Ghee",
+        "price": 728,
+        "packsize":"1l",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 172500.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 63,
+        "name":"Fortune Chakki Freah Atta",
+        "price": 446,
+        "packsize":"10kg",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 172620.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 64,
+        "name":"Daily Good Maida",
+        "price": 37,
+        "packsize":"500g",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 172722.png",
+        "category":"Rice and Flour"
+    }
+]

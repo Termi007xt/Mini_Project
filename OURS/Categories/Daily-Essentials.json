@@ -12,7 +12,7 @@
         "name":"iD Curd Cup",
         "price":80,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 160843.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 160843.png",
         "category":"Daily Essentials"
     },
     {
@@ -20,7 +20,7 @@
         "name":"Amul Butter",
         "price": 295,
         "packsize":"400g",
-        "image": "product_images/Screenshot 2024-12-01 160928.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 160928.png",
         "category":"Daily Essentials"
     },
     {
@@ -28,7 +28,7 @@
         "name":"Colgate MaxFresh Toothpaste",
         "price": 132,
         "packsize":"150g",
-        "image": "product_images/Screenshot 2024-12-01 161518.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 161518.png",
         "category":"Daily Essentials"
     },
     {
@@ -36,7 +36,7 @@
         "name":"Surf Excel Easy Wash",
         "price": 152,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 161713.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 161713.png",
         "category":"Daily Essentials"
     },
     {
@@ -44,7 +44,7 @@
         "name":"Eggoz Farm Fresh Eggs",
         "price": 121,
         "packsize":"10 pieces",
-        "image": "product_images/Screenshot 2024-12-01 161902.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 161902.png",
         "category":"Daily Essentials"
     },
     {
@@ -52,7 +52,7 @@
         "name":"Madhur Sugar",
         "price": 56,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 161942.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 161942.png",
         "category":"Daily Essentials"
     },
     {
@@ -60,7 +60,7 @@
         "name":"Tata Salt",
         "price": 28,
         "packsize":"1kg",
-        "image": "product_images/Screenshot 2024-12-01 162035.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162035.png",
         "category":"Daily Essentials"
     },
     {
@@ -68,7 +68,7 @@
         "name":"Britannia Pav",
         "price": 25,
         "packsize":"250g",
-        "image": "product_images/Screenshot 2024-12-01 162128.png",
+        "image": "../all-products/product_images/Screenshot 2024-12-01 162128.png",
         "category":"Daily Essentials"
     },
     {
