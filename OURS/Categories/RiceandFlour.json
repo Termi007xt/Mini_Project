@@ -16,14 +16,6 @@
         "category":"Rice and Flour"
     },
     {
-        "id": 57,
-        "name":"Filet",
-        "price": 132,
-        "packsize":"150g",
-        "image": "../all-products/product_images/Screenshot 2024-12-01 170241.png",
-        "category":"Meat and Fish"
-    },
-    {
         "id": 58,
         "name":"Rajdhani Besan",
         "price": 66,
