@@ -94,7 +94,7 @@ if (!isset($_SESSION["user"])) {
               <span>1</span>
               <span class="plus">></span> -->
             <!-- </div>        -->
-          </div>
+          <!-- </div> -->
         </div>
           <div class="btn">
             <button class="close">CLOSE</button>
