@@ -22,7 +22,7 @@ closeCart.addEventListener('click', () => {
 // Load products and initialize app
 const initApp = () => {
     // Fetch products from products.json
-    fetch('SnacksandDrinks.json')
+    fetch('SnacksandDrink.json')
         .then(response => response.json())
         .then(data => {
             products = data; // Store products in the global array

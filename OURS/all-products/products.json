@@ -587,7 +587,7 @@
         "name":"Coca-Cola",
         "price": 45,
         "packsize":"750ml",
-        "image": "product_images/coke.png",
+        "image": "product_images/Screenshot 2024-12-01 173819.png",
         "category":"Snacks and Drinks"
     },
     
@@ -710,6 +710,126 @@
         "packsize":"750ml",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MbhhJn_nbbtUsPfcBqIMEQEuNqfHVj8iyliln4pitapGRW_Sjv--P0UmE8fkqD5q-bc&usqp=CAU",
         "category":"Snacks and Drinks"
+    },
+    {
+        "id": 90,
+        "name":"Blueberries imported",
+        "price": 203,
+        "packsize":"200g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 91,
+        "name":"Pineapple",
+        "price": 62,
+        "packsize":"900g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Fruits and Vegetables"
+    },
+    {
+        "id": 92,
+        "name":"ID batter",
+        "price": 83,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 93,
+        "name":"MTR rava idli Instant Mix",
+        "price": 199,
+        "packsize":"1kg",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Daily Essentials"
+    },
+    {
+        "id": 94,
+        "name":"Tata Sampann Unpolished Moong daal",
+        "price": 89,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 95,
+        "name":"Fortune Suji",
+        "price": 36,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Rice and Flour"
+    },
+    {
+        "id": 95,
+        "name":"Tuna",
+        "price": 196,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Meat and Fish"
+    },
+    {
+        "id": 96,
+        "name":"Fish oil",
+        "price": 277,
+        "packsize":"400g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Meat and Fish"
+    },
+    {
+        "id": 97,
+        "name":"Salt",
+        "price": 59,
+        "packsize":"500g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 98,
+        "name":"Lion dates",
+        "price": 74,
+        "packsize":"250g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
+    },
+    {
+        "id": 84,
+        "name":"Daily Good Pistachios",
+        "price": 233,
+        "packsize":"100g",
+        "image": "product_images/Screenshot 2024-12-01 174851.png",
+        "category":"Spices and dry fruits"
     }
 ]
 
