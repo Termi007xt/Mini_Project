@@ -18,14 +18,14 @@ body {
     position: relative;
 }
 
-.header .icons span {
+.header .icons .cart-count {
     display: flex;
     width: 20px;
     height: 20px;
     background-color: red;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #fff;    
     border-radius: 50%;
     position: absolute;
     top: 70%;

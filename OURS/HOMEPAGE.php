@@ -26,7 +26,6 @@ if (!isset($_SESSION["user"])) {
     <!--JS file link for functionality-->
     <script src="js/script.js"></script>
     <script src="js/search.js"defer></script>
-    <script> src="all-products/app.js"</script>
 
     <!--==fav-icon======-->
     <link rel="icon" href="images/fav-icon.png" type="image/png">
@@ -45,44 +44,66 @@ if (!isset($_SESSION["user"])) {
 
   <!-- Visible portion of website-->
   <body>
-    <!--==Navigation Header===-->
-    <header class="header">
-      <!--logo (leftmost)-->
-      <a href="#"> <img class="logo" src="images/logo.png" /> </a>
+    <div class="container">
+      <!--==Navigation Header===-->
+      <header class="header">
+        <!--logo (leftmost)-->
+        <a href="#"> <img class="logo" src="images/logo.png" /> </a>
 
-      <!--menus in header-->
-      <nav class="navbar">
-        <a href="#category">Categories</a>
-        <a href="features\smartcart.php">Smart Cart</a>
-        <a href="features\recommendations.html">Smart selections</a>
-        <a href="features\orders.html">Orders</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#about-us">About Us</a>
-      </nav>
-      <!--menus in header-->
+        <!--menus in header-->
+        <nav class="navbar">
+          <a href="#category">Categories</a>
+          <a href="features\smartcart.php">Smart Cart</a>
+          <a href="features\recommendations.html">Smart selections</a>
+          <a href="features\orders.html">Orders</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#about-us">About Us</a>
+        </nav>
+        <!--menus in header-->
 
-      <!--icons in header-->
-      <div class="icons">
-        <div class="fa fa-bars" id="menu-btn"></div>
-        <div class="fa fa-search" id="search-btn"></div>
-        <div class="fa fa-shopping-cart" id="cart-btn">
-        <a href="#">  
-        <span class="cart-count">0</span>
-        </div>        
-        <a href="login-&-register/profile.php">
-          <div class="fa fa-user" id="login-btn"></div>
-        </a>
+        <!--icons in header-->
+        <!-- search bar -->
+        <form class="search-form">  
+            <input type="search" id="search-box" placeholder="Search here..">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+        <!-- 2 icons -->
+        <div class="icons">
+          <div class="fa fa-search" id="search-btn"></div>
+          <div class="fa fa-shopping-cart" id="icon-cart">
+          <span class="cart-counter">0</span>
+          </div>        
+          <a href="login-&-register/profile.php">
+            <div class="fa fa-user" id="login-btn"></div>
+          </a>
 
-      </div>
-      <!-- search bar -->
-      <form class="search-form">  
-          <input type="search" id="search-box" placeholder="Search here..">
-          <label for="search-box" class="fa fa-search"></label>
-      </form>
+        </div>
+      </header>
+      <!--==Navigation Header end===-->
 
-      <!--icons in header-->
-    </header>
-    <!--==Navigation Header end===-->
+      <!-- cart func -->
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+          <div class="item">
+            <img src="#", alt="Product">
+            <div class="name"></div>
+            <div class="totalPrice"></div>
+            <div class="quantity">
+              <span class="minus"><</span>
+              <span>1</span>
+              <span class="plus">></span>
+            </div>       
+          </div>
+        </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+      </div>      
+    </div>
+    <script src="homepage.js"></script>
+
 
     <!--==banner------------------->
     <section class="banner" id="home">

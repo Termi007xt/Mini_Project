@@ -123,9 +123,26 @@ body {
 .icons{
   position: relative;
 }
+
+.header .icons .cart-counter {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  right: -5px;
+}
+
+
 .fa-shopping-cart{
   position: relative;
 }
+
 
  /* .header .icons .cart-count {
   position: absolute;
