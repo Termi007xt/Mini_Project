@@ -208,39 +208,35 @@ if (!isset($_SESSION["user"])) {
   <h2>Popular Products</h2>
 </div>
 <div class="productsnumber">
-  <a href="Categories/Fruits and Vegetables.html" class="product-link">
-    <div class="product-card">
+  <div class="product-card">
     
-      <img
-        src="https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png"
-        alt="Product 1"
-        class="product-img"
-      />
-      <div class="product-details">
-        <h3>Kashmiri Apple</h3>
-        <p>1 kg</p>
-        <p>1000</p>
-      </div>
+  <img
+      src="https://5.imimg.com/data5/WY/UT/MY-26933826/apple-2g-china-1-kg.png"
+      alt="Product 1"
+      class="product-img"
+    />
+    <div class="product-details">
+      <h3><a href="Categories/Fruits and Vegetables.html">Kashmiri Apple</a></h3>
+      <p>1 kg</p>
+      <p>1000</p>
     </div>
-  </a>  
+  </div>
 
-
-  <a href="Categories/Fruits and Vegetables.html" class="product-link"></a>
-    <div class="product-card">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
-        width="40px"
-        ,
-        height="40px"
-        alt="Product 2"
-        class="product-img"
-      />
-      <div class="product-details">
-        <h3>Aashirvaad Atta</h3>
-        <p>5 kg</p>
-        <p>1250</p>
-      </div>
+  <div class="product-card">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
+      width="40px"
+      ,
+      height="40px"
+      alt="Product 2"
+      class="product-img"
+    />
+    <div class="product-details">
+      <h3><a href="Categories/Rice and Flour.html">Aashirvaad Atta</a></h3>
+      <p>5 kg</p>
+      <p>1250</p>
     </div>
+  </div>
 
   <div class="product-card">
     <img
@@ -249,7 +245,7 @@ if (!isset($_SESSION["user"])) {
       class="product-img"
     />
     <div class="product-details">
-      <h3>Pulses</h3>
+      <h3><a href="Categories/Rice and Flour.html">Pulses</a></h3>
       <p>2 Kgs</p>
       <p>160</p>
     </div>
@@ -262,7 +258,7 @@ if (!isset($_SESSION["user"])) {
       class="product-img"
     />
     <div class="product-details">
-      <h3>Maggie Classic</h3>
+      <h3><a href="Categories/SnacksandDrink.html">Maggie Classic</a></h3>
       <p>4 pack</p>
       <p>130</p>
     </div>
@@ -275,7 +271,7 @@ if (!isset($_SESSION["user"])) {
       class="product-img"
     />
     <div class="product-details">
-      <h3>Nandini Samrudhi Milk Pink</h3>
+      <h3><a href="Categories/Daily-Essentials.html">Nandini Samrudhi Milk Pink</a></h3>
       <p>500 ml</p>
       <p>27</p>
     </div>
@@ -284,12 +280,13 @@ if (!isset($_SESSION["user"])) {
   <div class="product-card">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MbhhJn_nbbtUsPfcBqIMEQEuNqfHVj8iyliln4pitapGRW_Sjv--P0UmE8fkqD5q-bc&usqp=CAU" alt="Product 6" class="product-img"/>
     <div class="product-details">
-      <h3>Thumps up</h3>
+      <h3><a href="Categories/Snacks and Drinks.html">Thumps up</a></h3>
       <p>750 ml</p>
       <p>40</p>
     </div>
   </div>
 </div>
+
 
 
 <!------contact us--------------------------------->
@@ -302,7 +299,7 @@ if (!isset($_SESSION["user"])) {
             <i class="fa-regular fa-envelope"></i>help@smartgroceries.dev
           </p>
           <p><i class="fa-solid fa-phone"></i>080-99816548</p>
-          <p><i class="fa-solid fa-phone"></i>Visit us here:</p>
+          <p><i class="fa-solid fa-map-pin"></i>Visit us here:</p>
           <div style="width: 90%; border-radius: 15px; overflow: hidden;">
             <iframe 
                 width="100%" 
@@ -333,15 +330,15 @@ if (!isset($_SESSION["user"])) {
     </div>
   </div>
   <div class="social-icons"><center>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
     </center></div>
 
   <!-- About Us Section -->

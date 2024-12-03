@@ -1,10 +1,10 @@
 // Selecting elements
-let listProductHTML = document.querySelector('.listProduct'); // For product listing
-let listCartHTML = document.querySelector('.listCart'); // For cart items
-let iconCart = document.querySelector('#icon-cart'); // Cart icon
-let iconCartSpan = document.querySelector('.cart-count'); // Cart count
-let body = document.querySelector('body'); // Body element
-let closeCart = document.querySelector('.close'); // Close button in the cart
+let listProductHTML = document.querySelector('.listProduct'); 
+let listCartHTML = document.querySelector('.listCart'); 
+let iconCart = document.querySelector('#icon-cart'); 
+let iconCartSpan = document.querySelector('.cart-count'); 
+let body = document.querySelector('body'); 
+let closeCart = document.querySelector('.close'); 
 
 // Product and cart data
 let products = [];

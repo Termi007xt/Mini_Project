@@ -25,7 +25,8 @@ const initApp = () => {
     fetch('Breakfast-and-cereal.json')
         .then(response => response.json())
         .then(data => {
-            products = data; // Store products in the global array
+            // Store all products in the global array
+            products = data; 
             addDataToHTML();
 
             // Load cart from local storage
@@ -37,7 +38,7 @@ const initApp = () => {
         .catch(error => console.error('Error fetching products:', error));
 };
 
-// Display products in the DOM
+// Display products in the DOM (filtered by category)
 const addDataToHTML = () => {
     listProductHTML.innerHTML = ''; // Clear existing product data
 
@@ -49,6 +50,7 @@ const addDataToHTML = () => {
             newProduct.innerHTML = `
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
+                <div class="category">Category: ${product.category}</div>
                 <div class="price">₹${product.price}</div>
                 <button class="addCart">Add To Cart</button>`;
             listProductHTML.appendChild(newProduct);
@@ -61,7 +63,10 @@ const addToCart = (productId) => {
     let positionInCart = cart.findIndex(item => item.product_id == productId);
 
     if (positionInCart < 0) {
-        cart.push({ product_id: productId, quantity: 1 });
+        let product = products.find(p => p.id == productId); // Find the full product details
+        if (product) {
+            cart.push({ product_id: productId, quantity: 1, category: product.category }); // Include category in cart item
+        }
     } else {
         cart[positionInCart].quantity += 1;
     }
@@ -90,6 +95,7 @@ const addCartToHTML = () => {
                         <img src="${product.image}" alt="${product.name}">
                     </div>
                     <div class="name">${product.name}</div>
+                    <div class="category">Category: ${cartItem.category}</div>  <!-- Display category in cart -->
                     <div class="totalPrice">₹${product.price * cartItem.quantity}</div>
                     <div class="quantity">
                         <span class="minus">-</span>
@@ -153,4 +159,3 @@ const changeCartQuantity = (productId, action) => {
 
 // Initialize the app
 initApp();
-
