@@ -92,6 +92,8 @@ if (!isset($_SESSION["user"])) {
       </div>      
     </div>
     <script src="js/homepage.js"defer></script>
+    <script src="js/cart.js"defer></script>
+
 
 
     <!--==banner------------------->
@@ -299,8 +301,8 @@ if (!isset($_SESSION["user"])) {
             <i class="fa-regular fa-envelope"></i>help@smartgroceries.dev
           </p>
           <p><i class="fa-solid fa-phone"></i>080-99816548</p>
-          <p><i class="fa-solid fa-map-pin"></i>Visit us here:</p>
-          <div style="width: 90%; border-radius: 15px; overflow: hidden;">
+          <p style="padding-bottom: 5px;"><i class="fa-solid fa-map-pin"></i>Visit us here:</p>
+          <div style="width: 90%; border-radius: 15px; overflow: hidden; box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.164);">
             <iframe 
                 width="100%" 
                 height="200" 
@@ -357,6 +359,7 @@ if (!isset($_SESSION["user"])) {
   <div class="copyright">
     <p>©️ Smart Groceries</p>
   </div>
+
 </div>
 
 <script>

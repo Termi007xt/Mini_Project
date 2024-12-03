@@ -144,22 +144,22 @@ body.showCart .cartTab {
     font-weight: 500;
     cursor: pointer;
 }
-.cartTab .btn{
+.cartTab .btn a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .btn .close{
-    /* border-radius: 5%; */
     background-color: lightcoral;
 }
 .cartTab .checkOut{
-    /* border-radius: 10%; */
     background-color: lightgreen;
 }
+
+
 .cartTab .listCart .item img{
     width: 100%;
     border-radius: 16px;
-}
+} 
 .cartTab .listCart .item{
     display: grid;
     margin-left: 5px;
