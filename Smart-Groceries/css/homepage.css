@@ -306,13 +306,13 @@ section {
   margin-right: auto;
 }
 
-/* .category-heading span {
+.category-heading span {
   color: #a7a7a7;
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 8px;
   margin-left: 88rem;
-} */
+}
 
 .category-heading span:hover {
   color: var(--green);
