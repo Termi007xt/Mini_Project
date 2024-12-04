@@ -312,7 +312,7 @@ if (!isset($_SESSION["user"])) {
                 marginheight="0" 
                 marginwidth="0" 
                 style="border-radius: 15px;" 
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sir%20M%20Visvesvaraya%20Institute%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sir%20M%20Visvesvaraya%20Institute%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a>
             </iframe>
           </div>
         </div>
@@ -358,7 +358,7 @@ if (!isset($_SESSION["user"])) {
     </div>
   </div>
   <div class="copyright">
-    <p>©️ Smart Groceries</p>
+    <p>&copy; Smart Groceries</p>
   </div>
 
 </div>

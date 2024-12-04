@@ -6,8 +6,8 @@
   --black: black;
   --light-color: #666;
   --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.164);
-  --border: 2rem solid rgba(0, 0, 0.1);
-  --outline: 0.1rem solid rgba(0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 /* universal selection (for common properties) */
@@ -69,7 +69,6 @@ body {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-
 
 /* logo properties */
 .header .logo {
@@ -140,13 +139,11 @@ body {
   right: -5px;
 }
 
-
 .fa-shopping-cart{
   position: relative;
 }
 
-
- /* .header .icons .cart-count {
+/* .header .icons .cart-count {
   position: absolute;
   right: 40px;
   background-color: red;
@@ -222,11 +219,13 @@ section {
   margin-left: 12px;
   position: relative;
 }
+
 .content h1 {
   font-size: 5.5rem;
   line-height: 50px;
   color: #202020;
 }
+
 .content p {
   color: #4eb060;
   font-size: 1.7rem;
@@ -319,16 +318,21 @@ section {
   color: var(--green);
   cursor: pointer;
 }
+
 .category-heading,
-.product-heading {
+.product-heading,
+.popular-product-text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%; /* Ensure it takes the full width of its parent */
   padding-left: 0; /* Ensure there's no left padding */
   margin-top: 5rem;
-  margin-left: 11.9rem;
+  margin-left: 0; /* Removed large left margin */
+  text-align: center; /* Center align text on mobile */
+  padding: 0 1rem; /* Add horizontal padding for spacing */
 }
+
 .category-heading h2,
 .popular-product-text h2 {
   font-size: 3rem;
@@ -336,6 +340,7 @@ section {
   color: #202020;
   letter-spacing: 0.5px;
 }
+
 .category-heading span,
 .product-heading span {
   font-size: 15px;
@@ -343,6 +348,7 @@ section {
   font-weight: 400;
   letter-spacing: 1px;
 }
+
 .category-container {
   display: flex;
   justify-content: center;
@@ -350,9 +356,11 @@ section {
   margin-top: 5px;
   gap: 15px;
 }
+
 .fa-search {
   cursor: pointer;
 }
+
 .category-box {
   display: flex;
   flex-direction: column;
@@ -365,6 +373,7 @@ section {
   border: 1.2px solid rgba(0, 0, 0, 0.03);
   cursor: pointer;
 }
+
 .category-box img {
   height: 52px;
   width: 74.28px;
@@ -372,6 +381,7 @@ section {
   object-position: center;
   transition: all ease 0.1s;
 }
+
 .category-box span {
   color: #393939;
   font-size: 1rem;
@@ -379,6 +389,7 @@ section {
   letter-spacing: 0.3px;
   font-weight: 600;
 }
+
 .category-box:hover img {
   transform: scale(1.1);
   transition: all ease 0.1s;
@@ -443,11 +454,8 @@ section {
 
 .popular-product-text {
   margin-top: 50px;
-  margin-left: 11.9rem;
-}
-.product-link {
-  text-decoration: none;
-  color: inherit;
+  margin-left: 0; /* Removed large left margin */
+  text-align: center; /* Center align text */
 }
 
 /*-------------------Contact-----------------*/
@@ -647,7 +655,6 @@ nav .fa-solid {
   padding-right: 1.5rem;
   color: var(--black);
   cursor: pointer;
-
 }
 
 .header .search-form label:hover {
@@ -658,7 +665,7 @@ nav .fa-solid {
 
 .show-all-button {
     display: inline-block;
-    margin-left: 90rem;
+    /* Removed margin-left: 90rem; */
     padding: 10px 20px;
     background-color: #7ed957;
     color: rgb(255, 255, 255);
@@ -670,4 +677,159 @@ nav .fa-solid {
 
 .show-all-button:hover {
     background-color: #006d2ecc;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  /* Hide the navigation menu */
+  .header .navbar {
+    display: none;
+  }
+
+  /* Ensure only logo, profile, and cart icons are visible */
+  .header .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Hide the search form on mobile */
+  .header .search-form {
+    display: none;
+  }
+
+  /* Adjust category headings and popular products text alignment */
+  .category-heading,
+  .product-heading,
+  .popular-product-text {
+    margin-left: 0; /* Remove large left margin */
+    text-align: center; /* Center align text */
+    padding: 0 1rem; /* Add horizontal padding for spacing */
+  }
+
+  /* Adjust the "Show All" button */
+  .show-all-button {
+    margin-left: 0; /* Remove large left margin */
+    margin-top: 10px; /* Add top margin for spacing */
+    display: block; /* Make it block-level for centering */
+    text-align: center; /* Center the button */
+  }
+
+  /* Adjust category-container for better mobile display */
+  .category-container {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the category boxes */
+    gap: 10px; /* Reduce gap between boxes */
+  }
+
+  /* Adjust category-box width for two per row */
+  .category-box {
+    width: 45%; /* Approximately two boxes per row */
+    min-width: 100px; /* Reduce minimum width */
+    margin: 5px 0; /* Add vertical margin */
+  }
+
+  /* Adjust banner and discount-banner heights for mobile */
+  .banner,
+  .discount-banner {
+    height: 40vh; /* Reduce height on smaller screens */
+  }
+
+  /* Adjust content text sizes for mobile */
+  .content h1 {
+    font-size: 4rem; /* Smaller headings */
+    line-height: 1.2; /* Adjust line height */
+  }
+
+  .content p {
+    font-size: 1.5rem; /* Smaller paragraph text */
+    margin-top: 10px; /* Add top margin */
+  }
+
+  /* Adjust sale-heading position and size */
+  .sale-heading {
+    font-size: 3rem; /* Smaller font size */
+    right: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Center alignment */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjust countdown big-text size */
+  .big-text {
+    font-size: 4.5rem; /* Smaller countdown numbers */
+  }
+
+  /* Adjust popular products font size */
+  .popular-product-text h2 {
+    font-size: 2.5rem; /* Smaller heading */
+  }
+
+  /* Center align banner content */
+  .banner .content {
+    text-align: center;
+    margin-left: 0; /* Remove left margin */
+    width: 100%; /* Full width */
+  }
+
+  /* Center align discount-banner content */
+  .discount-banner .sale-heading {
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+  }
+}
+
+/* Further Responsive Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+  /* Make category boxes full width */
+  .category-box {
+    width: 90%; /* Single column layout */
+    margin: 5px auto; /* Center the boxes */
+  }
+
+  /* Adjust headings font size */
+  .category-heading h2,
+  .popular-product-text h2 {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  /* Adjust banner and discount-banner heights */
+  .banner,
+  .discount-banner {
+    height: 30vh; /* Further reduce height */
+  }
+
+  /* Adjust content text sizes */
+  .content h1 {
+    font-size: 3.5rem; /* Even smaller headings */
+  }
+
+  .content p {
+    font-size: 1.2rem; /* Even smaller paragraph text */
+  }
+
+  /* Adjust sale-heading position and size */
+  .sale-heading {
+    font-size: 2.5rem; /* Further reduce font size */
+    right: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Center alignment */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjust countdown big-text size */
+  .big-text {
+    font-size: 3.5rem; /* Further reduce countdown numbers */
+  }
+
+  /* Adjust logo size if needed */
+  .header .logo {
+    height: 70px; /* Smaller logo height */
+    width: 120px; /* Smaller logo width */
+  }
+
+  /* Adjust "Show All" button */
+  .show-all-button {
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 12px; /* Reduce font size */
+  }
 }
