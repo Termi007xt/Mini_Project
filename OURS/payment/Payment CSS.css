@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-*{
+/* Apply base styles */
+* {
     font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -12,11 +13,13 @@
 body {
     background-color: #e5e5f7;
     opacity: 0.8;
-    background-image: radial-gradient(circle at center center, #7ed957, #e5e5f7), repeating-radial-gradient(circle at center center, #7ed957, #7ed957, 11px, transparent 22px, transparent 11px);
+    background-image: radial-gradient(circle at center center, #7ed957, #e5e5f7),
+        repeating-radial-gradient(circle at center center, #7ed957, #7ed957, 11px, transparent 22px, transparent 11px);
     background-blend-mode: multiply;
 }
 
-.container{
+/* Container and form styling */
+.container {
     min-height: 100vh;
     background: #eee;
     display: flex;
@@ -26,167 +29,211 @@ body {
     padding-bottom: 60px;
 }
 
-.container{
-    min-height: 100vh;
-    background: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;
-}
-
-.container form{
+.container form {
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 600px;
     padding-top: 160px;
 }
 
-.container form .inputBox{
+.container form .inputBox {
     margin-top: 20px;
 }
 
-.container form .inputBox span{
+.container form .inputBox span {
     display: block;
-    color:#999;
+    color: #999;
     padding-bottom: 5px;
 }
 
 .container form .inputBox input,
-.container form .inputBox select{
+.container form .inputBox select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:#444;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #444;
 }
 
-.container form .flexbox{
+.container form .flexbox {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
 
-.container form .flexbox .inputBox{
-    flex:1 1 150px;
+.container form .flexbox .inputBox {
+    flex: 1 1 150px;
 }
 
-.container form .submit-btn{
+.container form .submit-btn {
     width: 100%;
-    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
     cursor: pointer;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
-.container form .submit-btn:hover{
+.container form .submit-btn:hover {
     letter-spacing: 2px;
-    opacity: .8;
+    opacity: 0.8;
 }
 
-.container .card-container{
+.container .card-container {
     margin-bottom: -150px;
     position: relative;
     height: 250px;
     width: 400px;
 }
 
-.container .card-container .front{
+.container .card-container .front,
+.container .card-container .back {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0; left: 0;
-    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
     border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    padding:20px;
-    transform:perspective(1000px) rotateY(0deg);
-    transition:transform .3s ease-out;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.3s ease-out;
 }
 
-.container .card-container .front .image{
+.container .card-container .back {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.container .card-container .front .image {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.container .card-container .front .image img{
+.container .card-container .front .image img {
     height: 50px;
 }
 
-.container .card-container .front .card-number-box{
-    padding:30px 0;
+.container .card-container .front .card-number-box {
+    padding: 30px 0;
     font-size: 22px;
-    color:#fff;
+    color: #fff;
 }
 
-.container .card-container .front .flexbox{
+.container .card-container .front .flexbox {
     display: flex;
 }
 
-.container .card-container .front .flexbox .box:nth-child(1){
+.container .card-container .front .flexbox .box:nth-child(1) {
     margin-right: auto;
 }
 
-.container .card-container .front .flexbox .box{
+.container .card-container .front .flexbox .box {
     font-size: 15px;
-    color:#fff;
+    color: #fff;
 }
 
-.container .card-container .back{
-    position: absolute;
-    top:0; left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(120deg,#2980b9,#8e44ad);
-    border-radius: 5px;
-    padding: 20px 0;
-    text-align: right;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
-}
-
-.container .card-container .back .stripe{
+.container .card-container .back .stripe {
     background: #000;
     width: 100%;
     margin: 10px 0;
     height: 50px;
 }
 
-.container .card-container .back .box{
+.container .card-container .back .box {
     padding: 0 20px;
 }
 
-.container .card-container .back .box span{
-    color:#fff;
+.container .card-container .back .box span {
+    color: #fff;
     font-size: 15px;
 }
 
-.container .card-container .back .box .cvv-box{
+.container .card-container .back .box .cvv-box {
     height: 50px;
     padding: 10px;
     margin-top: 5px;
-    color:#333;
+    color: #333;
     background: #fff;
     border-radius: 5px;
     width: 100%;
 }
 
-.container .card-container .back .box img{
+.container .card-container .back .box img {
     margin-top: 30px;
     height: 30px;
 }
 
+/* Link styling */
 a:link {
-    color: white
+    color: white;
+}
+
+/* Media Queries for Mobile Support */
+@media (max-width: 768px) {
+    .container form {
+        width: 90%;
+        padding-top: 100px; /* Adjust top padding for mobile */
+    }
+
+    .container .card-container {
+        height: 200px;
+        width: 300px;
+    }
+
+    .container .card-container .front,
+    .container .card-container .back {
+        padding: 15px;
+    }
+
+    .container form .inputBox input,
+    .container form .inputBox select {
+        padding: 8px;
+    }
+
+    .container form .submit-btn {
+        font-size: 18px;
+    }
+
+    /* Stack flexbox on mobile */
+    .container form .flexbox {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Additional media query for smaller mobile screens */
+@media (max-width: 480px) {
+    .container form {
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .container .card-container {
+        height: 180px;
+        width: 270px;
+    }
+
+    .container .card-container .front .card-number-box {
+        font-size: 18px;
+    }
+
+    .container .card-container .front .image img {
+        height: 40px;
+    }
+
+    .container form .submit-btn {
+        font-size: 16px;
+    }
+
+    .container .card-container .back .box {
+        padding: 10px;
+    }
 }
