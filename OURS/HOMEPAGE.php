@@ -262,7 +262,7 @@ if (!isset($_SESSION["user"])) {
       class="product-img"
     />
     <div class="product-details">
-      <h3><a href="Categories/SnacksandDrink.html">Maggie Classic</a></h3>
+      <h3><a href="Categories/Snacks and Drink.html">Maggie Classic</a></h3>
       <p>4 pack</p>
       <p>130</p>
     </div>
