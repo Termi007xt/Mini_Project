@@ -228,9 +228,8 @@ if (!isset($_SESSION["user"])) {
 
   <div class="product-card">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYAqtrSsET_fmh0zq_T2ihv8hTE05phH2wQ&s"
+      src="https://admin.itcstore.in/media/catalog/category/urad_2.png"
       width="40px"
-      ,
       height="40px"
       alt="Product 2"
       class="product-img"
@@ -244,7 +243,7 @@ if (!isset($_SESSION["user"])) {
 
   <div class="product-card">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWb9pWnxUOt7LaxFSZH20msJLWV1yyOHCgPQ&s"
+      src="https://m.media-amazon.com/images/I/71arAlcbDGL.jpg"
       alt="Product 3"
       class="product-img"
     />
@@ -270,7 +269,7 @@ if (!isset($_SESSION["user"])) {
 
   <div class="product-card">
     <img
-      src="https://kmf-public.s3.ap-south-1.amazonaws.com/Samrudhi_500_ml_BIMUL_2_product_image_eebc55a74d.jpg"
+      src="images/milk.jpg"
       alt="Product 5"
       class="product-img"
     />
@@ -282,7 +281,7 @@ if (!isset($_SESSION["user"])) {
   </div>
 
   <div class="product-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MbhhJn_nbbtUsPfcBqIMEQEuNqfHVj8iyliln4pitapGRW_Sjv--P0UmE8fkqD5q-bc&usqp=CAU" alt="Product 6" class="product-img"/>
+    <img src="https://m.media-amazon.com/images/I/61yecBpCDhL.jpg" alt="Product 6" class="product-img"/>
     <div class="product-details">
       <h3><a href="Categories/Snacks and Drinks.html">Thumps up</a></h3>
       <p>750 ml</p>
