@@ -222,3 +222,16 @@ body.showCart .cartTab {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.grand-total {
+    background-color: #61ff52; /* Same as cartTab background */
+    color: #000000;
+    font-size: 16px;
+    
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-top: 1px solid #eee;
+    
+    
+}
