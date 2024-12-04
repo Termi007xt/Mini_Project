@@ -146,7 +146,7 @@ img {
     position: relative;
     top: 28px;
     width: 400px; /* Slightly wider for the form */
-    height: 520px; /* Increased height for registration fields */
+    height: 600px; /* Increased height for registration fields */
     border-radius: 14px;
     z-index: 1111;
     overflow: hidden;
@@ -162,7 +162,7 @@ img {
     top: 4px;
     left: 4px;
     width: 390px; /* 10px smaller than card width */
-    height: 510px; /* 10px smaller than card height */
+    height: 590px; /* 10px smaller than card height */
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(24px);
