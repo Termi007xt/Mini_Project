@@ -138,21 +138,31 @@ body.showCart .cartTab {
 }
 
 .cartTab button {
-    background-color: #fff;
+    background-color: lightgreen;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+.cartTab a{
+    background-color: lightgreen;
     border: none;
     font-family: var(--font-family);
     font-weight: 500;
     cursor: pointer;
+    padding: 20px;
+    padding-left: 56px;
+    padding-top: 14px;
+     
 }
-.cartTab .btn a{
+.cartTab .btn{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.btn .close{
+.cartTab .close{
     background-color: lightcoral;
 }
-.cartTab .checkOut{
-    background-color: lightgreen;
+.cartTab .a .checkOut{
+    background-color: lightgreen;  
 }
 
 

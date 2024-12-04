@@ -1,4 +1,4 @@
-<center?php
+<?php
 session_start();
 if (!isset($_SESSION["user"])) {
    header("Location: login-&-register/login.php");
@@ -87,7 +87,9 @@ if (!isset($_SESSION["user"])) {
         </div>
           <div class="btn">
             <button class="close">CLOSE</button>
-            <button class="checkOut">Check Out</button>
+            <a href="payment/Payment HTML.html">
+              <button class="checkOut">CHECK OUT</button>
+            </a>
         </div>
       </div>      
     </div>
@@ -311,7 +313,7 @@ if (!isset($_SESSION["user"])) {
                 marginheight="0" 
                 marginwidth="0" 
                 style="border-radius: 15px;" 
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=13.149615050000001,77.60684816767413+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sir%20M%20Visvesvaraya%20Institute%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
             </iframe>
           </div>
         </div>
@@ -332,13 +334,13 @@ if (!isset($_SESSION["user"])) {
     </div>
   </div>
   <div class="social-icons"><center>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      <a target="_blank" href="https://github.com/Termi007xt/Mini_Project"
         ><i class="fa-brands fa-github"></i
       ></a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      <a target="_blank" href="https://github.com/Termi007xt/Mini_Project"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a target="_blank" href="https://github.com/Termi007xt/Mini_Project"
         ><i class="fa-brands fa-youtube"></i
       ></a>
     </center></div>
