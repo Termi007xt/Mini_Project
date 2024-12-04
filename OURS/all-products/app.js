@@ -129,7 +129,8 @@ const displayGrandTotal = (grandTotal) => {
       total += product.price * cartItem.quantity;
     }
     });
-    grandTotalElement.innerHTML = `Grand Total: ₹${grandTotal}`;
+    grandTotalElement.innerHTML = `Grand Total: <span style="font-weight: bold;">₹${grandTotal}</span>`;
+
 };
 
 // Save cart to local storage
