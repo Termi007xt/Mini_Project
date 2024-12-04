@@ -1,10 +1,10 @@
-// Selecting elements
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
 let iconCart = document.querySelector('#icon-cart');
 let iconCartSpan = document.querySelector('.cart-count');
 let body = document.querySelector('body');
 let closeCart = document.querySelector('.close'); 
+
 
 // Product and cart data
 let products = [];
@@ -74,7 +74,7 @@ const addToCart = (productId) => {
 const addCartToHTML = () => {
     listCartHTML.innerHTML = ''; 
     let totalQuantity = 0;
-    let grandTotal=0;
+    let grandTotal = 0;
 
     if (cart.length > 0) {
         cart.forEach(cartItem => {
@@ -86,7 +86,7 @@ const addCartToHTML = () => {
                 newItem.classList.add('item');
                 newItem.dataset.id = cartItem.product_id;
 
-                // total amount
+                // Calculate total amount for the item
                 let itemTotalPrice = product.price * cartItem.quantity;
                 grandTotal += itemTotalPrice;
 
@@ -95,7 +95,7 @@ const addCartToHTML = () => {
                         <img src="${product.image}" alt="${product.name}">
                     </div>
                     <div class="name">${product.name}</div>
-                    <div class="totalPrice">₹${product.price * cartItem.quantity}</div>
+                    <div class="totalPrice">₹${itemTotalPrice}</div>
                     <div class="quantity">
                         <span class="minus">-</span>
                         <span>${cartItem.quantity}</span>
@@ -106,8 +106,11 @@ const addCartToHTML = () => {
         });
     }
 
-    iconCartSpan.textContent = totalQuantity; 
-    
+    // Update cart count
+    iconCartSpan.textContent = totalQuantity;
+
+    // Display the grand total
+    displayGrandTotal(grandTotal);
 };
 
 const displayGrandTotal = (grandTotal) => {
@@ -117,6 +120,15 @@ const displayGrandTotal = (grandTotal) => {
         grandTotalElement.classList.add('grand-total');
         listCartHTML.appendChild(grandTotalElement);
     }
+
+    //calculate grand total
+    let total = 0;
+    cart.forEach(cartItem => {
+    let product = products.find(p => p.id == cartItem.product_id);
+    if (product) {
+      total += product.price * cartItem.quantity;
+    }
+    });
     grandTotalElement.innerHTML = `Grand Total: ₹${grandTotal}`;
 };
 

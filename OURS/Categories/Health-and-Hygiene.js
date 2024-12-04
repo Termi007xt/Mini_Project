@@ -1,10 +1,11 @@
 // Selecting elements
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
-let iconCart = document.querySelector('#icon-cart'); // Cart icon
-let iconCartSpan = document.querySelector('.cart-count'); // Cart count
+let iconCart = document.querySelector('#icon-cart');
+let iconCartSpan = document.querySelector('.cart-count');
 let body = document.querySelector('body');
-let closeCart = document.querySelector('.close'); // Close button in the cart
+let closeCart = document.querySelector('.close'); 
+
 
 // Product and cart data
 let products = [];
@@ -25,7 +26,7 @@ const initApp = () => {
     fetch('Health-and-Hygiene.json')
         .then(response => response.json())
         .then(data => {
-            products = data; // Store products in the global array
+            products = data; 
             addDataToHTML();
 
             // Load cart from local storage
@@ -39,7 +40,7 @@ const initApp = () => {
 
 // Display products in the DOM
 const addDataToHTML = () => {
-    listProductHTML.innerHTML = ''; // Clear existing product data
+    listProductHTML.innerHTML = ''; 
 
     if (products.length > 0) {
         products.forEach(product => {
@@ -72,8 +73,9 @@ const addToCart = (productId) => {
 
 // Update cart in the DOM
 const addCartToHTML = () => {
-    listCartHTML.innerHTML = ''; // Clear existing cart items
+    listCartHTML.innerHTML = ''; 
     let totalQuantity = 0;
+    let grandTotal = 0;
 
     if (cart.length > 0) {
         cart.forEach(cartItem => {
@@ -85,12 +87,16 @@ const addCartToHTML = () => {
                 newItem.classList.add('item');
                 newItem.dataset.id = cartItem.product_id;
 
+                // Calculate total amount for the item
+                let itemTotalPrice = product.price * cartItem.quantity;
+                grandTotal += itemTotalPrice;
+
                 newItem.innerHTML = `
                     <div class="image">
                         <img src="${product.image}" alt="${product.name}">
                     </div>
                     <div class="name">${product.name}</div>
-                    <div class="totalPrice">₹${product.price * cartItem.quantity}</div>
+                    <div class="totalPrice">₹${itemTotalPrice}</div>
                     <div class="quantity">
                         <span class="minus">-</span>
                         <span>${cartItem.quantity}</span>
@@ -101,7 +107,30 @@ const addCartToHTML = () => {
         });
     }
 
-    iconCartSpan.textContent = totalQuantity; // Update cart count
+    // Update cart count
+    iconCartSpan.textContent = totalQuantity;
+
+    // Display the grand total
+    displayGrandTotal(grandTotal);
+};
+
+const displayGrandTotal = (grandTotal) => {
+    let grandTotalElement = document.querySelector('.grand-total');
+    if (!grandTotalElement) {
+        grandTotalElement = document.createElement('div');
+        grandTotalElement.classList.add('grand-total');
+        listCartHTML.appendChild(grandTotalElement);
+    }
+
+    //calculate grand total
+    let total = 0;
+    cart.forEach(cartItem => {
+    let product = products.find(p => p.id == cartItem.product_id);
+    if (product) {
+      total += product.price * cartItem.quantity;
+    }
+    });
+    grandTotalElement.innerHTML = `Grand Total: ₹${grandTotal}`;
 };
 
 // Save cart to local storage
@@ -142,7 +171,7 @@ const changeCartQuantity = (productId, action) => {
             cart[cartItemIndex].quantity -= 1;
 
             if (cart[cartItemIndex].quantity <= 0) {
-                cart.splice(cartItemIndex, 1); // Remove item if quantity is 0
+                cart.splice(cartItemIndex, 1);
             }
         }
     }
@@ -151,6 +180,5 @@ const changeCartQuantity = (productId, action) => {
     saveCartToLocalStorage();
 };
 
-// Initialize the app
 initApp();
-
+displayGrandTotal(grandTotal);
