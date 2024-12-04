@@ -74,6 +74,7 @@ const addToCart = (productId) => {
 const addCartToHTML = () => {
     listCartHTML.innerHTML = ''; 
     let totalQuantity = 0;
+    let grandTotal=0;
 
     if (cart.length > 0) {
         cart.forEach(cartItem => {
@@ -84,6 +85,10 @@ const addCartToHTML = () => {
                 let newItem = document.createElement('div');
                 newItem.classList.add('item');
                 newItem.dataset.id = cartItem.product_id;
+
+                // total amount
+                let itemTotalPrice = product.price * cartItem.quantity;
+                grandTotal += itemTotalPrice;
 
                 newItem.innerHTML = `
                     <div class="image">
@@ -102,6 +107,17 @@ const addCartToHTML = () => {
     }
 
     iconCartSpan.textContent = totalQuantity; 
+    
+};
+
+const displayGrandTotal = (grandTotal) => {
+    let grandTotalElement = document.querySelector('.grand-total');
+    if (!grandTotalElement) {
+        grandTotalElement = document.createElement('div');
+        grandTotalElement.classList.add('grand-total');
+        listCartHTML.appendChild(grandTotalElement);
+    }
+    grandTotalElement.innerHTML = `Grand Total: ₹${grandTotal}`;
 };
 
 // Save cart to local storage
@@ -152,3 +168,4 @@ const changeCartQuantity = (productId, action) => {
 };
 
 initApp();
+displayGrandTotal(grandTotal);

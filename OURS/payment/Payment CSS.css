@@ -9,6 +9,13 @@
     text-transform: uppercase;
 }
 
+body {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #7ed957, #e5e5f7), repeating-radial-gradient(circle at center center, #7ed957, #7ed957, 11px, transparent 22px, transparent 11px);
+    background-blend-mode: multiply;
+}
+
 .container{
     min-height: 100vh;
     background: #eee;
