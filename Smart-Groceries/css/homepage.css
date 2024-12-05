@@ -328,7 +328,7 @@ section {
   width: 100%; /* Ensure it takes the full width of its parent */
   padding-left: 0; /* Ensure there's no left padding */
   margin-top: 5rem;
-  margin-left: 0; /* Removed large left margin */
+  margin-left: 12rem; /* Removed large left margin */
   text-align: center; /* Center align text on mobile */
   padding: 0 1rem; /* Add horizontal padding for spacing */
 }
@@ -454,7 +454,7 @@ section {
 
 .popular-product-text {
   margin-top: 50px;
-  margin-left: 0; /* Removed large left margin */
+  margin-left: 12rem; /* Removed large left margin */
   text-align: center; /* Center align text */
 }
 
